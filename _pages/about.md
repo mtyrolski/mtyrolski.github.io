@@ -19,13 +19,49 @@ You can view my [full CV here](../files/cv.pdf).
 
 ## Selected Publications
 
+<style>
+.publication-box {
+  display: flex;
+  align-items: center;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 1rem;
+  background: #fafbfc;
+  min-height: 120px;
+  transition: background 0.2s, box-shadow 0.2s, border-color 0.2s;
+}
+.publication-box:hover {
+  background: #f0f6ff;
+  box-shadow: 0 2px 8px rgba(30, 136, 229, 0.08);
+  border-color: #90caf9;
+}
+.paper-link {
+  display: inline-block;
+  background: #c62828;
+  color: #fff;
+  padding: 0.4em 1em;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 600;
+  margin: 0.5em 0 0.2em 0;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+}
+.paper-link:hover {
+  background: #fff;
+  color: #c62828;
+  box-shadow: 0 0 0 2px #c62828 inset;
+}
+</style>
+
 <div style="display: flex; flex-direction: column; gap: 1.5rem;">
 {% for publication in site.publications %}
-  <div style="display: flex; align-items: center; border: 1px solid #e0e0e0; border-radius: 8px; padding: 1rem; background: #fafbfc; min-height: 120px;">
+  <div class="publication-box">
     <div style="flex: 1;">
       <strong>{{ publication.title }}</strong><br>
       <em>{{ publication.venue }}, {{ publication.pub_date | date: '%Y' }}</em><br>
-      {% if publication.paperurl %}<a href="{{ publication.paperurl }}">Paper</a>{% endif %}
+      {% if publication.paperurl %}
+        <a href="{{ publication.paperurl }}" class="paper-link">Paper</a>
+      {% endif %}
       {% if publication.excerpt %}<br>{{ publication.excerpt }}{% endif %}
     </div>
     <div style="width: 100px; height: 100px; margin-left: 1.5rem; background: #eaeaea; border-radius: 6px; display: flex; align-items: center; justify-content: center; color: #aaa; font-size: 0.9em;">
