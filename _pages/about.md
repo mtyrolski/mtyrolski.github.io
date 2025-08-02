@@ -9,7 +9,7 @@ redirect_from:
 
 I am **Michał Tyrolski**, a *Senior AI Consultant* at **Ernst & Young**. I hold an **M.Sc. in Machine Learning** (2023) and a **B.Sc. in Computer Science** (2021) from the **University of Warsaw**, where I was supervised by prof. Marek Cygan and prof. Piotr Miłoś.
 
-My research focuses on **Multi-Agent Systems**, **Meta-RL**, **AI-based Planning**, and **decision-making in complex environments**. My expertise includes offline and online reinforcement learning, planning, efficient transformers, and LLMs. I have contributed to AI projects at **Microsoft**, **Nvidia**, **Deepflare**, and **Samsung**.
+My main research interests include **AI-based Planning**, **decision-making in complex environments**, **Meta-Reinforcement Learning**, and **Continual Learning**. Over the years, I’ve gained experience in both offline and online reinforcement learning, planning, efficient transformer architectures, and LLMs. I’ve also had the opportunity to be involved in AI projects at **Microsoft**, **Nvidia**, **Deepflare**, and **Samsung**.
 
 I am an active member of the AI community, particularly with **ML in PL**, where I have been an organizer since 2020. In my free time, I enjoy mountain hiking and motorization.
 
@@ -76,20 +76,27 @@ You can view my [full CV here](../files/cv.pdf).
 ## Selected Projects
 
 <div style="display: flex; flex-direction: column; gap: 1.5rem;">
-  <div style="border: 1px solid #e0e0e0; border-radius: 8px; padding: 1rem; background: #fafbfc;">
-    <strong>Multi-Agent RL for Smart Grids</strong><br>
-    <em>EY, 2024</em><br>
-    Developed a scalable reinforcement learning system for optimizing energy distribution in smart grids, reducing costs and improving reliability.
-  </div>
-  <div style="border: 1px solid #e0e0e0; border-radius: 8px; padding: 1rem; background: #fafbfc;">
-    <strong>Efficient Transformer Architectures</strong><br>
-    <em>University of Warsaw, 2023</em><br>
-    Researched and implemented efficient transformer models for NLP tasks, achieving state-of-the-art results with reduced computational resources.
-  </div>
-  <div style="border: 1px solid #e0e0e0; border-radius: 8px; padding: 1rem; background: #fafbfc;">
-    <strong>AI-based Medical Diagnostics</strong><br>
-    <em>Deepflare, 2022</em><br>
-    Built deep learning pipelines for medical image analysis, supporting early disease detection and clinical decision-making.
+  <div style="border: 1px solid #1976d2; border-radius: 8px; padding: 1.5rem; background: #f5faff; box-shadow: 0 2px 8px rgba(25, 118, 210, 0.06);">
+    <strong style="font-size: 1.2em; color: #1976d2;">CaRL Library: Combinatorial RL for planning</strong><br>
+    <em>Lead author & maintainer</em><br>
+    <p style="margin-top: 0.7em;">
+      <b>CaRL</b> is an open-source library for scalable offline and online reinforcement/imitation learning in combinatorial planning problems.<br>
+      <ul style="margin: 0.5em 0 0.5em 1.2em;">
+        <li>Supports environments like <b>Sokoban</b>, <b>NPuzzle</b>, <b>Rubik</b>, and <b>INT</b>.</li>
+        <li>Includes 35+ open-source models (Generator, Value, Policy, CLLP).</li>
+        <li>Enables distributed experiments on SLURM clusters and local machines.</li>
+        <li>Interactive Jupyter notebooks for research and reproducibility.</li>
+        <li>Used in multiple peer-reviewed papers.</li>
+      </ul>
+    </div>
+        <div style="width: 100%; max-width: 420px; height: 120px; margin: 1.2em auto 0.7em auto; background: #e3eaf6; border-radius: 7px; display: flex; align-items: center; justify-content: center; color: #90caf9; font-size: 1.1em; font-weight: 500; letter-spacing: 0.5px;">
+      Image Placeholder
+    </div>
+      <b>Key features:</b> modular architecture, Hydra config extension, heterogeneous job support, remote deployment, and dataset demos.
+    </p>
+    <div style="margin-top: 0.7em;">
+      <a href="https://github.com/mtyrolski/carl" style="display: inline-block; background: #1976d2; color: #fff; padding: 0.4em 1.2em; border-radius: 5px; text-decoration: none; font-weight: 600; margin-right: 0.7em; transition: background 0.2s;">GitHub Repo</a>
+      <a href="https://arxiv.org/abs/2406.03361" style="display: inline-block; background: #c62828; color: #fff; padding: 0.4em 1.2em; border-radius: 5px; text-decoration: none; font-weight: 600; transition: background 0.2s;">Latest Paper</a>
   </div>
 </div>
 
