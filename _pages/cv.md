@@ -1,12 +1,3 @@
 ---
-layout: archive
-title: "CV"
-permalink: /cv/
-author_profile: true
-redirect_from:
-  - /resume
+# This page has been removed. Please see the CV link in the About page.
 ---
-
-{% include base_path %}
-
-[Full CV](../files/cv.pdf)
