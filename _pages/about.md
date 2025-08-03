@@ -64,8 +64,12 @@ You can view my [full CV here](../files/cv.pdf).
       {% endif %}
       {% if publication.excerpt %}<br>{{ publication.excerpt }}{% endif %}
     </div>
-    <div style="width: 100px; height: 100px; margin-left: 1.5rem; background: #eaeaea; border-radius: 6px; display: flex; align-items: center; justify-content: center; color: #aaa; font-size: 0.9em;">
-      <span>Image<br>Placeholder</span>
+    <div style="width: 100px; height: 100px; margin-left: 1.5rem; background: #eaeaea; border-radius: 6px; display: flex; align-items: center; justify-content: center; overflow: hidden;">
+      {% if publication.image %}
+        <img src="{{ publication.image }}" alt="{{ publication.title }}" style="max-width: 100%; max-height: 100%; object-fit: cover; border-radius: 6px;" />
+      {% else %}
+        <span style="color: #aaa; font-size: 0.9em;">Image<br>Placeholder</span>
+      {% endif %}
     </div>
   </div>
 {% endfor %}
@@ -79,6 +83,9 @@ You can view my [full CV here](../files/cv.pdf).
   <div style="border: 1px solid #1976d2; border-radius: 8px; padding: 1.5rem; background: #f5faff; box-shadow: 0 2px 8px rgba(25, 118, 210, 0.06);">
     <strong style="font-size: 1.2em; color: #1976d2;">CaRL Library: Combinatorial RL for planning</strong><br>
     <em>Lead author & maintainer</em><br>
+    <div style="width: 100%; max-width: 420px; height: 120px; margin: 1.2em auto 0.7em auto; background: #e3eaf6; border-radius: 7px; display: flex; align-items: center; justify-content: center; color: #90caf9; font-size: 1.1em; font-weight: 500; letter-spacing: 0.5px;">
+      Image Placeholder
+    </div>
     <p style="margin-top: 0.7em;">
       <b>CaRL</b> is an open-source library for scalable offline and online reinforcement/imitation learning in combinatorial planning problems.<br>
       <ul style="margin: 0.5em 0 0.5em 1.2em;">
@@ -88,15 +95,12 @@ You can view my [full CV here](../files/cv.pdf).
         <li>Interactive Jupyter notebooks for research and reproducibility.</li>
         <li>Used in multiple peer-reviewed papers.</li>
       </ul>
-    </div>
-        <div style="width: 100%; max-width: 420px; height: 120px; margin: 1.2em auto 0.7em auto; background: #e3eaf6; border-radius: 7px; display: flex; align-items: center; justify-content: center; color: #90caf9; font-size: 1.1em; font-weight: 500; letter-spacing: 0.5px;">
-      Image Placeholder
-    </div>
       <b>Key features:</b> modular architecture, Hydra config extension, heterogeneous job support, remote deployment, and dataset demos.
     </p>
     <div style="margin-top: 0.7em;">
       <a href="https://github.com/mtyrolski/carl" style="display: inline-block; background: #1976d2; color: #fff; padding: 0.4em 1.2em; border-radius: 5px; text-decoration: none; font-weight: 600; margin-right: 0.7em; transition: background 0.2s;">GitHub Repo</a>
       <a href="https://arxiv.org/abs/2406.03361" style="display: inline-block; background: #c62828; color: #fff; padding: 0.4em 1.2em; border-radius: 5px; text-decoration: none; font-weight: 600; transition: background 0.2s;">Latest Paper</a>
+    </div>
   </div>
 </div>
 
