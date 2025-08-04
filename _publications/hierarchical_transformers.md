@@ -1,21 +1,24 @@
 ---
-title: "Hierarchical Transformers Are More Efficient Language Models (NAACL 2022)"
+title: "Hierarchical Transformers Are More Efficient Language Models"
 collection: publications
 category: manuscripts
 permalink: /publication/2022-01-01-hierarchical-transformers
-excerpt: 'Co-authored with Google Research. Improving efficiency in managing long sequences within the attention mechanism.'
+excerpt: "Hourglass, a hierarchical Transformer architecture, improves long-sequence modeling efficiency via downsampling and upsampling layers, achieving SOTA on ImageNet32 and superior performance on enwik8."
 date: 2022-07-01
-venue: 'NAACL 2022'
-slidesurl: ''
-paperurl: 'https://arxiv.org/abs/2110.13711'
-citation: 'Czechowski, K., Odrzygóźdź, T., Zbysiński, M., Zawalski, M., Olejnik, K., Wu, Y., Kuciński, Ł., Tyrolski, M., and Miłoś, P. (2022). "Hierarchical Transformers Are More Efficient Language Models." NAACL 2022.'
-image: '' # Paste image path here, e.g. /images/publications/hierarchical_transformers.png
+venue: "NAACL 2022"
+slidesurl: ""
+paperurl: "https://arxiv.org/abs/2110.13711"
+citation: "Czechowski, K., Odrzygóźdź, T., Zbysiński, M., Zawalski, M., Olejnik, K., Wu, Y., Kuciński, Ł., Tyrolski, M., & Miłoś, P. (2022). Hierarchical Transformers Are More Efficient Language Models. In NAACL 2022."
+image: "/images/publications/hierarchical_transformers.png"
 ---
 
 {% if page.image %}
 <img src="{{ page.image }}" alt="Hierarchical Transformers Are More Efficient Language Models" style="max-width: 420px; border-radius: 8px; margin-bottom: 1em;" />
 {% endif %}
 
-Co-authored a paper with Google Research. Improving efficiency in managing long sequences within the attention mechanism by introducing hierarchical transformer architecture.
+Transformer models yield impressive results on many NLP and sequence modeling tasks. Remarkably, Transformers can handle long sequences which allows them to produce long coherent outputs: full paragraphs produced by GPT-3 or well-structured images produced by DALL-E. These large language models are impressive but also very inefficient and costly, which limits their applications and accessibility.
 
-<!-- Add more details or links as available. -->
+We postulate that having an explicit hierarchical architecture is the key to Transformers that efficiently handle long sequences. To verify this claim, we first study different ways to downsample and upsample activations in Transformers so as to make them hierarchical. We use the best performing upsampling and downsampling layers to create **Hourglass** - a hierarchical Transformer language model. Hourglass improves upon the Transformer baseline given the same amount of computation and can yield the same results as Transformers more efficiently. In particular, Hourglass sets new state-of-the-art for Transformer models on the ImageNet32 generation task and improves language modeling efficiency on the widely studied enwik8 benchmark.
+
+**Links:**
+- [Paper (PDF)]({{ page.paperurl }})

@@ -164,6 +164,9 @@ collections:
   publications:
     output: true
     permalink: /publications/:path/
+  other_papers:
+    output: true
+    permalink: /other-papers/:path/
   talks:
     output: true
     permalink: /talks/:path/

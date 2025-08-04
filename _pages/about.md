@@ -58,15 +58,50 @@ You can view my [full CV here](../files/cv.pdf).
   <div class="publication-box">
     <div style="flex: 1;">
       <strong>{{ publication.title }}</strong><br>
-      <em>{{ publication.venue }}, {{ publication.pub_date | date: '%Y' }}</em><br>
+      <em>{{ publication.venue }}, {{ publication.date | date: '%Y' }}</em><br>
       {% if publication.paperurl %}
         <a href="{{ publication.paperurl }}" class="paper-link">Paper</a>
+      {% endif %}
+      {% if publication.codeurl %}
+        <a href="{{ publication.codeurl }}" class="paper-link">Code</a>
+      {% endif %}
+      {% if publication.websiteurl %}
+        <a href="{{ publication.websiteurl }}" class="paper-link">Website</a>
+      {% endif %}
+      {% if publication.colaburl %}
+        <a href="{{ publication.colaburl }}" class="paper-link">Colab</a>
       {% endif %}
       {% if publication.excerpt %}<br>{{ publication.excerpt }}{% endif %}
     </div>
     <div style="width: 100px; height: 100px; margin-left: 1.5rem; background: #eaeaea; border-radius: 6px; display: flex; align-items: center; justify-content: center; overflow: hidden;">
       {% if publication.image %}
         <img src="{{ publication.image }}" alt="{{ publication.title }}" style="max-width: 100%; max-height: 100%; object-fit: cover; border-radius: 6px;" />
+      {% else %}
+        <span style="color: #aaa; font-size: 0.9em;">Image<br>Placeholder</span>
+      {% endif %}
+    </div>
+  </div>
+{% endfor %}
+</div>
+
+---
+
+## Other Papers
+
+<div style="display: flex; flex-direction: column; gap: 1.5rem;">
+{% for paper in site.other_papers %}
+  <div class="publication-box">
+    <div style="flex: 1;">
+      <strong>{{ paper.title }}</strong><br>
+      <em>{{ paper.venue }}, {{ paper.date | date: '%Y' }}</em><br>
+      {% if paper.paperurl %}
+        <a href="{{ paper.paperurl }}" class="paper-link">Paper</a>
+      {% endif %}
+      {% if paper.excerpt %}<br>{{ paper.excerpt }}{% endif %}
+    </div>
+    <div style="width: 100px; height: 100px; margin-left: 1.5rem; background: #eaeaea; border-radius: 6px; display: flex; align-items: center; justify-content: center; overflow: hidden;">
+      {% if paper.image %}
+        <img src="{{ paper.image }}" alt="{{ paper.title }}" style="max-width: 100%; max-height: 100%; object-fit: cover; border-radius: 6px;" />
       {% else %}
         <span style="color: #aaa; font-size: 0.9em;">Image<br>Placeholder</span>
       {% endif %}
