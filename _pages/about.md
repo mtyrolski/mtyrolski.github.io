@@ -90,7 +90,7 @@ You can view my [full CV here](../files/cv.pdf).
       {% endif %}
       {% if publication.excerpt %}<br>{{ publication.excerpt }}{% endif %}
     </div>
-    <div style="width: 360px; height: 360px; margin-left: 2.5rem; background: #eaeaea; border-radius: 12px; display: flex; align-items: center; justify-content: center; overflow: hidden;">
+    <div style="width: 290px; height: 290px; margin-left: 2.5rem; background: #fafbfc; border-radius: 12px; display: flex; align-items: center; justify-content: center; overflow: hidden;">
       {% if publication.image %}
         <img src="{{ publication.image }}" alt="{{ publication.title }}" style="max-width: 100%; max-height: 100%; object-fit: cover; border-radius: 12px;" />
       {% else %}
@@ -115,7 +115,7 @@ You can view my [full CV here](../files/cv.pdf).
       {% endif %}
       {% if paper.excerpt %}<br>{{ paper.excerpt }}{% endif %}
     </div>
-    <div style="width: 260px; height: 260px; margin-left: 2.5rem; background: #eaeaea; border-radius: 12px; display: flex; align-items: center; justify-content: center; overflow: hidden;">
+    <div style="width: 260px; height: 260px; margin-left: 2.5rem; background: #fafbfc; border-radius: 12px; display: flex; align-items: center; justify-content: center; overflow: hidden;">
       {% if paper.image %}
         <img src="{{ paper.image }}" alt="{{ paper.title }}" style="max-width: 100%; max-height: 100%; object-fit: cover; border-radius: 12px;" />
       {% else %}
@@ -133,7 +133,7 @@ You can view my [full CV here](../files/cv.pdf).
   <div style="border: 1px solid #1976d2; border-radius: 8px; padding: 1.5rem; background: #f5faff; box-shadow: 0 2px 8px rgba(25, 118, 210, 0.06);">
     <strong style="font-size: 1.2em; color: #1976d2;">CaRL Library: Combinatorial RL for planning</strong><br>
     <em>Lead author & maintainer</em><br>
-    <div style="width: 100%; max-width: 600px; height: 320px; margin: 1.2em auto 0.7em auto; background: #e3eaf6; border-radius: 14px; display: flex; align-items: center; justify-content: center;">
+    <div style="width: 100%; max-width: 600px; height: 320px; margin: 1.2em auto 0.7em auto; background: #fafbfc; border-radius: 14px; display: flex; align-items: center; justify-content: center;">
       <img src="../images/planning.png" alt="CaRL Architecture" style="max-width: 100%; max-height: 100%; object-fit: contain; border-radius: 14px;" />
     </div>
     <p style="margin-top: 0.7em;">
