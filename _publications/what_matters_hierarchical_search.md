@@ -9,7 +9,7 @@ venue: "ICLR 2024 (Generative Models for Decision Making)"
 slidesurl: ""
 paperurl: "https://arxiv.org/abs/2406.03361"
 codeurl: "https://github.com/mtyrolski/CaRL"
-citation: "Zawalski, M., Góral, G., Tyrolski, M., Wiśnios, E., Budrowski, F., Kuciński, Ł., & Miłoś, P. (2024). What Matters in Hierarchical Search for Combinatorial Problems? In ICLR 2024: Generative Models for Decision Making."
+citation: "Zawalski, M., Góral, G., Tyrolski, M., Wiśnios, E., Budrowski, F., Cygan, M., Kuciński, Ł. and Miłoś, P., 2024. What Matters in Hierarchical Search for Combinatorial Reasoning Problems?. arXiv preprint arXiv:2406.03361."
 image: "/images/publications/what_matters.png"
 ---
 

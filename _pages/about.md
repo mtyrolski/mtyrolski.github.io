@@ -58,7 +58,7 @@ You can view my [full CV here](../files/cv.pdf).
   <div class="publication-box">
     <div style="flex: 1;">
       <strong>{{ publication.title }}</strong><br>
-      <em>{{ publication.venue }}, {{ publication.date | date: '%Y' }}</em><br>
+      <em>{{ publication.venue }}</em><br>
       {% if publication.paperurl %}
         <a href="{{ publication.paperurl }}" class="paper-link">Paper</a>
       {% endif %}
@@ -93,7 +93,7 @@ You can view my [full CV here](../files/cv.pdf).
   <div class="publication-box">
     <div style="flex: 1;">
       <strong>{{ paper.title }}</strong><br>
-      <em>{{ paper.venue }}, {{ paper.date | date: '%Y' }}</em><br>
+      <em>{{ paper.venue }}</em><br>
       {% if paper.paperurl %}
         <a href="{{ paper.paperurl }}" class="paper-link">Paper</a>
       {% endif %}

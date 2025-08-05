@@ -11,7 +11,7 @@ paperurl: "https://arxiv.org/abs/2206.00702"
 websiteurl: "https://sites.google.com/view/adaptivesubgoalsearch/"
 colaburl: "https://colab.research.google.com/drive/1qdHaTSegZRHMy6nRHXXFjY0DjKSTZQ0x?usp=sharing"
 codeurl: "https://github.com/AdaptiveSubgoalSearch/adaptive_subs"
-citation: "Tyrolski, M., Zawalski, M., Budrowski, F., & Miłoś, P. (2023). Adjusting Planning Horizon with Adaptive Subgoal Search. In ICLR 2023 (Top-5%, Oral)."
+citation: "Zawalski, M., Tyrolski, M., Czechowski, K., Odrzygóźdź, T., Stachura, D., Piękos, P., Wu, Y., Kuciński, Ł. and Miłoś, P., 2022. Fast and precise: Adjusting planning horizon with adaptive subgoal search. arXiv preprint arXiv:2206.00702."
 image: "/images/publications/adaptive_subgoal_search.png"
 ---
 

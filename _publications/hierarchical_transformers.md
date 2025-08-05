@@ -8,7 +8,7 @@ date: 2022-07-01
 venue: "NAACL 2022"
 slidesurl: ""
 paperurl: "https://arxiv.org/abs/2110.13711"
-citation: "Czechowski, K., Odrzygóźdź, T., Zbysiński, M., Zawalski, M., Olejnik, K., Wu, Y., Kuciński, Ł., Tyrolski, M., & Miłoś, P. (2022). Hierarchical Transformers Are More Efficient Language Models. In NAACL 2022."
+citation: "Nawrot, P., Tworkowski, S., Tyrolski, M., Kaiser, Ł., Wu, Y., Szegedy, C. and Michalewski, H., 2021. Hierarchical transformers are more efficient language models. arXiv preprint arXiv:2110.13711."
 image: "/images/publications/hierarchical_transformers.png"
 ---
 

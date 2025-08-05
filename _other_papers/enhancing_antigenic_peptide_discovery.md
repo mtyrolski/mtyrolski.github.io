@@ -3,12 +3,12 @@ title: "Enhancing Antigenic Peptide Discovery"
 collection: other_papers
 category: manuscripts
 permalink: /other-papers/2023-01-01-enhancing-antigenic-peptide-discovery
-excerpt: "Improved MHC-I binding prediction methodology, achieving better generalization than previous state-of-the-art methods."
+excerpt: "This study pinpoints evaluation pitfalls in MHC-I presentation prediction and proposes a unified framework to standardize methodology. It also introduces a transformer model trained on interspecies data, markedly improving peptide–MHC-I binding accuracy and generalization across diverse peptides, alleles, and proteins."
 date: 2023-05-01
 venue: "ICLR 2023, MLDD Workshop"
 slidesurl: ""
 paperurl: ""
-citation: "Tyrolski, M., et al. (2023). Enhancing Antigenic Peptide Discovery. ICLR 2023, MLDD Workshop."
+citation: "Giziński, S., Preibisch, G., Kucharski, P., Tyrolski, M., Rembalski, M., Grzegorczyk, P. and Gambin, A., 2024. Enhancing antigenic peptide discovery: Improved MHC-I binding prediction and methodology. Methods, 224, pp.1-9."
 image: "/images/publications/enhancing_antigenic_peptide_discovery.png"
 ---
 
