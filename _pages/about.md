@@ -9,7 +9,7 @@ redirect_from:
 
 <!-- Custom Top Bar with Profile -->
 <div style="display: flex; align-items: center; background-color: #f8f9fa; padding: 15px; border-radius: 8px; margin-bottom: 25px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); max-width: 1200px; margin-left: auto; margin-right: auto;">
-  <div style="width: 100px; height: 100px; border-radius: 50%; overflow: hidden; margin-right: 20px; flex-shrink: 0;">
+  <div style="width: 180px; height: 180px; border-radius: 50%; overflow: hidden; margin-right: 32px; flex-shrink: 0; box-shadow: 0 4px 16px rgba(0,0,0,0.10);">
     <img src="../images/IMG_8383.JPEG" alt="Michał Tyrolski" style="width: 100%; height: 100%; object-fit: cover;">
   </div>
   <div>
@@ -90,11 +90,11 @@ You can view my [full CV here](../files/cv.pdf).
       {% endif %}
       {% if publication.excerpt %}<br>{{ publication.excerpt }}{% endif %}
     </div>
-    <div style="width: 150px; height: 150px; margin-left: 1.5rem; background: #eaeaea; border-radius: 6px; display: flex; align-items: center; justify-content: center; overflow: hidden;">
+    <div style="width: 360px; height: 360px; margin-left: 2.5rem; background: #eaeaea; border-radius: 12px; display: flex; align-items: center; justify-content: center; overflow: hidden;">
       {% if publication.image %}
-        <img src="{{ publication.image }}" alt="{{ publication.title }}" style="max-width: 100%; max-height: 100%; object-fit: cover; border-radius: 6px;" />
+        <img src="{{ publication.image }}" alt="{{ publication.title }}" style="max-width: 100%; max-height: 100%; object-fit: cover; border-radius: 12px;" />
       {% else %}
-        <span style="color: #aaa; font-size: 0.9em;">Image<br>Placeholder</span>
+        <span style="color: #aaa; font-size: 1.2em;">Image<br>Placeholder</span>
       {% endif %}
     </div>
   </div>
@@ -115,11 +115,11 @@ You can view my [full CV here](../files/cv.pdf).
       {% endif %}
       {% if paper.excerpt %}<br>{{ paper.excerpt }}{% endif %}
     </div>
-    <div style="width: 150px; height: 150px; margin-left: 1.5rem; background: #eaeaea; border-radius: 6px; display: flex; align-items: center; justify-content: center; overflow: hidden;">
+    <div style="width: 260px; height: 260px; margin-left: 2.5rem; background: #eaeaea; border-radius: 12px; display: flex; align-items: center; justify-content: center; overflow: hidden;">
       {% if paper.image %}
-        <img src="{{ paper.image }}" alt="{{ paper.title }}" style="max-width: 100%; max-height: 100%; object-fit: cover; border-radius: 6px;" />
+        <img src="{{ paper.image }}" alt="{{ paper.title }}" style="max-width: 100%; max-height: 100%; object-fit: cover; border-radius: 12px;" />
       {% else %}
-        <span style="color: #aaa; font-size: 0.9em;">Image<br>Placeholder</span>
+        <span style="color: #aaa; font-size: 1.2em;">Image<br>Placeholder</span>
       {% endif %}
     </div>
   </div>
@@ -133,8 +133,8 @@ You can view my [full CV here](../files/cv.pdf).
   <div style="border: 1px solid #1976d2; border-radius: 8px; padding: 1.5rem; background: #f5faff; box-shadow: 0 2px 8px rgba(25, 118, 210, 0.06);">
     <strong style="font-size: 1.2em; color: #1976d2;">CaRL Library: Combinatorial RL for planning</strong><br>
     <em>Lead author & maintainer</em><br>
-    <div style="width: 100%; max-width: 420px; height: 180px; margin: 1.2em auto 0.7em auto; background: #e3eaf6; border-radius: 7px; display: flex; align-items: center; justify-content: center;">
-      <img src="../images/planning.png" alt="CaRL Architecture" style="max-width: 100%; max-height: 100%; object-fit: contain; border-radius: 7px;" />
+    <div style="width: 100%; max-width: 600px; height: 320px; margin: 1.2em auto 0.7em auto; background: #e3eaf6; border-radius: 14px; display: flex; align-items: center; justify-content: center;">
+      <img src="../images/planning.png" alt="CaRL Architecture" style="max-width: 100%; max-height: 100%; object-fit: contain; border-radius: 14px;" />
     </div>
     <p style="margin-top: 0.7em;">
       <b>CaRL</b> is an open-source library for scalable offline and online reinforcement/imitation learning in combinatorial planning problems.<br>
