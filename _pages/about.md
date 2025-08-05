@@ -25,11 +25,11 @@ redirect_from:
 </div>
 
 
-I am **Michał Tyrolski**, a *Senior AI Consultant* at **Ernst & Young**. I hold an **M.Sc. in Machine Learning** (2023), supervised by prof. Marek Cygan and prof. Piotr Miłoś, and a **B.Sc. in Computer Science** (2021), supervised by prof. Henryk Michalewski, both from the **University of Warsaw**.
+I am **Michał Tyrolski**, a *Senior AI Consultant* at **Ernst & Young**. I hold an **M.Sc. in Machine Learning** (2023), supervised by prof. Marek Cygan and prof. Piotr Miłoś, and a **B.Sc. in Computer Science** (2021), supervised by prof. Henryk Michalewski, both from the [**University of Warsaw**](https://www.mimuw.edu.pl/en/).
 
 My main research interests include **AI-based Planning**, **decision-making in complex environments**, **Meta-Reinforcement Learning**, and **Continual Learning**. Over the years, I’ve gained experience in both offline and online reinforcement learning, planning, efficient transformer architectures, and LLMs. I’ve also had the opportunity to be involved in AI projects at **Microsoft**, **Nvidia**, **Deepflare**, and **Samsung**.
 
-I am an active member of the AI community, particularly with **ML in PL**, where I have been an organizer since 2020. In my free time, I enjoy mountain hiking and motorization.
+I am an active member of the AI community, particularly with [**ML in PL Association**](https://mlinpl.org/), where I have been an organizer since 2020. In my free time, I enjoy mountain hiking and motorization.
 
 You can view my [full CV here](../files/cv.pdf).
 
