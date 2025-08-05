@@ -1,11 +1,29 @@
 ---
 permalink: /
-title: "Michał Tyrolski - AI Researcher"
-author_profile: true
+title: ""
+author_profile: false
 redirect_from: 
   - /about/
   - /about.html
 ---
+
+<!-- Custom Top Bar with Profile -->
+<div style="display: flex; align-items: center; background-color: #f8f9fa; padding: 15px; border-radius: 8px; margin-bottom: 25px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); max-width: 1200px; margin-left: auto; margin-right: auto;">
+  <div style="width: 100px; height: 100px; border-radius: 50%; overflow: hidden; margin-right: 20px; flex-shrink: 0;">
+    <img src="../images/IMG_8383.JPEG" alt="Michał Tyrolski" style="width: 100%; height: 100%; object-fit: cover;">
+  </div>
+  <div>
+    <h1 style="margin: 0; font-size: 1.7em;">Michał Tyrolski</h1>
+    <p style="margin: 5px 0 0;">Senior AI Consultant at Ernst & Young / Independent Researcher</p>
+    <div style="margin-top: 8px;">
+      <a href="https://github.com/mtyrolski" style="margin-right: 10px;"><i class="fab fa-github"></i> GitHub</a>
+      <a href="https://twitter.com/mtyrolski" style="margin-right: 10px;"><i class="fab fa-twitter"></i> Twitter</a>
+      <a href="https://www.linkedin.com/in/michal-tyrolski/" style="margin-right: 10px;"><i class="fab fa-linkedin"></i> LinkedIn</a>
+      <a href="../files/cv.pdf"><i class="fas fa-file-pdf"></i> CV</a>
+    </div>
+  </div>
+</div>
+
 
 I am **Michał Tyrolski**, a *Senior AI Consultant* at **Ernst & Young**. I hold an **M.Sc. in Machine Learning** (2023) and a **B.Sc. in Computer Science** (2021) from the **University of Warsaw**, where I was supervised by prof. Marek Cygan and prof. Piotr Miłoś.
 
@@ -15,7 +33,6 @@ I am an active member of the AI community, particularly with **ML in PL**, where
 
 You can view my [full CV here](../files/cv.pdf).
 
----
 
 ## Selected Publications
 
@@ -25,9 +42,9 @@ You can view my [full CV here](../files/cv.pdf).
   align-items: center;
   border: 1px solid #e0e0e0;
   border-radius: 8px;
-  padding: 1rem;
+  padding: 1.5rem;
   background: #fafbfc;
-  min-height: 120px;
+  min-height: 150px;
   transition: background 0.2s, box-shadow 0.2s, border-color 0.2s;
 }
 .publication-box:hover {
@@ -53,10 +70,10 @@ You can view my [full CV here](../files/cv.pdf).
 }
 </style>
 
-<div style="display: flex; flex-direction: column; gap: 1.5rem;">
+<div style="display: flex; flex-direction: column; gap: 1.5rem; max-width: 1200px; margin: 0 auto;">
 {% for publication in site.publications %}
   <div class="publication-box">
-    <div style="flex: 1;">
+    <div style="flex: 1; max-width: calc(100% - 170px);">
       <strong>{{ publication.title }}</strong><br>
       <em>{{ publication.venue }}</em><br>
       {% if publication.paperurl %}
@@ -73,7 +90,7 @@ You can view my [full CV here](../files/cv.pdf).
       {% endif %}
       {% if publication.excerpt %}<br>{{ publication.excerpt }}{% endif %}
     </div>
-    <div style="width: 100px; height: 100px; margin-left: 1.5rem; background: #eaeaea; border-radius: 6px; display: flex; align-items: center; justify-content: center; overflow: hidden;">
+    <div style="width: 150px; height: 150px; margin-left: 1.5rem; background: #eaeaea; border-radius: 6px; display: flex; align-items: center; justify-content: center; overflow: hidden;">
       {% if publication.image %}
         <img src="{{ publication.image }}" alt="{{ publication.title }}" style="max-width: 100%; max-height: 100%; object-fit: cover; border-radius: 6px;" />
       {% else %}
@@ -84,14 +101,13 @@ You can view my [full CV here](../files/cv.pdf).
 {% endfor %}
 </div>
 
----
 
 ## Other Papers
 
-<div style="display: flex; flex-direction: column; gap: 1.5rem;">
+<div style="display: flex; flex-direction: column; gap: 1.5rem; max-width: 1200px; margin: 0 auto;">
 {% for paper in site.other_papers %}
   <div class="publication-box">
-    <div style="flex: 1;">
+    <div style="flex: 1; max-width: calc(100% - 170px);">
       <strong>{{ paper.title }}</strong><br>
       <em>{{ paper.venue }}</em><br>
       {% if paper.paperurl %}
@@ -99,7 +115,7 @@ You can view my [full CV here](../files/cv.pdf).
       {% endif %}
       {% if paper.excerpt %}<br>{{ paper.excerpt }}{% endif %}
     </div>
-    <div style="width: 100px; height: 100px; margin-left: 1.5rem; background: #eaeaea; border-radius: 6px; display: flex; align-items: center; justify-content: center; overflow: hidden;">
+    <div style="width: 150px; height: 150px; margin-left: 1.5rem; background: #eaeaea; border-radius: 6px; display: flex; align-items: center; justify-content: center; overflow: hidden;">
       {% if paper.image %}
         <img src="{{ paper.image }}" alt="{{ paper.title }}" style="max-width: 100%; max-height: 100%; object-fit: cover; border-radius: 6px;" />
       {% else %}
@@ -110,16 +126,15 @@ You can view my [full CV here](../files/cv.pdf).
 {% endfor %}
 </div>
 
----
 
 ## Selected Projects
 
-<div style="display: flex; flex-direction: column; gap: 1.5rem;">
+<div style="display: flex; flex-direction: column; gap: 1.5rem; max-width: 1200px; margin: 0 auto;">
   <div style="border: 1px solid #1976d2; border-radius: 8px; padding: 1.5rem; background: #f5faff; box-shadow: 0 2px 8px rgba(25, 118, 210, 0.06);">
     <strong style="font-size: 1.2em; color: #1976d2;">CaRL Library: Combinatorial RL for planning</strong><br>
     <em>Lead author & maintainer</em><br>
-    <div style="width: 100%; max-width: 420px; height: 120px; margin: 1.2em auto 0.7em auto; background: #e3eaf6; border-radius: 7px; display: flex; align-items: center; justify-content: center; color: #90caf9; font-size: 1.1em; font-weight: 500; letter-spacing: 0.5px;">
-      Image Placeholder
+    <div style="width: 100%; max-width: 420px; height: 180px; margin: 1.2em auto 0.7em auto; background: #e3eaf6; border-radius: 7px; display: flex; align-items: center; justify-content: center;">
+      <img src="../images/planning.png" alt="CaRL Architecture" style="max-width: 100%; max-height: 100%; object-fit: contain; border-radius: 7px;" />
     </div>
     <p style="margin-top: 0.7em;">
       <b>CaRL</b> is an open-source library for scalable offline and online reinforcement/imitation learning in combinatorial planning problems.<br>
@@ -139,5 +154,4 @@ You can view my [full CV here](../files/cv.pdf).
   </div>
 </div>
 
----
 

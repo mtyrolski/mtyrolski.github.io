@@ -9,7 +9,7 @@ venue: "ICLR 2023, MLDD Workshop"
 slidesurl: ""
 paperurl: ""
 citation: "Giziński, S., Preibisch, G., Kucharski, P., Tyrolski, M., Rembalski, M., Grzegorczyk, P. and Gambin, A., 2024. Enhancing antigenic peptide discovery: Improved MHC-I binding prediction and methodology. Methods, 224, pp.1-9."
-image: "/images/publications/enhancing_antigenic_peptide_discovery.png"
+image: "/images/publications/mhc.webp"
 ---
 
 {% if page.image %}

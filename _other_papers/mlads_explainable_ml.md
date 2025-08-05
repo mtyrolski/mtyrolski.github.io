@@ -9,7 +9,7 @@ venue: "Microsoft MLADS 2022"
 slidesurl: ""
 paperurl: ""
 citation: "Tyrolski, M., et al. (2022). Explainable Machine Learning at Microsoft MLADS. Internal Conference."
-image: "/images/publications/mlads_explainable_ml.png"
+image: "/images/publications/mlads.webp"
 ---
 
 {% if page.image %}
