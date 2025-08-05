@@ -5,6 +5,8 @@
 #main {
   @include container;
   @include clearfix;
+  // Increase overall page container width
+  max-width: 1500px !important;
   margin-top: 2em;
   padding-left: 1em;
   padding-right: 1em;
@@ -12,7 +14,8 @@
   animation-delay: 0.35s;
 
   @include breakpoint($x-large) {
-    max-width: $x-large;
+    // Wider page container
+    max-width: 1500px !important;
   }
 }
 
@@ -133,9 +136,10 @@
       padding-left: 1em;
       padding-right: 1em;
 
-      @include breakpoint($x-large) {
-        max-width: $x-large;
-      }
+  @include breakpoint($x-large) {
+    // Wider page container for hero wrapper
+    max-width: 1500px !important;
+  }
     }
 
     .page__title,

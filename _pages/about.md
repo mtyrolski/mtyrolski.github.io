@@ -8,7 +8,7 @@ redirect_from:
 ---
 
 <!-- Custom Top Bar with Profile -->
-<div style="display: flex; align-items: center; background-color: #f8f9fa; padding: 15px; border-radius: 8px; margin-bottom: 25px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); max-width: 1800px; margin-left: auto; margin-right: auto;">
+<div style="display: flex; align-items: center; background-color: #f8f9fa; padding: 15px; border-radius: 8px; margin-bottom: 25px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); max-width: 1500px; margin-left: auto; margin-right: auto;">
   <div style="width: 180px; height: 180px; border-radius: 50%; overflow: hidden; margin-right: 32px; flex-shrink: 0; box-shadow: 0 4px 16px rgba(0,0,0,0.10);">
     <img src="../images/IMG_8383.JPEG" alt="Michał Tyrolski" style="width: 100%; height: 100%; object-fit: cover;">
   </div>
@@ -70,7 +70,7 @@ You can view my [full CV here](../files/cv.pdf).
 }
 </style>
 
-<div style="display: flex; flex-direction: column; gap: 1.5rem; max-width: 1800px; margin: 0 auto;">
+<div style="display: flex; flex-direction: column; gap: 1.5rem; max-width: 1500px; margin: 0 auto;">
 {% for publication in site.publications %}
   <div class="publication-box">
     <div style="flex: 1; max-width: calc(100% - 170px);">
@@ -104,7 +104,7 @@ You can view my [full CV here](../files/cv.pdf).
 
 ## Other Papers
 
-<div style="display: flex; flex-direction: column; gap: 1.5rem; max-width: 1800px; margin: 0 auto;">
+<div style="display: flex; flex-direction: column; gap: 1.5rem; max-width: 1500px; margin: 0 auto;">
 {% for paper in site.other_papers %}
   <div class="publication-box">
     <div style="flex: 1; max-width: calc(100% - 170px);">
@@ -129,7 +129,7 @@ You can view my [full CV here](../files/cv.pdf).
 
 ## Selected Projects
 
-<div style="display: flex; flex-direction: column; gap: 1.5rem; max-width: 1800px; margin: 0 auto;">
+<div style="display: flex; flex-direction: column; gap: 1.5rem; max-width: 1500px; margin: 0 auto;">
   <div style="border: 1px solid #1976d2; border-radius: 8px; padding: 1.5rem; background: #f5faff; box-shadow: 0 2px 8px rgba(25, 118, 210, 0.06);">
     <strong style="font-size: 1.2em; color: #1976d2;">CaRL Library: Combinatorial RL for planning</strong><br>
     <em>Lead author & maintainer</em><br>
