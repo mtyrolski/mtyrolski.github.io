@@ -94,6 +94,18 @@ redirect_from:
 .item-date { font-size: 0.92em; color: #6b7280; margin-top: 2px; }
 .item-subtext { font-size: 0.9em; color: #7a7f8a; margin-top: 1px; }
 
+/* Inline date and place for Professional Experience */
+.info-card.experience .item-date,
+.info-card.experience .item-subtext {
+  display: inline;
+}
+.info-card.experience .item-date::after {
+  content: ' · ';
+  color: #6b7280;
+  margin: 0 4px;
+}
+.info-card.experience .item-subtext { margin: 0; }
+
 @media (max-width: 768px) {
   .profile-header { flex-direction: column; align-items: flex-start; }
   .avatar { width: 140px; height: 140px; }
@@ -118,7 +130,7 @@ redirect_from:
     </div>
   </div>
   <div class="info-grid">
-    <div class="info-card">
+  <div class="info-card experience">
       <h3>Professional Experience</h3>
       <ul>
         <li>
@@ -157,7 +169,7 @@ redirect_from:
       <h3>Education</h3>
       <ul>
         <li>
-          <div class="item-title">M.Sc. Machine Learning, University of Warsaw (honors)</div>
+          <div class="item-title">M.Sc. Machine Learning, University of Warsaw</div>
           <div class="item-date">2021 — 2023</div>
           <div class="item-subtext">Warsaw, Poland · top 5% students · graduated with honors</div>
         </li>
@@ -172,7 +184,7 @@ redirect_from:
 </div>
 
 
-I am **Michał Tyrolski**, a *Senior AI Consultant* at **Ernst & Young**. I hold an **M.Sc. in Machine Learning** (2023), supervised by prof. [Marek Cygan](https://www.mimuw.edu.pl/~henrykm/resume.html) and prof. [Piotr Miłoś](https://www.mimuw.edu.pl/~pmilos/), and a **B.Sc. in Computer Science** (2021), supervised by prof. [Henryk Michalewski](https://www.mimuw.edu.pl/~henrykm/resume.html) and prof. [Łukasz Kaiser](https://scholar.google.com/citations?user=JWmiQR0AAAAJ&hl=en), both from the [**University of Warsaw**](https://www.mimuw.edu.pl/en/).
+I am **Michał Tyrolski**, a *Senior AI Consultant* at **Ernst & Young**. I hold an **M.Sc. in Machine Learning** (2023), supervised by prof. [Marek Cygan](https://scholar.google.com/citations?hl=en&user=df8TSy4AAAAJ) and prof. [Piotr Miłoś](https://www.mimuw.edu.pl/~pmilos/), and a **B.Sc. in Computer Science** (2021), supervised by prof. [Henryk Michalewski](https://www.mimuw.edu.pl/~henrykm/resume.html) and prof. [Łukasz Kaiser](https://scholar.google.com/citations?user=JWmiQR0AAAAJ&hl=en), both from the [**University of Warsaw, MIM Faculty**](https://www.mimuw.edu.pl/en/).
 
 My main research interests include **AI-based Planning**, **decision-making in complex environments**, **Reinforcement Learning**, **Meta-RL**, and **Continual Learning**. Over the years, I’ve gained experience in both offline and online reinforcement learning, planning, efficient transformer architectures, and LLMs. I’ve also had the opportunity to be involved in AI projects at **Microsoft**, **Nvidia**, **Deepflare**, and **Samsung**.
 
