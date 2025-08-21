@@ -87,8 +87,12 @@ redirect_from:
 .info-card:hover { box-shadow: 0 8px 18px rgba(25, 118, 210, 0.10); transform: translateY(-1px); border-color: #1256a1; }
 .info-card h3 { margin: 0 0 8px 0; font-size: 1.05em; }
 .info-card ul { margin: 0; padding-left: 1.2rem; }
-.info-card li { margin: 6px 0; }
+.info-card li { margin: 8px 0; }
 .info-card li::marker { color: #1976d2; }
+/* two-line item layout */
+.item-title { font-weight: 600; line-height: 1.3; }
+.item-date { font-size: 0.92em; color: #6b7280; margin-top: 2px; }
+.item-subtext { font-size: 0.9em; color: #7a7f8a; margin-top: 1px; }
 
 @media (max-width: 768px) {
   .profile-header { flex-direction: column; align-items: flex-start; }
@@ -117,19 +121,51 @@ redirect_from:
     <div class="info-card">
       <h3>Professional Experience</h3>
       <ul>
-  <li>2025–present — Senior AI Consultant IV, Ernst & Young (Warsaw)</li>
-  <li>2022–2025 — Deep Learning Researcher, DeepFlare (Warsaw)</li>
-  <li>07–10 2022 — Data Scientist Intern, Microsoft (Dublin)</li>
-  <li>2021–2022 — Teaching Assistant, University of Warsaw (Warsaw)</li>
-  <li>07–10 2021 — Deep Learning Intern, Nvidia (Warsaw)</li>
-  <li>04–06 2021 — Software Engineering Intern, Microsoft (Dublin)</li>
+        <li>
+          <div class="item-title">Senior AI Consultant IV, Ernst & Young</div>
+          <div class="item-date">2025 — present</div>
+          <div class="item-subtext">Warsaw, Poland</div>
+        </li>
+        <li>
+          <div class="item-title">Deep Learning Researcher, DeepFlare</div>
+          <div class="item-date">2022 — 2025</div>
+          <div class="item-subtext">Warsaw, Poland</div>
+        </li>
+        <li>
+          <div class="item-title">Data Scientist Intern, Microsoft</div>
+          <div class="item-date">Jul 2022 — Oct 2022</div>
+          <div class="item-subtext">Dublin, Ireland</div>
+        </li>
+        <li>
+          <div class="item-title">Teaching Assistant, University of Warsaw</div>
+          <div class="item-date">2021 — 2022</div>
+          <div class="item-subtext">Warsaw, Poland</div>
+        </li>
+        <li>
+          <div class="item-title">Deep Learning Intern, Nvidia</div>
+          <div class="item-date">Jul 2021 — Oct 2021</div>
+          <div class="item-subtext">Warsaw, Poland</div>
+        </li>
+        <li>
+          <div class="item-title">Software Engineering Intern, Microsoft</div>
+          <div class="item-date">Apr 2021 — Jun 2021</div>
+          <div class="item-subtext">Dublin, Ireland</div>
+        </li>
       </ul>
     </div>
     <div class="info-card">
       <h3>Education</h3>
       <ul>
-  <li>2021–2023 — M.Sc. Machine Learning, University of Warsaw (honors)</li>
-  <li>2018–2021 — B.Sc. Computer Science, University of Warsaw</li>
+        <li>
+          <div class="item-title">M.Sc. Machine Learning, University of Warsaw (honors)</div>
+          <div class="item-date">2021 — 2023</div>
+          <div class="item-subtext">Warsaw, Poland · top 5% students · graduated with honors</div>
+        </li>
+        <li>
+          <div class="item-title">B.Sc. Computer Science, University of Warsaw</div>
+          <div class="item-date">2018 — 2021</div>
+          <div class="item-subtext">Warsaw, Poland · top 5% students</div>
+        </li>
       </ul>
     </div>
   </div>
