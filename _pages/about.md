@@ -8,18 +8,129 @@ redirect_from:
 ---
 
 <!-- Custom Top Bar with Profile -->
-<div style="display: flex; align-items: center; background-color: #f8f9fa; padding: 15px; border-radius: 8px; margin-bottom: 25px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); max-width: 1500px; margin-left: auto; margin-right: auto;">
-  <div style="width: 180px; height: 180px; border-radius: 50%; overflow: hidden; margin-right: 32px; flex-shrink: 0; box-shadow: 0 4px 16px rgba(0,0,0,0.10);">
-    <img src="../images/IMG_8383.JPEG" alt="Michał Tyrolski" style="width: 100%; height: 100%; object-fit: cover;">
+<style>
+/* Profile card styling */
+.profile-card {
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(180deg, #f8f9fa, #ffffff);
+  border: 1px solid #e6e8eb;
+  border-radius: 14px;
+  padding: 18px 20px;
+  margin: 0 auto 28px auto;
+  max-width: 1500px;
+  box-shadow: 0 6px 20px rgba(16, 24, 40, 0.06);
+}
+.profile-header {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.avatar {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.10);
+  border: 3px solid #fff;
+  background: #eef2f7;
+  flex-shrink: 0;
+}
+.profile-meta h1 {
+  margin: 0;
+  font-size: 1.9em;
+  letter-spacing: -0.01em;
+}
+.profile-role {
+  margin: 6px 0 0 0;
+  color: #425466;
+}
+.socials {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.socials a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: #ffffff;
+  color: #1976d2;
+  border: 1px solid #dbe4ff;
+  padding: 6px 10px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s, transform 0.1s;
+}
+.socials a:hover {
+  background: #1976d2;
+  color: #ffffff;
+  box-shadow: 0 6px 16px rgba(25, 118, 210, 0.25);
+  transform: translateY(-1px);
+}
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(240px, 1fr));
+  gap: 16px;
+  margin-top: 16px;
+}
+.info-card {
+  background: #fbfcff;
+  border: 1px solid #e6eefc;
+  border-left: 4px solid #1976d2;
+  border-radius: 12px;
+  padding: 14px 16px;
+  transition: box-shadow 0.2s, transform 0.1s, border-color 0.2s;
+}
+.info-card:hover { box-shadow: 0 8px 18px rgba(25, 118, 210, 0.10); transform: translateY(-1px); border-color: #1256a1; }
+.info-card h3 { margin: 0 0 8px 0; font-size: 1.05em; }
+.info-card ul { margin: 0; padding-left: 1.2rem; }
+.info-card li { margin: 6px 0; }
+.info-card li::marker { color: #1976d2; }
+
+@media (max-width: 768px) {
+  .profile-header { flex-direction: column; align-items: flex-start; }
+  .avatar { width: 140px; height: 140px; }
+  .info-grid { grid-template-columns: 1fr; }
+}
+</style>
+
+<div class="profile-card">
+  <div class="profile-header">
+    <div class="avatar">
+      <img src="../images/IMG_8383.JPEG" alt="Michał Tyrolski" style="width: 100%; height: 100%; object-fit: cover;">
+    </div>
+    <div class="profile-meta">
+      <h1>Michał Tyrolski</h1>
+      <p class="profile-role">Senior AI Consultant at Ernst & Young / Independent Researcher</p>
+      <div class="socials">
+        <a href="https://github.com/mtyrolski"><i class="fab fa-github"></i> <span>GitHub</span></a>
+        <a href="https://twitter.com/mtyrolski"><i class="fab fa-twitter"></i> <span>Twitter</span></a>
+        <a href="https://www.linkedin.com/in/michal-tyrolski/"><i class="fab fa-linkedin"></i> <span>LinkedIn</span></a>
+        <a href="../files/cv.pdf"><i class="fas fa-file-pdf"></i> <span>CV</span></a>
+      </div>
+    </div>
   </div>
-  <div>
-    <h1 style="margin: 0; font-size: 1.7em;">Michał Tyrolski</h1>
-    <p style="margin: 5px 0 0;">Senior AI Consultant at Ernst & Young / Independent Researcher</p>
-    <div style="margin-top: 8px;">
-      <a href="https://github.com/mtyrolski" style="margin-right: 10px;"><i class="fab fa-github"></i> GitHub</a>
-      <a href="https://twitter.com/mtyrolski" style="margin-right: 10px;"><i class="fab fa-twitter"></i> Twitter</a>
-      <a href="https://www.linkedin.com/in/michal-tyrolski/" style="margin-right: 10px;"><i class="fab fa-linkedin"></i> LinkedIn</a>
-      <a href="../files/cv.pdf"><i class="fas fa-file-pdf"></i> CV</a>
+  <div class="info-grid">
+    <div class="info-card">
+      <h3>Professional Experience</h3>
+      <ul>
+  <li>2025–present — Senior AI Consultant IV, Ernst & Young (Warsaw)</li>
+  <li>2022–2025 — Deep Learning Researcher, DeepFlare (Warsaw)</li>
+  <li>07–10 2022 — Data Scientist Intern, Microsoft (Dublin)</li>
+  <li>2021–2022 — Teaching Assistant, University of Warsaw (Warsaw)</li>
+  <li>07–10 2021 — Deep Learning Intern, Nvidia (Warsaw)</li>
+  <li>04–06 2021 — Software Engineering Intern, Microsoft (Dublin)</li>
+      </ul>
+    </div>
+    <div class="info-card">
+      <h3>Education</h3>
+      <ul>
+  <li>2021–2023 — M.Sc. Machine Learning, University of Warsaw (honors)</li>
+  <li>2018–2021 — B.Sc. Computer Science, University of Warsaw</li>
+      </ul>
     </div>
   </div>
 </div>
