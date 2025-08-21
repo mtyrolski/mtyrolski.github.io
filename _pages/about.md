@@ -8,26 +8,185 @@ redirect_from:
 ---
 
 <!-- Custom Top Bar with Profile -->
-<div style="display: flex; align-items: center; background-color: #f8f9fa; padding: 15px; border-radius: 8px; margin-bottom: 25px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); max-width: 1500px; margin-left: auto; margin-right: auto;">
-  <div style="width: 180px; height: 180px; border-radius: 50%; overflow: hidden; margin-right: 32px; flex-shrink: 0; box-shadow: 0 4px 16px rgba(0,0,0,0.10);">
-    <img src="../images/IMG_8383.JPEG" alt="Michał Tyrolski" style="width: 100%; height: 100%; object-fit: cover;">
+<style>
+/* Profile card styling */
+.profile-card {
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(180deg, #f8f9fa, #ffffff);
+  border: 1px solid #e6e8eb;
+  border-radius: 14px;
+  padding: 18px 20px;
+  margin: 0 auto 28px auto;
+  max-width: 1500px;
+  box-shadow: 0 6px 20px rgba(16, 24, 40, 0.06);
+}
+.profile-header {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.avatar {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.10);
+  border: 3px solid #fff;
+  background: #eef2f7;
+  flex-shrink: 0;
+}
+.profile-meta h1 {
+  margin: 0;
+  font-size: 1.9em;
+  letter-spacing: -0.01em;
+}
+.profile-role {
+  margin: 6px 0 0 0;
+  color: #425466;
+}
+.socials {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.socials a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: #ffffff;
+  color: #1976d2;
+  border: 1px solid #dbe4ff;
+  padding: 6px 10px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s, transform 0.1s;
+}
+.socials a:hover {
+  background: #1976d2;
+  color: #ffffff;
+  box-shadow: 0 6px 16px rgba(25, 118, 210, 0.25);
+  transform: translateY(-1px);
+}
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(240px, 1fr));
+  gap: 16px;
+  margin-top: 16px;
+}
+.info-card {
+  background: #fbfcff;
+  border: 1px solid #e6eefc;
+  border-left: 4px solid #1976d2;
+  border-radius: 12px;
+  padding: 14px 16px;
+  transition: box-shadow 0.2s, transform 0.1s, border-color 0.2s;
+}
+.info-card:hover { box-shadow: 0 8px 18px rgba(25, 118, 210, 0.10); transform: translateY(-1px); border-color: #1256a1; }
+.info-card h3 { margin: 0 0 8px 0; font-size: 1.05em; }
+.info-card ul { margin: 0; padding-left: 1.2rem; }
+.info-card li { margin: 8px 0; }
+.info-card li::marker { color: #1976d2; }
+/* two-line item layout */
+.item-title { font-weight: 600; line-height: 1.3; }
+.item-date { font-size: 0.92em; color: #6b7280; margin-top: 2px; }
+.item-subtext { font-size: 0.9em; color: #7a7f8a; margin-top: 1px; }
+
+/* Inline date and place for Professional Experience */
+.info-card.experience .item-date,
+.info-card.experience .item-subtext {
+  display: inline;
+}
+.info-card.experience .item-date::after {
+  content: ' · ';
+  color: #6b7280;
+  margin: 0 4px;
+}
+.info-card.experience .item-subtext { margin: 0; }
+
+@media (max-width: 768px) {
+  .profile-header { flex-direction: column; align-items: flex-start; }
+  .avatar { width: 140px; height: 140px; }
+  .info-grid { grid-template-columns: 1fr; }
+}
+</style>
+
+<div class="profile-card">
+  <div class="profile-header">
+    <div class="avatar">
+      <img src="../images/IMG_8383.JPEG" alt="Michał Tyrolski" style="width: 100%; height: 100%; object-fit: cover;">
+    </div>
+    <div class="profile-meta">
+      <h1>Michał Tyrolski</h1>
+      <p class="profile-role">Senior AI Consultant at Ernst & Young / Independent Researcher</p>
+      <div class="socials">
+        <a href="https://github.com/mtyrolski"><i class="fab fa-github"></i> <span>GitHub</span></a>
+        <a href="https://twitter.com/mtyrolski"><i class="fab fa-twitter"></i> <span>Twitter</span></a>
+        <a href="https://www.linkedin.com/in/michal-tyrolski/"><i class="fab fa-linkedin"></i> <span>LinkedIn</span></a>
+        <a href="../files/cv.pdf"><i class="fas fa-file-pdf"></i> <span>CV</span></a>
+      </div>
+    </div>
   </div>
-  <div>
-    <h1 style="margin: 0; font-size: 1.7em;">Michał Tyrolski</h1>
-    <p style="margin: 5px 0 0;">Senior AI Consultant at Ernst & Young / Independent Researcher</p>
-    <div style="margin-top: 8px;">
-      <a href="https://github.com/mtyrolski" style="margin-right: 10px;"><i class="fab fa-github"></i> GitHub</a>
-      <a href="https://twitter.com/mtyrolski" style="margin-right: 10px;"><i class="fab fa-twitter"></i> Twitter</a>
-      <a href="https://www.linkedin.com/in/michal-tyrolski/" style="margin-right: 10px;"><i class="fab fa-linkedin"></i> LinkedIn</a>
-      <a href="../files/cv.pdf"><i class="fas fa-file-pdf"></i> CV</a>
+  <div class="info-grid">
+  <div class="info-card experience">
+      <h3>Professional Experience</h3>
+      <ul>
+        <li>
+          <div class="item-title">Senior AI Consultant IV, Ernst & Young</div>
+          <div class="item-date">2025 — present</div>
+          <div class="item-subtext">Warsaw, Poland</div>
+        </li>
+        <li>
+          <div class="item-title">Deep Learning Researcher, DeepFlare</div>
+          <div class="item-date">2022 — 2025</div>
+          <div class="item-subtext">Warsaw, Poland</div>
+        </li>
+        <li>
+          <div class="item-title">Data Scientist Intern, Microsoft</div>
+          <div class="item-date">Jul 2022 — Oct 2022</div>
+          <div class="item-subtext">Dublin, Ireland</div>
+        </li>
+        <li>
+          <div class="item-title">Teaching Assistant, University of Warsaw</div>
+          <div class="item-date">2021 — 2022</div>
+          <div class="item-subtext">Warsaw, Poland</div>
+        </li>
+        <li>
+          <div class="item-title">Deep Learning Intern, Nvidia</div>
+          <div class="item-date">Jul 2021 — Oct 2021</div>
+          <div class="item-subtext">Warsaw, Poland</div>
+        </li>
+        <li>
+          <div class="item-title">Software Engineering Intern, Microsoft</div>
+          <div class="item-date">Apr 2021 — Jun 2021</div>
+          <div class="item-subtext">Dublin, Ireland</div>
+        </li>
+      </ul>
+    </div>
+    <div class="info-card">
+      <h3>Education</h3>
+      <ul>
+        <li>
+          <div class="item-title">M.Sc. Machine Learning, University of Warsaw</div>
+          <div class="item-date">2021 — 2023</div>
+          <div class="item-subtext">Warsaw, Poland · top 5% students · graduated with honors</div>
+        </li>
+        <li>
+          <div class="item-title">B.Sc. Computer Science, University of Warsaw</div>
+          <div class="item-date">2018 — 2021</div>
+          <div class="item-subtext">Warsaw, Poland · top 5% students</div>
+        </li>
+      </ul>
     </div>
   </div>
 </div>
 
 
-I am **Michał Tyrolski**, a *Senior AI Consultant* at **Ernst & Young**. I hold an **M.Sc. in Machine Learning** (2023), supervised by prof. Marek Cygan and prof. Piotr Miłoś, and a **B.Sc. in Computer Science** (2021), supervised by prof. Henryk Michalewski, both from the [**University of Warsaw**](https://www.mimuw.edu.pl/en/).
+I am **Michał Tyrolski**, a *Senior AI Consultant* at **Ernst & Young**. I hold an **M.Sc. in Machine Learning** (2023), supervised by prof. [Marek Cygan](https://scholar.google.com/citations?hl=en&user=df8TSy4AAAAJ) and prof. [Piotr Miłoś](https://www.mimuw.edu.pl/~pmilos/), and a **B.Sc. in Computer Science** (2021), supervised by prof. [Henryk Michalewski](https://www.mimuw.edu.pl/~henrykm/resume.html) and prof. [Łukasz Kaiser](https://scholar.google.com/citations?user=JWmiQR0AAAAJ&hl=en), both from the [**University of Warsaw, MIM Faculty**](https://www.mimuw.edu.pl/en/).
 
-My main research interests include **AI-based Planning**, **decision-making in complex environments**, **Meta-Reinforcement Learning**, and **Continual Learning**. Over the years, I’ve gained experience in both offline and online reinforcement learning, planning, efficient transformer architectures, and LLMs. I’ve also had the opportunity to be involved in AI projects at **Microsoft**, **Nvidia**, **Deepflare**, and **Samsung**.
+My main research interests include **AI-based Planning**, **decision-making in complex environments**, **Reinforcement Learning**, **Meta-RL**, and **Continual Learning**. Over the years, I’ve gained experience in both offline and online reinforcement learning, planning, efficient transformer architectures, and LLMs. I’ve also had the opportunity to be involved in AI projects at **Microsoft**, **Nvidia**, **Deepflare**, and **Samsung**.
 
 I am an active member of the AI community, particularly with [**ML in PL Association**](https://mlinpl.org/), where I have been an organizer since 2020. In my free time, I enjoy mountain hiking and motorization.
 
