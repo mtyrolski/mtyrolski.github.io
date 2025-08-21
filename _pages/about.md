@@ -172,9 +172,9 @@ redirect_from:
 </div>
 
 
-I am **Michał Tyrolski**, a *Senior AI Consultant* at **Ernst & Young**. I hold an **M.Sc. in Machine Learning** (2023), supervised by prof. Marek Cygan and prof. Piotr Miłoś, and a **B.Sc. in Computer Science** (2021), supervised by prof. Henryk Michalewski, both from the [**University of Warsaw**](https://www.mimuw.edu.pl/en/).
+I am **Michał Tyrolski**, a *Senior AI Consultant* at **Ernst & Young**. I hold an **M.Sc. in Machine Learning** (2023), supervised by prof. [Marek Cygan](https://www.mimuw.edu.pl/~henrykm/resume.html) and prof. [Piotr Miłoś](https://www.mimuw.edu.pl/~pmilos/), and a **B.Sc. in Computer Science** (2021), supervised by prof. [Henryk Michalewski](https://www.mimuw.edu.pl/~henrykm/resume.html) and prof. [Łukasz Kaiser](https://scholar.google.com/citations?user=JWmiQR0AAAAJ&hl=en), both from the [**University of Warsaw**](https://www.mimuw.edu.pl/en/).
 
-My main research interests include **AI-based Planning**, **decision-making in complex environments**, **Meta-Reinforcement Learning**, and **Continual Learning**. Over the years, I’ve gained experience in both offline and online reinforcement learning, planning, efficient transformer architectures, and LLMs. I’ve also had the opportunity to be involved in AI projects at **Microsoft**, **Nvidia**, **Deepflare**, and **Samsung**.
+My main research interests include **AI-based Planning**, **decision-making in complex environments**, **Reinforcement Learning**, **Meta-RL**, and **Continual Learning**. Over the years, I’ve gained experience in both offline and online reinforcement learning, planning, efficient transformer architectures, and LLMs. I’ve also had the opportunity to be involved in AI projects at **Microsoft**, **Nvidia**, **Deepflare**, and **Samsung**.
 
 I am an active member of the AI community, particularly with [**ML in PL Association**](https://mlinpl.org/), where I have been an organizer since 2020. In my free time, I enjoy mountain hiking and motorization.
 
