@@ -183,12 +183,20 @@ redirect_from:
   </div>
 </div>
 
-
+<!-- Generic Actual Info -->
 I am **Michał Tyrolski**, a *Senior AI Consultant* at **Ernst & Young**. I hold an **M.Sc. in Machine Learning** (2023), supervised by prof. [Marek Cygan](https://scholar.google.com/citations?hl=en&user=df8TSy4AAAAJ) and prof. [Piotr Miłoś](https://www.mimuw.edu.pl/~pmilos/), and a **B.Sc. in Computer Science** (2021), supervised by prof. [Henryk Michalewski](https://www.mimuw.edu.pl/~henrykm/resume.html) and prof. [Łukasz Kaiser](https://scholar.google.com/citations?user=JWmiQR0AAAAJ&hl=en), both from the [**University of Warsaw, MIM Faculty**](https://www.mimuw.edu.pl/en/).
 
-My main research interests include **AI-based Planning**, **decision-making in complex environments**, **Reinforcement Learning**, **Meta-RL**, and **Continual Learning**. Over the years, I’ve gained experience in both offline and online reinforcement learning, planning, efficient transformer architectures, and LLMs. I’ve also had the opportunity to be involved in AI projects at **Microsoft**, **Nvidia**, **Deepflare**, and **Samsung**.
+
+<!-- Research Interests -->
+My research interests include **AI-based Planning**, **decision-making in complex environments** and **Reinforcement Learning**. I am motivated by the potential of enhancing and developing reasoning capabilities of AI algorithms along with investigation of their strategic thinking emerging for Game Intelligence. To keep pursing that direction I am diving on **Meta-RL**, and **Continual Learning** to develop algorithms **capable of solving problem instances** under, broadly speaking, **heavy domain shifts** across different axes.
 
 
+<!-- Techniczne skille + experience  + doświadczenie przy różnych googlach nie googlach -->
+Over the years, I’ve gained experience in both offline and online reinforcement learning, planning, efficient transformer architectures, and LLMs. I’ve also had the opportunity to be involved in AI projects at **Microsoft**, **Nvidia**, **Deepflare**, and **Samsung**.
+
+od low level C++/CUDA, przez MLOpsy and whole ML-related engineering through internal and not internal research (?) both for client and etc
+
+<!-- Community Contribution -->
 I am an active member of the AI community, particularly within the [**ML in PL Association**](https://mlinpl.org/), a non-profit advancing the machine learning community in Poland and across Central & Eastern Europe. Since 2020, I have served as **Scientific Program Officer** across six annual editions—curating a high-impact invited speaker lineup—and had the honor to be **co-Leader** of the [**ML in PL 2021 Conference**](https://conference2021.mlinpl.org/).
 
 
