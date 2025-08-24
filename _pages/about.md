@@ -188,10 +188,22 @@ I am **Michał Tyrolski**, a *Senior AI Consultant* at **Ernst & Young**. I hold
 
 
 <!-- Research Interests -->
-My research interests include **AI-based Planning**, **decision-making in complex environments** and **Reinforcement Learning**. I am motivated by the potential of enhancing and developing reasoning capabilities of AI algorithms along with investigation of their strategic thinking emerging for Game Intelligence. To keep pursing that direction I am diving on **Meta-RL**, and **Continual Learning** to develop algorithms **capable of solving problem instances** under, broadly speaking, **heavy domain shifts** across different axes.
-
+My research interests lie at the intersection of **AI-based Planning**, **decision-making in complex environments**, and **Reinforcement Learning**. I am driven by the challenge of advancing the reasoning capabilities of AI algorithms and exploring the strategic thinking that emerges within Game Intelligence. To further pursue this direction, I have recently begun delving in **Meta-RL**, and **Continual Learning** to develop algorithms **capable of solving problem instances** under, broadly speaking, **heavy domain shifts** across different axes.
 
 <!-- Techniczne skille + experience  + doświadczenie przy różnych googlach nie googlach -->
+
+During my career I have been gathering holistic experience on different aspects of computer science. I have hands-on experience across the AI stack—from low-level C++/CUDA engineering (NVIDIA Dynamo-Triton), scalable and highly available distributed systems (Microsoft OMEX) through advanced MLOps and library development for reinforcement learning (CaRL: Deep Reinforcement Learning library calibrated for planning and search.)
+
+I have been working on 
+
+For a bachelor thesis I have been coworked on a paper written with cooperation with Google Research regarding efficient transformers.
+
+In july I have received best poster award at EEML 2025
+
+and scalable systems (Microsoft), to deep learning research for impactful applications (DeepFlare, Samsung, Ernst & Young).
+
+- had and 
+
 Over the years, I’ve gained experience in both offline and online reinforcement learning, planning, efficient transformer architectures, and LLMs. I’ve also had the opportunity to be involved in AI projects at **Microsoft**, **Nvidia**, **Deepflare**, and **Samsung**.
 
 od low level C++/CUDA, przez MLOpsy and whole ML-related engineering through internal and not internal research (?) both for client and etc
