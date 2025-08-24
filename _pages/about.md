@@ -192,21 +192,7 @@ My research interests lie at the intersection of **AI-based Planning**, **decisi
 
 <!-- Techniczne skille + experience  + doświadczenie przy różnych googlach nie googlach -->
 
-During my career I have been gathering holistic experience on different aspects of computer science. I have hands-on experience across the AI stack—from low-level C++/CUDA engineering (NVIDIA Dynamo-Triton), scalable and highly available distributed systems (Microsoft OMEX) through advanced MLOps and library development for reinforcement learning (CaRL: Deep Reinforcement Learning library calibrated for planning and search.)
-
-I have been working on 
-
-For a bachelor thesis I have been coworked on a paper written with cooperation with Google Research regarding efficient transformers.
-
-In july I have received best poster award at EEML 2025
-
-and scalable systems (Microsoft), to deep learning research for impactful applications (DeepFlare, Samsung, Ernst & Young).
-
-- had and 
-
-Over the years, I’ve gained experience in both offline and online reinforcement learning, planning, efficient transformer architectures, and LLMs. I’ve also had the opportunity to be involved in AI projects at **Microsoft**, **Nvidia**, **Deepflare**, and **Samsung**.
-
-od low level C++/CUDA, przez MLOpsy and whole ML-related engineering through internal and not internal research (?) both for client and etc
+Throughout my career, I have developed holistic expertise across the AI stack, from **low-level C++/CUDA engineering** ([NVIDIA Triton Inference Server](https://docs.nvidia.com/deeplearning/triton-inference-server/user-guide/docs/index.html)) and **scalable distributed systems** ([Microsoft Omex](https://github.com/microsoft/Omex)) through **MLOps pipelines**. My experience spans both industry and research, including advancing **deep learning for vaccine discovery** (DeepFlare), developing 3D computer vision algorithms (Samsung), and designing state-of-the-art **model parallelism for large NLP models** (NVIDIA). As the first intern at Microsoft Ireland to publish at MLADS, I contributed to explainable AI, and my bachelor’s thesis with **Google Research** explored efficient transformers, achieving state-of-the-art results in long-sequence prediction. Most recently, I received the *Best Poster Award* at **EEML 2025** for work on hierarchical search landscapes.
 
 <!-- Community Contribution -->
 I am an active member of the AI community, particularly within the [**ML in PL Association**](https://mlinpl.org/), a non-profit advancing the machine learning community in Poland and across Central & Eastern Europe. Since 2020, I have served as **Scientific Program Officer** across six annual editions—curating a high-impact invited speaker lineup—and had the honor to be **co-Leader** of the [**ML in PL 2021 Conference**](https://conference2021.mlinpl.org/).
