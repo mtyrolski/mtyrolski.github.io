@@ -3,13 +3,13 @@ title: "What Matters in Hierarchical Search for Combinatorial Problems?"
 collection: publications
 category: manuscripts
 permalink: /publication/2024-01-01-what-matters-hierarchical-search
-excerpt: "Comprehensive analysis of key properties influencing hierarchical search in combinatorial reasoning, with guidelines for robust comparisons and future algorithm design."
+excerpt: "Empirical analysis of properties shaping hierarchical search in combinatorial reasoning; guidelines for robust comparison + future design."
 date: 2024-06-01
 venue: "ICLR 2024 (Generative Models for Decision Making)"
 slidesurl: ""
 paperurl: "https://arxiv.org/abs/2406.03361"
 codeurl: "https://github.com/mtyrolski/CaRL"
-citation: "Zawalski, M., Góral, G., Tyrolski, M., Wiśnios, E., Budrowski, F., Cygan, M., Kuciński, Ł. and Miłoś, P., 2024. What Matters in Hierarchical Search for Combinatorial Reasoning Problems?. arXiv preprint arXiv:2406.03361."
+citation: "Zawalski, M., Góral, G., Tyrolski, M., Wiśnios, E., Budrowski, F., Cygan, M., Kuciński, Ł., & Miłoś, P. (2024). What matters in hierarchical search for combinatorial reasoning problems? arXiv preprint arXiv:2406.03361."
 image: "/images/publications/what-matters.png"
 ---
 

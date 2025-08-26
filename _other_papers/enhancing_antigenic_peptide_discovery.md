@@ -7,8 +7,8 @@ excerpt: "This study pinpoints evaluation pitfalls in MHC-I presentation predict
 date: 2023-05-01
 venue: "ICLR 2023, MLDD Workshop"
 slidesurl: ""
-paperurl: ""
-citation: "Giziński, S., Preibisch, G., Kucharski, P., Tyrolski, M., Rembalski, M., Grzegorczyk, P. and Gambin, A., 2024. Enhancing antigenic peptide discovery: Improved MHC-I binding prediction and methodology. Methods, 224, pp.1-9."
+paperurl: "https://doi.org/10.1016/j.ymeth.2024.01.016"
+citation: "Giziński, S., Preibisch, G., Kucharski, P., Tyrolski, M., Rembalski, M., Grzegorczyk, P., & Gambin, A. (2024). Enhancing antigenic peptide discovery: Improved MHC-I binding prediction and methodology. Methods, 224, 1–9. https://doi.org/10.1016/j.ymeth.2024.01.016"
 image: "/images/publications/mhc.webp"
 ---
 

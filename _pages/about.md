@@ -113,6 +113,8 @@ redirect_from:
 }
 </style>
 
+<!-- Citation toggle handled with <details> for GitHub Pages compatibility (no inline JS needed) -->
+
 <div class="profile-card">
   <div class="profile-header">
     <div class="avatar">
@@ -149,7 +151,7 @@ redirect_from:
           <div class="item-subtext">Dublin, Ireland</div>
         </li>
         <li>
-          <div class="item-title">Teaching Assistant, University of Warsaw</div>
+          <div class="item-title">Teaching Assistant, Uni of Warsaw</div>
           <div class="item-date">2021 — 2022</div>
           <div class="item-subtext">Warsaw, Poland</div>
         </li>
@@ -163,6 +165,16 @@ redirect_from:
           <div class="item-date">Apr 2021 — Jun 2021</div>
           <div class="item-subtext">Dublin, Ireland</div>
         </li>
+        <li>
+          <div class="item-title">Deep Learning Intern, Nvidia</div>
+          <div class="item-date">Jun 2020 — Sep 2020</div>
+          <div class="item-subtext">Warsaw, Poland</div>
+        </li>
+        <li>
+          <div class="item-title">Software Developer Intern AI, Samsung</div>
+          <div class="item-date">Jul 2019 — Sep 2019</div>
+          <div class="item-subtext">Warsaw, Poland</div>
+        </li>
       </ul>
     </div>
     <div class="info-card">
@@ -170,25 +182,49 @@ redirect_from:
       <ul>
         <li>
           <div class="item-title">M.Sc. Machine Learning, University of Warsaw</div>
-          <div class="item-date">2021 — 2023</div>
-          <div class="item-subtext">Warsaw, Poland · top 5% students · graduated with honors</div>
+          <div class="item-date">Warsaw, Poland 2021 — 2023</div>
+          <div class="item-subtext">top 5% students · graduated with honors</div>
+          <div class="key-activities">
+            <strong>Key activities:</strong>
+            <ul>
+              <li>ICLR A* oral top-5%, onsite presentation on reinforcement learning, first such paper from Poland</li>
+              <li>Co-led ML in PL Conference 2021,</li>
+            </ul>
+          </div>
         </li>
         <li>
           <div class="item-title">B.Sc. Computer Science, University of Warsaw</div>
-          <div class="item-date">2018 — 2021</div>
-          <div class="item-subtext">Warsaw, Poland · top 5% students</div>
+          <div class="item-date">Warsaw, Poland 2018 — 2021</div>
+          <div class="item-subtext">top 5% students</div>
+          <div class="key-activities">
+            <strong>Key activities:</strong>
+            <ul>
+              <li>Published paper on efficient transformers with Google Research.</li>
+              <li>President, Machine Learning Society at UW.</li>
+            </ul>
+          </div>
         </li>
       </ul>
     </div>
   </div>
 </div>
 
-
+<!-- Generic Actual Info -->
 I am **Michał Tyrolski**, a *Senior AI Consultant* at **Ernst & Young**. I hold an **M.Sc. in Machine Learning** (2023), supervised by prof. [Marek Cygan](https://scholar.google.com/citations?hl=en&user=df8TSy4AAAAJ) and prof. [Piotr Miłoś](https://www.mimuw.edu.pl/~pmilos/), and a **B.Sc. in Computer Science** (2021), supervised by prof. [Henryk Michalewski](https://www.mimuw.edu.pl/~henrykm/resume.html) and prof. [Łukasz Kaiser](https://scholar.google.com/citations?user=JWmiQR0AAAAJ&hl=en), both from the [**University of Warsaw, MIM Faculty**](https://www.mimuw.edu.pl/en/).
 
-My main research interests include **AI-based Planning**, **decision-making in complex environments**, **Reinforcement Learning**, **Meta-RL**, and **Continual Learning**. Over the years, I’ve gained experience in both offline and online reinforcement learning, planning, efficient transformer architectures, and LLMs. I’ve also had the opportunity to be involved in AI projects at **Microsoft**, **Nvidia**, **Deepflare**, and **Samsung**.
 
-I am an active member of the AI community, particularly with [**ML in PL Association**](https://mlinpl.org/), where I have been an organizer since 2020. In my free time, I enjoy mountain hiking and motorization.
+<!-- Research Interests -->
+My research interests lie at the intersection of **AI-based Planning**, **decision-making in complex environments**, and **Reinforcement Learning**. I am driven by the challenge of advancing the reasoning capabilities of AI algorithms and exploring the strategic thinking that emerges within Game Intelligence. To further pursue this direction, I have recently begun delving in **Meta-RL**, and **Continual Learning** to develop algorithms **capable of solving problem instances** under, broadly speaking, **heavy domain shifts** across different axes.
+
+<!-- Techniczne skille + experience  + doświadczenie przy różnych googlach nie googlach -->
+
+My experience covers the entire AI stack: from low-level C++/CUDA engineering ([NVIDIA Triton Inference Server](https://docs.nvidia.com/deeplearning/triton-inference-server/user-guide/docs/index.html)) and scalable distributed systems ([Microsoft Omex](https://github.com/microsoft/Omex)), through MLOps and ML library development ([CaRL: Deep RL library calibrated for planning and search](https://github.com/mtyrolski/carl)), to advanced research in both industry and academia. I have worked on deep learning methods for vaccine discovery (DeepFlare), 3D computer vision algorithms (Samsung), and built myself fastest model parallelism algorithm at the time for tremendously large NLP models (NVIDIA). I was the first Microsoft Ireland intern to have a paper accepted at [MLADS](https://mymlads.microsoft.com/)  on explainable AI. My bachelor’s thesis with **Google Research** set state-of-the-art benchmarks for [efficient transformers](https://arxiv.org/abs/2110.13711) in long-sequence prediction. While on my master’s thesis, I developed **Adaptive Subgoal Search (AdaSubS)**, a novel search algorithm for efficient reinforcement learning on low computational budgets, presented onsite as an ICLR 2023 top-5% oral paper—the first such achievement from Poland. Most recently, my research on hierarchical search landscapes was awarded **Best Poster at [EEML 2025](https://www.eeml.eu/)**.
+
+
+<!-- Community Contribution -->
+I am an active member of the AI community, particularly within the [**ML in PL Association**](https://mlinpl.org/), a non-profit advancing the machine learning community in Poland and across Central & Eastern Europe. Since 2020, I have served as **Scientific Program Officer** across six annual editions—curating a high-impact invited speaker lineup—and had the honor to be **co-Leader** of the [**ML in PL 2021 Conference**](https://conference2021.mlinpl.org/). In my free time, I enjoy mountain hiking and motorization.
+
+
 
 You can view my [full CV here](../files/cv.pdf).
 
@@ -227,6 +263,37 @@ You can view my [full CV here](../files/cv.pdf).
   color: #c62828;
   box-shadow: 0 0 0 2px #c62828 inset;
 }
+.cite-button {
+    display: inline-block;
+    background: #1976d2;
+    color: #fff;
+    padding: 0.4em 1em;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    margin: 0.5em 0;
+    cursor: pointer;
+    transition: background 0.2s, box-shadow 0.2s;
+  }
+  .cite-button:hover {
+    background: #1256a1;
+    box-shadow: 0 2px 8px rgba(25, 118, 210, 0.2);
+  }
+  .citation-details {
+    margin-top: 0.4em;
+  }
+  .citation-details[open] > .cite-button {
+    background: #1256a1;
+  }
+  .citation-box {
+    background: #f8f9fa;
+    border: 1px solid #e0e0e0;
+    padding: 1em;
+    border-radius: 8px;
+    margin-top: 0.6em;
+    font-family: monospace;
+    white-space: pre-wrap;
+  }
 </style>
 
 <div style="display: flex; flex-direction: column; gap: 1.5rem; max-width: 1500px; margin: 0 auto;">
@@ -248,6 +315,12 @@ You can view my [full CV here](../files/cv.pdf).
         <a href="{{ publication.colaburl }}" class="paper-link">Colab</a>
       {% endif %}
       {% if publication.excerpt %}<br>{{ publication.excerpt }}{% endif %}
+      {% if publication.citation %}
+        <details class="citation-details" id="cite-{{ publication.title | slugify }}">
+          <summary class="cite-button" style="list-style:none;">Cite</summary>
+          <div class="citation-box">{{ publication.citation }}</div>
+        </details>
+      {% endif %}
     </div>
     <div style="width: 290px; height: 290px; margin-left: 2.5rem; background: #fafbfc; border-radius: 12px; display: flex; align-items: center; justify-content: center; overflow: hidden;">
       {% if publication.image %}
@@ -273,6 +346,12 @@ You can view my [full CV here](../files/cv.pdf).
         <a href="{{ paper.paperurl }}" class="paper-link">Paper</a>
       {% endif %}
       {% if paper.excerpt %}<br>{{ paper.excerpt }}{% endif %}
+      {% if paper.citation %}
+        <details class="citation-details" id="cite-{{ paper.title | slugify }}">
+          <summary class="cite-button" style="list-style:none;">Cite</summary>
+          <div class="citation-box">{{ paper.citation }}</div>
+        </details>
+      {% endif %}
     </div>
     <div style="width: 260px; height: 260px; margin-left: 2.5rem; background: #fafbfc; border-radius: 12px; display: flex; align-items: center; justify-content: center; overflow: hidden;">
       {% if paper.image %}
