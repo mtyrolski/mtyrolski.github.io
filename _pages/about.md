@@ -210,19 +210,40 @@ redirect_from:
 </div>
 
 <!-- Generic Actual Info -->
-I am **Michał Tyrolski**, a *Senior AI Consultant* at **Ernst & Young**. I hold an **M.Sc. in Machine Learning** (2023), supervised by prof. [Marek Cygan](https://scholar.google.com/citations?hl=en&user=df8TSy4AAAAJ) and prof. [Piotr Miłoś](https://www.mimuw.edu.pl/~pmilos/), and a **B.Sc. in Computer Science** (2021), supervised by prof. [Henryk Michalewski](https://www.mimuw.edu.pl/~henrykm/resume.html) and prof. [Łukasz Kaiser](https://scholar.google.com/citations?user=JWmiQR0AAAAJ&hl=en), both from the [**University of Warsaw, MIM Faculty**](https://www.mimuw.edu.pl/en/).
+  <style>
+  .para-label {
+    display:inline-block;
+    font-size:0.72em;
+    letter-spacing:0.08em;
+    text-transform:uppercase;
+    background:#1976d2;
+    color:#fff;
+    padding:3px 7px 2px;
+    border-radius:5px;
+    font-weight:600;
+    margin-right:8px;
+    line-height:1;
+    position:relative;
+    top:-2px;
+    box-shadow:0 2px 4px rgba(25,118,210,0.25);
+  }
+  @media (max-width:600px){
+    .para-label{font-size:0.65em; margin-right:6px;}
+  }
+  </style>
+
+  <span class="para-label">Profile</span> I am **Michał Tyrolski**, a *Senior AI Consultant* at **Ernst & Young**. I hold an **M.Sc. in Machine Learning** (2023), supervised by prof. [Marek Cygan](https://scholar.google.com/citations?hl=en&user=df8TSy4AAAAJ) and prof. [Piotr Miłoś](https://www.mimuw.edu.pl/~pmilos/), and a **B.Sc. in Computer Science** (2021), supervised by prof. [Henryk Michalewski](https://www.mimuw.edu.pl/~henrykm/resume.html) and prof. [Łukasz Kaiser](https://scholar.google.com/citations?user=JWmiQR0AAAAJ&hl=en), both from the [**University of Warsaw, MIM Faculty**](https://www.mimuw.edu.pl/en/).
 
 
 <!-- Research Interests -->
-My research interests lie at the intersection of **AI-based Planning**, **decision-making in complex environments**, and **Reinforcement Learning**. I am driven by the challenge of advancing the reasoning capabilities of AI algorithms and exploring the strategic thinking that emerges within Game Intelligence. To further pursue this direction, I have recently begun delving in **Meta-RL**, and **Continual Learning** to develop algorithms **capable of solving problem instances** under, broadly speaking, **heavy domain shifts** across different axes.
+<span class="para-label">Research Focus</span> My research interests lie at the intersection of **AI-based Planning**, **decision-making in complex environments**, and **Reinforcement Learning**. I am driven by the challenge of advancing the reasoning capabilities of AI algorithms and exploring the strategic thinking that emerges within Game Intelligence. To further pursue this direction, I have recently begun delving in **Meta-RL**, and **Continual Learning** to develop algorithms **capable of solving problem instances** under, broadly speaking, **heavy domain shifts** across different axes.
 
 <!-- Techniczne skille + experience  + doświadczenie przy różnych googlach nie googlach -->
-
-My experience covers the entire AI stack: from low-level C++/CUDA engineering ([NVIDIA Triton Inference Server](https://docs.nvidia.com/deeplearning/triton-inference-server/user-guide/docs/index.html)) and scalable distributed systems ([Microsoft Omex](https://github.com/microsoft/Omex)), through MLOps and ML library development ([CaRL: Deep RL library calibrated for planning and search](https://github.com/mtyrolski/carl)), to advanced research in both industry and academia. I have worked on deep learning methods for vaccine discovery (DeepFlare), 3D computer vision algorithms (Samsung), and built myself fastest model parallelism algorithm at the time for tremendously large NLP models (NVIDIA). I was the first Microsoft Ireland intern to have a paper accepted at [MLADS](https://mymlads.microsoft.com/)  on explainable AI. My bachelor’s thesis with **Google Research** set state-of-the-art benchmarks for [efficient transformers](https://arxiv.org/abs/2110.13711) in long-sequence prediction. While on my master’s thesis, I developed **Adaptive Subgoal Search (AdaSubS)**, a novel search algorithm for efficient reinforcement learning on low computational budgets, presented onsite as an ICLR 2023 top-5% oral paper—the first such achievement from Poland. Most recently, my research on hierarchical search landscapes was awarded **Best Poster at [EEML 2025](https://www.eeml.eu/)**.
+<span class="para-label">Computer Science Background</span> My experience covers the entire AI stack: from low-level C++/CUDA engineering ([NVIDIA Triton Inference Server](https://docs.nvidia.com/deeplearning/triton-inference-server/user-guide/docs/index.html)) and scalable distributed systems ([Microsoft Omex](https://github.com/microsoft/Omex)), through MLOps and ML library development ([CaRL: Deep RL library calibrated for planning and search](https://github.com/mtyrolski/carl)), to advanced research in both industry and academia. I have worked on deep learning methods for vaccine discovery (DeepFlare), 3D computer vision algorithms (Samsung), and built myself fastest model parallelism algorithm at the time for tremendously large NLP models (NVIDIA). I was the first Microsoft Ireland intern to have a paper accepted at [MLADS](https://mymlads.microsoft.com/) on explainable AI. My bachelor’s thesis with **Google Research** set state-of-the-art benchmarks for [efficient transformers](https://arxiv.org/abs/2110.13711) in long-sequence prediction. While on my master’s thesis, I developed **Adaptive Subgoal Search (AdaSubS)**, a novel search algorithm for efficient reinforcement learning on low computational budgets, presented onsite as an ICLR 2023 top-5% oral paper—the first such achievement from Poland. Most recently, my research on hierarchical search landscapes was awarded **Best Poster at [EEML 2025](https://www.eeml.eu/)**.
 
 
 <!-- Community Contribution -->
-I am an active member of the AI community, particularly within the [**ML in PL Association**](https://mlinpl.org/), a non-profit advancing the machine learning community in Poland and across Central & Eastern Europe. Since 2020, I have served as **Scientific Program Officer** across six annual editions—curating a high-impact invited speaker lineup—and had the honor to be **co-Leader** of the [**ML in PL 2021 Conference**](https://conference2021.mlinpl.org/). In my free time, I enjoy mountain hiking and motorization.
+<span class="para-label">Community</span> I am an active member of the AI community, particularly within the [**ML in PL Association**](https://mlinpl.org/), a non-profit advancing the machine learning community in Poland and across Central & Eastern Europe. Since 2020, I have served as **Scientific Program Officer** across six annual editions—curating a high-impact invited speaker lineup—and had the honor to be **co-Leader** of the [**ML in PL 2021 Conference**](https://conference2021.mlinpl.org/). In my free time, I enjoy mountain hiking and motorization.
 
 
 
@@ -293,7 +314,29 @@ You can view my [full CV here](../files/cv.pdf).
     margin-top: 0.6em;
     font-family: monospace;
     white-space: pre-wrap;
+  word-break: break-word;
   }
+/* Publication image wrapper utility */
+.pub-img-wrapper {
+  width: 290px; height: 290px; margin-left: 2.5rem; background: #fafbfc; border-radius: 12px; display: flex; align-items: center; justify-content: center; overflow: hidden;
+}
+.pub-img-wrapper.small { width: 260px; height: 260px; }
+@media (max-width: 920px) {
+  .publication-box { flex-direction: column; align-items: flex-start; padding: 1.1rem 1.1rem 1.25rem; }
+  .pub-img-wrapper, .pub-img-wrapper.small { width: 100%; height: auto; margin: 1rem 0 0 0; }
+  .pub-img-wrapper img { width: 100%; height: auto; max-height: 320px; object-fit: contain; }
+  .publication-box > div:first-child { max-width: 100% !important; }
+  .cite-button { width: auto; }
+}
+@media (max-width: 520px) {
+  .profile-card { padding: 16px 16px 22px; }
+  .publication-box { padding: 0.95rem 0.95rem 1.1rem; }
+  .pub-img-wrapper img { max-height: 260px; }
+  .cite-button { padding: 0.45em 0.85em; font-size: 0.9em; }
+}
+@media (max-width: 380px) {
+  .cite-button { width: 100%; text-align: center; }
+}
 </style>
 
 <div style="display: flex; flex-direction: column; gap: 1.5rem; max-width: 1500px; margin: 0 auto;">
@@ -322,7 +365,7 @@ You can view my [full CV here](../files/cv.pdf).
         </details>
       {% endif %}
     </div>
-    <div style="width: 290px; height: 290px; margin-left: 2.5rem; background: #fafbfc; border-radius: 12px; display: flex; align-items: center; justify-content: center; overflow: hidden;">
+  <div class="pub-img-wrapper">
       {% if publication.image %}
         <img src="{{ publication.image }}" alt="{{ publication.title }}" style="max-width: 100%; max-height: 100%; object-fit: cover; border-radius: 12px;" />
       {% else %}
@@ -353,7 +396,7 @@ You can view my [full CV here](../files/cv.pdf).
         </details>
       {% endif %}
     </div>
-    <div style="width: 260px; height: 260px; margin-left: 2.5rem; background: #fafbfc; border-radius: 12px; display: flex; align-items: center; justify-content: center; overflow: hidden;">
+  <div class="pub-img-wrapper small">
       {% if paper.image %}
         <img src="{{ paper.image }}" alt="{{ paper.title }}" style="max-width: 100%; max-height: 100%; object-fit: cover; border-radius: 12px;" />
       {% else %}
