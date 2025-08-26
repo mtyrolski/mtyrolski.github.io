@@ -149,7 +149,7 @@ redirect_from:
           <div class="item-subtext">Dublin, Ireland</div>
         </li>
         <li>
-          <div class="item-title">Teaching Assistant, University of Warsaw</div>
+          <div class="item-title">Teaching Assistant, Uni of Warsaw</div>
           <div class="item-date">2021 — 2022</div>
           <div class="item-subtext">Warsaw, Poland</div>
         </li>
@@ -163,6 +163,16 @@ redirect_from:
           <div class="item-date">Apr 2021 — Jun 2021</div>
           <div class="item-subtext">Dublin, Ireland</div>
         </li>
+        <li>
+          <div class="item-title">Deep Learning Intern, Nvidia</div>
+          <div class="item-date">Jun 2020 — Sep 2020</div>
+          <div class="item-subtext">Warsaw, Poland</div>
+        </li>
+        <li>
+          <div class="item-title">Software Developer Intern AI, Samsung</div>
+          <div class="item-date">Jul 2019 — Sep 2019</div>
+          <div class="item-subtext">Warsaw, Poland</div>
+        </li>
       </ul>
     </div>
     <div class="info-card">
@@ -170,13 +180,13 @@ redirect_from:
       <ul>
         <li>
           <div class="item-title">M.Sc. Machine Learning, University of Warsaw</div>
-          <div class="item-date">2021 — 2023</div>
-          <div class="item-subtext">Warsaw, Poland · top 5% students · graduated with honors</div>
+          <div class="item-date">Warsaw, Poland 2021 — 2023</div>
+          <div class="item-subtext">top 5% students · graduated with honors</div>
         </li>
         <li>
           <div class="item-title">B.Sc. Computer Science, University of Warsaw</div>
-          <div class="item-date">2018 — 2021</div>
-          <div class="item-subtext">Warsaw, Poland · top 5% students</div>
+          <div class="item-date">Warsaw, Poland 2018 — 2021</div>
+          <div class="item-subtext">top 5% students</div>
         </li>
       </ul>
     </div>
