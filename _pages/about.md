@@ -182,11 +182,23 @@ redirect_from:
           <div class="item-title">M.Sc. Machine Learning, University of Warsaw</div>
           <div class="item-date">Warsaw, Poland 2021 — 2023</div>
           <div class="item-subtext">top 5% students · graduated with honors</div>
+          <div class="key-activities">
+            <strong>Key activities:</strong>
+            <ul>
+              <li>First A* top-5% oral presentation of my master’s thesis at ICLR.</li>
+            </ul>
+          </div>
         </li>
         <li>
           <div class="item-title">B.Sc. Computer Science, University of Warsaw</div>
           <div class="item-date">Warsaw, Poland 2018 — 2021</div>
           <div class="item-subtext">top 5% students</div>
+          <div class="key-activities">
+            <strong>Key activities:</strong>
+            <ul>
+              <li>Board member &amp; President (V 2021 – X 2022), Machine Learning Society at UW.</li>
+            </ul>
+          </div>
         </li>
       </ul>
     </div>
@@ -201,7 +213,9 @@ I am **Michał Tyrolski**, a *Senior AI Consultant* at **Ernst & Young**. I hold
 My research interests lie at the intersection of **AI-based Planning**, **decision-making in complex environments**, and **Reinforcement Learning**. I am driven by the challenge of advancing the reasoning capabilities of AI algorithms and exploring the strategic thinking that emerges within Game Intelligence. To further pursue this direction, I have recently begun delving in **Meta-RL**, and **Continual Learning** to develop algorithms **capable of solving problem instances** under, broadly speaking, **heavy domain shifts** across different axes.
 
 <!-- Techniczne skille + experience  + doświadczenie przy różnych googlach nie googlach -->
-My experience spans the entire **AI stack**: from low-level **C++/CUDA engineering** ([NVIDIA Triton Inference Server](https://docs.nvidia.com/deeplearning/triton-inference-server/user-guide/docs/index.html)) and **scalable distributed systems** ([Microsoft Omex](https://github.com/microsoft/Omex)), through **MLOps** and **ML library development** ([CaRL: Deep RL library for AI planning](https://github.com/mtyrolski/carl)), to advanced research in both industry and academia. I have worked on **deep learning methods for vaccine discovery** ([DeepFlare](https://www.linkedin.com/posts/deepflare_aivaccines-santaezanimale-oneceva-activity-7221496828603580417-v_77)), developed **3D computer vision algorithms** (Samsung), and designed the fastest **model parallelism framework** at the time for tremendously large NLP models (NVIDIA). At **Microsoft Data Science in Ireland**, I first-authored a paper on **explainable AI at petabyte scale**, accepted at [MLADS](https://mymlads.microsoft.com/). My bachelor’s thesis with **Google Research** set state-of-the-art benchmarks for [efficient transformers](https://arxiv.org/abs/2110.13711) in long-sequence prediction. Most recently, my research on **hierarchical search landscapes** received the **Best Poster Award at [EEML 2025](https://www.eeml.eu/)**.
+
+My experience covers the entire AI stack: from low-level C++/CUDA engineering ([NVIDIA Triton Inference Server](https://docs.nvidia.com/deeplearning/triton-inference-server/user-guide/docs/index.html)) and scalable distributed systems ([Microsoft Omex](https://github.com/microsoft/Omex)), through MLOps and ML library development ([CaRL: Deep RL library calibrated for planning and search](https://github.com/mtyrolski/carl)), to advanced research in both industry and academia. I have worked on deep learning methods for vaccine discovery (DeepFlare), 3D computer vision algorithms (Samsung), and built myself fastest model parallelism algorithm at the time for tremendously large NLP models (NVIDIA). I was the first Microsoft Ireland intern to have a paper accepted at [MLADS](https://mymlads.microsoft.com/)  on explainable AI. My bachelor’s thesis with **Google Research** set state-of-the-art benchmarks for [efficient transformers](https://arxiv.org/abs/2110.13711) in long-sequence prediction. Most recently, my research on hierarchical search landscapes was awarded **Best Poster at [EEML 2025](https://www.eeml.eu/)**.
+
 
 <!-- Community Contribution -->
 I am an active member of the AI community, particularly within the [**ML in PL Association**](https://mlinpl.org/), a non-profit advancing the machine learning community in Poland and across Central & Eastern Europe. Since 2020, I have served as **Scientific Program Officer** across six annual editions—curating a high-impact invited speaker lineup—and had the honor to be **co-Leader** of the [**ML in PL 2021 Conference**](https://conference2021.mlinpl.org/). In my free time, I enjoy mountain hiking and motorization.
