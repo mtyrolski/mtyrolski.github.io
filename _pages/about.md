@@ -113,6 +113,8 @@ redirect_from:
 }
 </style>
 
+<!-- Citation toggle handled with <details> for GitHub Pages compatibility (no inline JS needed) -->
+
 <div class="profile-card">
   <div class="profile-header">
     <div class="avatar">
@@ -185,7 +187,8 @@ redirect_from:
           <div class="key-activities">
             <strong>Key activities:</strong>
             <ul>
-              <li>First A* top-5% oral presentation of my master’s thesis at ICLR.</li>
+              <li>ICLR A* oral top-5%, onsite presentation on reinforcement learning, first such paper from Poland</li>
+              <li>Co-led ML in PL Conference 2021,</li>
             </ul>
           </div>
         </li>
@@ -196,7 +199,8 @@ redirect_from:
           <div class="key-activities">
             <strong>Key activities:</strong>
             <ul>
-              <li>Board member &amp; President (V 2021 – X 2022), Machine Learning Society at UW.</li>
+              <li>Published paper on efficient transformers with Google Research.</li>
+              <li>President, Machine Learning Society at UW.</li>
             </ul>
           </div>
         </li>
@@ -214,7 +218,7 @@ My research interests lie at the intersection of **AI-based Planning**, **decisi
 
 <!-- Techniczne skille + experience  + doświadczenie przy różnych googlach nie googlach -->
 
-My experience covers the entire AI stack: from low-level C++/CUDA engineering ([NVIDIA Triton Inference Server](https://docs.nvidia.com/deeplearning/triton-inference-server/user-guide/docs/index.html)) and scalable distributed systems ([Microsoft Omex](https://github.com/microsoft/Omex)), through MLOps and ML library development ([CaRL: Deep RL library calibrated for planning and search](https://github.com/mtyrolski/carl)), to advanced research in both industry and academia. I have worked on deep learning methods for vaccine discovery (DeepFlare), 3D computer vision algorithms (Samsung), and built myself fastest model parallelism algorithm at the time for tremendously large NLP models (NVIDIA). I was the first Microsoft Ireland intern to have a paper accepted at [MLADS](https://mymlads.microsoft.com/)  on explainable AI. My bachelor’s thesis with **Google Research** set state-of-the-art benchmarks for [efficient transformers](https://arxiv.org/abs/2110.13711) in long-sequence prediction. Most recently, my research on hierarchical search landscapes was awarded **Best Poster at [EEML 2025](https://www.eeml.eu/)**.
+My experience covers the entire AI stack: from low-level C++/CUDA engineering ([NVIDIA Triton Inference Server](https://docs.nvidia.com/deeplearning/triton-inference-server/user-guide/docs/index.html)) and scalable distributed systems ([Microsoft Omex](https://github.com/microsoft/Omex)), through MLOps and ML library development ([CaRL: Deep RL library calibrated for planning and search](https://github.com/mtyrolski/carl)), to advanced research in both industry and academia. I have worked on deep learning methods for vaccine discovery (DeepFlare), 3D computer vision algorithms (Samsung), and built myself fastest model parallelism algorithm at the time for tremendously large NLP models (NVIDIA). I was the first Microsoft Ireland intern to have a paper accepted at [MLADS](https://mymlads.microsoft.com/)  on explainable AI. My bachelor’s thesis with **Google Research** set state-of-the-art benchmarks for [efficient transformers](https://arxiv.org/abs/2110.13711) in long-sequence prediction. While on my master’s thesis, I developed **Adaptive Subgoal Search (AdaSubS)**, a novel search algorithm for efficient reinforcement learning on low computational budgets, presented onsite as an ICLR 2023 top-5% oral paper—the first such achievement from Poland. Most recently, my research on hierarchical search landscapes was awarded **Best Poster at [EEML 2025](https://www.eeml.eu/)**.
 
 
 <!-- Community Contribution -->
@@ -259,6 +263,37 @@ You can view my [full CV here](../files/cv.pdf).
   color: #c62828;
   box-shadow: 0 0 0 2px #c62828 inset;
 }
+.cite-button {
+    display: inline-block;
+    background: #1976d2;
+    color: #fff;
+    padding: 0.4em 1em;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    margin: 0.5em 0;
+    cursor: pointer;
+    transition: background 0.2s, box-shadow 0.2s;
+  }
+  .cite-button:hover {
+    background: #1256a1;
+    box-shadow: 0 2px 8px rgba(25, 118, 210, 0.2);
+  }
+  .citation-details {
+    margin-top: 0.4em;
+  }
+  .citation-details[open] > .cite-button {
+    background: #1256a1;
+  }
+  .citation-box {
+    background: #f8f9fa;
+    border: 1px solid #e0e0e0;
+    padding: 1em;
+    border-radius: 8px;
+    margin-top: 0.6em;
+    font-family: monospace;
+    white-space: pre-wrap;
+  }
 </style>
 
 <div style="display: flex; flex-direction: column; gap: 1.5rem; max-width: 1500px; margin: 0 auto;">
@@ -280,6 +315,12 @@ You can view my [full CV here](../files/cv.pdf).
         <a href="{{ publication.colaburl }}" class="paper-link">Colab</a>
       {% endif %}
       {% if publication.excerpt %}<br>{{ publication.excerpt }}{% endif %}
+      {% if publication.citation %}
+        <details class="citation-details" id="cite-{{ publication.title | slugify }}">
+          <summary class="cite-button" style="list-style:none;">Cite</summary>
+          <div class="citation-box">{{ publication.citation }}</div>
+        </details>
+      {% endif %}
     </div>
     <div style="width: 290px; height: 290px; margin-left: 2.5rem; background: #fafbfc; border-radius: 12px; display: flex; align-items: center; justify-content: center; overflow: hidden;">
       {% if publication.image %}
@@ -305,6 +346,12 @@ You can view my [full CV here](../files/cv.pdf).
         <a href="{{ paper.paperurl }}" class="paper-link">Paper</a>
       {% endif %}
       {% if paper.excerpt %}<br>{{ paper.excerpt }}{% endif %}
+      {% if paper.citation %}
+        <details class="citation-details" id="cite-{{ paper.title | slugify }}">
+          <summary class="cite-button" style="list-style:none;">Cite</summary>
+          <div class="citation-box">{{ paper.citation }}</div>
+        </details>
+      {% endif %}
     </div>
     <div style="width: 260px; height: 260px; margin-left: 2.5rem; background: #fafbfc; border-radius: 12px; display: flex; align-items: center; justify-content: center; overflow: hidden;">
       {% if paper.image %}

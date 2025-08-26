@@ -3,12 +3,12 @@ title: "Hierarchical Transformers Are More Efficient Language Models"
 collection: publications
 category: manuscripts
 permalink: /publication/2022-01-01-hierarchical-transformers
-excerpt: "Hourglass, a hierarchical Transformer architecture, improves long-sequence modeling efficiency via downsampling and upsampling layers, achieving SOTA on ImageNet32 and superior performance on enwik8."
+excerpt: "Hourglass: a hierarchical Transformer with down/upsampling layers that improves long-sequence modeling efficiency; SOTA on ImageNet32 and strong enwik8 performance."
 date: 2022-07-01
 venue: "NAACL 2022"
 slidesurl: ""
 paperurl: "https://arxiv.org/abs/2110.13711"
-citation: "Nawrot, P., Tworkowski, S., Tyrolski, M., Kaiser, Ł., Wu, Y., Szegedy, C. and Michalewski, H., 2021. Hierarchical transformers are more efficient language models. arXiv preprint arXiv:2110.13711."
+citation: "Nawrot, P., Tworkowski, S., Tyrolski, M., Kaiser, Ł., Wu, Y., Szegedy, C., & Michalewski, H. (2021). Hierarchical transformers are more efficient language models. arXiv preprint arXiv:2110.13711."
 image: "/images/publications/hierarchical_transformers.png"
 ---
 

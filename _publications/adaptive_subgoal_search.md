@@ -3,7 +3,7 @@ title: "Adjusting Planning Horizon with Adaptive Subgoal Search"
 collection: publications
 category: manuscripts
 permalink: /publication/2023-01-01-adjusting-planning-horizon
-excerpt: "AdaSubS adaptively adjusts the planning horizon by generating diverse subgoals and swiftly filtering unreachable ones, combining efficiency and fine-grained control on tasks like Sokoban, Rubik's Cube, and INT."
+excerpt: "AdaSubS adaptively adjusts planning horizon via diverse subgoals + fast reachability filtering; efficient on Sokoban, Rubik's Cube, INT."
 date: 2023-06-01
 venue: "ICLR 2023 (Top-5%, Oral)"
 slidesurl: ""
@@ -11,7 +11,7 @@ paperurl: "https://arxiv.org/abs/2206.00702"
 websiteurl: "https://sites.google.com/view/adaptivesubgoalsearch/"
 colaburl: "https://colab.research.google.com/drive/1qdHaTSegZRHMy6nRHXXFjY0DjKSTZQ0x?usp=sharing"
 codeurl: "https://github.com/AdaptiveSubgoalSearch/adaptive_subs"
-citation: "Zawalski, M., Tyrolski, M., Czechowski, K., Odrzygóźdź, T., Stachura, D., Piękos, P., Wu, Y., Kuciński, Ł. and Miłoś, P., 2022. Fast and precise: Adjusting planning horizon with adaptive subgoal search. arXiv preprint arXiv:2206.00702."
+citation: "Zawalski, M., Tyrolski, M., Czechowski, K., Odrzygóźdź, T., Stachura, D., Piękos, P., Wu, Y., Kuciński, Ł., & Miłoś, P. (2022). Fast and precise: Adjusting planning horizon with adaptive subgoal search. arXiv preprint arXiv:2206.00702."
 image: "/images/publications/adasubs.png"
 ---
 
