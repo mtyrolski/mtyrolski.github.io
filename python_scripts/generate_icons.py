@@ -73,7 +73,7 @@ def crop_center_top_to_square(img: Image.Image, size: int):
     w, h = img.size
     side = min(w, h)
     left = (w - side)//2
-    top = 0  # align to top
+    top = (h - side)//4  # bias crop towards top
     cropped = img.crop((left, top, left+side, top+side))
     return cropped.resize((size, size), Image.LANCZOS)
 
