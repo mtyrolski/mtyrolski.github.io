@@ -437,6 +437,73 @@ You can view my [full CV here](../files/cv.pdf).
       <a href="https://arxiv.org/abs/2406.03361" style="display: inline-block; background: #c62828; color: #fff; padding: 0.4em 1.2em; border-radius: 5px; text-decoration: none; font-weight: 600; transition: background 0.2s;">Latest Paper</a>
     </div>
   </div>
+
+  <div style="border: 1px solid #1976d2; border-radius: 8px; padding: 1.5rem; background: #f5faff; box-shadow: 0 2px 8px rgba(25, 118, 210, 0.06);">
+    <strong style="font-size: 1.2em; color: #1976d2;">Microsoft Omex: Scalable Distributed Systems</strong><br>
+    <em>Software Engineering Intern</em><br>
+    <div style="width: 100%; max-width: 600px; height: 320px; margin: 1.2em auto 0.7em auto; background: #fafbfc; border-radius: 14px; display: flex; align-items: center; justify-content: center;">
+      <span style="color: #aaa; font-size: 1.2em;">Image Placeholder</span>
+    </div>
+    <p style="margin-top: 0.7em;">
+      <b>Microsoft Omex</b> is a scalable distributed observability and monitoring system used across Microsoft's cloud infrastructure.<br>
+      <ul style="margin: 0.5em 0 0.5em 1.2em;">
+        <li>Contributed to large-scale distributed systems infrastructure.</li>
+        <li>Worked on telemetry and monitoring solutions for cloud services.</li>
+        <li>Implemented performance optimizations for high-throughput data processing.</li>
+        <li>Gained experience with <b>C#</b>, <b>.NET</b>, and <b>Azure</b> cloud services.</li>
+        <li>Applied software engineering best practices in production environments.</li>
+      </ul>
+      <b>Key focus:</b> Building reliable, scalable systems for observability and monitoring at massive scale.
+    </p>
+    <div style="margin-top: 0.7em;">
+      <a href="https://github.com/microsoft/Omex" style="display: inline-block; background: #1976d2; color: #fff; padding: 0.4em 1.2em; border-radius: 5px; text-decoration: none; font-weight: 600; margin-right: 0.7em; transition: background 0.2s;">GitHub Repo</a>
+    </div>
+  </div>
+
+  <div style="border: 1px solid #1976d2; border-radius: 8px; padding: 1.5rem; background: #f5faff; box-shadow: 0 2px 8px rgba(25, 118, 210, 0.06);">
+    <strong style="font-size: 1.2em; color: #1976d2;">NVIDIA Triton Inference Server: Python Backend</strong><br>
+    <em>Deep Learning Intern</em><br>
+    <div style="width: 100%; max-width: 600px; height: 320px; margin: 1.2em auto 0.7em auto; background: #fafbfc; border-radius: 14px; display: flex; align-items: center; justify-content: center;">
+      <span style="color: #aaa; font-size: 1.2em;">Image Placeholder</span>
+    </div>
+    <p style="margin-top: 0.7em;">
+      <b>NVIDIA Triton Inference Server</b> is an open-source inference serving software that enables efficient deployment of AI models at scale.<br>
+      <ul style="margin: 0.5em 0 0.5em 1.2em;">
+        <li>Developed Python backend for model inference deployment.</li>
+        <li>Worked on <b>C++/CUDA</b> engineering for high-performance inference.</li>
+        <li>Optimized inference pipelines for deep learning models.</li>
+        <li>Enabled support for custom Python-based inference logic.</li>
+        <li>Contributed to production-grade model serving infrastructure.</li>
+      </ul>
+      <b>Key achievement:</b> Built fastest model parallelism algorithm at the time for extremely large NLP models.
+    </p>
+    <div style="margin-top: 0.7em;">
+      <a href="https://docs.nvidia.com/deeplearning/triton-inference-server/user-guide/docs/index.html" style="display: inline-block; background: #1976d2; color: #fff; padding: 0.4em 1.2em; border-radius: 5px; text-decoration: none; font-weight: 600; margin-right: 0.7em; transition: background 0.2s;">Documentation</a>
+    </div>
+  </div>
+
+  <div style="border: 1px solid #1976d2; border-radius: 8px; padding: 1.5rem; background: #f5faff; box-shadow: 0 2px 8px rgba(25, 118, 210, 0.06);">
+    <strong style="font-size: 1.2em; color: #1976d2;">Google Trax: Efficient Transformers</strong><br>
+    <em>Bachelor's Thesis Research</em><br>
+    <div style="width: 100%; max-width: 600px; height: 320px; margin: 1.2em auto 0.7em auto; background: #fafbfc; border-radius: 14px; display: flex; align-items: center; justify-content: center;">
+      <span style="color: #aaa; font-size: 1.2em;">Image Placeholder</span>
+    </div>
+    <p style="margin-top: 0.7em;">
+      <b>Google Trax</b> is a deep learning library for advanced research on sequence models, developed by Google Research.<br>
+      <ul style="margin: 0.5em 0 0.5em 1.2em;">
+        <li>Bachelor's thesis with <b>Google Research</b> supervised by prof. Łukasz Kaiser.</li>
+        <li>Set <b>state-of-the-art benchmarks</b> for efficient transformers in long-sequence prediction.</li>
+        <li>Published research on <b>efficient transformer architectures</b>.</li>
+        <li>Focused on reducing computational complexity for long sequences.</li>
+        <li>Contributed to understanding of attention mechanisms and their optimization.</li>
+      </ul>
+      <b>Key contribution:</b> Advanced research on efficient transformers achieving state-of-the-art results.
+    </p>
+    <div style="margin-top: 0.7em;">
+      <a href="https://github.com/google/trax" style="display: inline-block; background: #1976d2; color: #fff; padding: 0.4em 1.2em; border-radius: 5px; text-decoration: none; font-weight: 600; margin-right: 0.7em; transition: background 0.2s;">GitHub Repo</a>
+      <a href="https://arxiv.org/abs/2110.13711" style="display: inline-block; background: #c62828; color: #fff; padding: 0.4em 1.2em; border-radius: 5px; text-decoration: none; font-weight: 600; transition: background 0.2s;">Paper</a>
+    </div>
+  </div>
 </div>
 
 
