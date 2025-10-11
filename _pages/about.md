@@ -344,7 +344,8 @@ You can view my [full CV here](../files/cv.pdf).
 </style>
 
 <div style="display: flex; flex-direction: column; gap: 1.5rem; max-width: 1500px; margin: 0 auto;">
-{% for publication in site.publications %}
+{% assign pubs_sorted = site.publications | sort: 'date' | reverse %}
+{% for publication in pubs_sorted %}
   <div class="publication-box">
     <div style="flex: 1; max-width: calc(100% - 170px);">
       <strong>{{ publication.title }}</strong><br>
