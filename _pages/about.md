@@ -126,7 +126,7 @@ redirect_from:
       <div class="socials">
         <a href="https://github.com/mtyrolski"><i class="fab fa-github"></i> <span>GitHub</span></a>
         <a href="https://twitter.com/mtyrolski"><i class="fab fa-twitter"></i> <span>Twitter</span></a>
-        <a href="https://www.linkedin.com/in/michal-tyrolski/"><i class="fab fa-linkedin"></i> <span>LinkedIn</span></a>
+        <a href="https://www.linkedin.com/in/mtyrolski/"><i class="fab fa-linkedin"></i> <span>LinkedIn</span></a>
         <a href="../files/cv.pdf"><i class="fas fa-file-pdf"></i> <span>CV</span></a>
       </div>
     </div>
@@ -415,6 +415,28 @@ You can view my [full CV here](../files/cv.pdf).
 ## Selected Projects
 
 <div style="display: flex; flex-direction: column; gap: 1.5rem; max-width: 1500px; margin: 0 auto;">
+  <div style="border: 1px solid #1976d2; border-radius: 8px; padding: 1.5rem; background: #f5faff; box-shadow: 0 2px 8px rgba(25, 118, 210, 0.06);">
+    <strong style="font-size: 1.2em; color: #1976d2;">OpenGVL: Benchmarking Visual Temporal Progress for Data Curation</strong><br>
+    <em>Co-author & contributor</em><br>
+    <div style="width: 100%; max-width: 600px; height: 320px; margin: 1.2em auto 0.7em auto; background: #fafbfc; border-radius: 14px; display: flex; align-items: center; justify-content: center;">
+      <img src="../images/publications/opengvl.png" alt="OpenGVL" style="max-width: 100%; max-height: 100%; object-fit: contain; border-radius: 14px;" />
+    </div>
+    <p style="margin-top: 0.7em;">
+      <b>OpenGVL</b> is an open benchmark and toolkit for measuring how well vision–language models understand <b>temporal task progress</b> in robotics, enabling <b>automatic dataset curation</b> by predicting per-frame completion from videos.
+      <ul style="margin: 0.5em 0 0.5em 1.2em;">
+        <li><b>Problem:</b> Equip robots with a sense of progress for better learning and decision-making.</li>
+        <li><b>Metric (VOC):</b> Value‑Order Correlation — Spearman rank correlation between predicted progress ordering and true time order.</li>
+        <li><b>Few‑shot prompting:</b> Uses ordered context episodes to guide predictions on shuffled frames.</li>
+        <li><b>Contamination control:</b> Hidden tasks with curated demos; 100% completion rate datasets used for evaluation.</li>
+        <li><b>Unified interface:</b> Standardized prompts, data loaders, and configs (Hydra) across open and closed VLMs.</li>
+      </ul>
+    </p>
+    <div style="margin-top: 0.7em;">
+      <a href="https://github.com/budzianowski/opengvl" style="display: inline-block; background: #1976d2; color: #fff; padding: 0.4em 1.2em; border-radius: 5px; text-decoration: none; font-weight: 600; margin-right: 0.7em; transition: background 0.2s;">GitHub Repo</a>
+      <a href="https://huggingface.co/spaces/OpenGVL/OpenGVL" style="display: inline-block; background: #1976d2; color: #fff; padding: 0.4em 1.2em; border-radius: 5px; text-decoration: none; font-weight: 600; margin-right: 0.7em; transition: background 0.2s;">Live Benchmark</a>
+      <a href="https://arxiv.org/abs/2509.17321" style="display: inline-block; background: #c62828; color: #fff; padding: 0.4em 1.2em; border-radius: 5px; text-decoration: none; font-weight: 600; transition: background 0.2s;">arXiv</a>
+    </div>
+  </div>
   <div style="border: 1px solid #1976d2; border-radius: 8px; padding: 1.5rem; background: #f5faff; box-shadow: 0 2px 8px rgba(25, 118, 210, 0.06);">
     <strong style="font-size: 1.2em; color: #1976d2;">CaRL Library: Combinatorial RL for planning</strong><br>
     <em>Lead author & maintainer</em><br>
