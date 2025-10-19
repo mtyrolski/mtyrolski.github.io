@@ -113,7 +113,6 @@ redirect_from:
 }
 </style>
 
-<!-- Citation toggle handled with <details> for GitHub Pages compatibility (no inline JS needed) -->
 
 <div class="profile-card">
   <div class="profile-header">
@@ -131,10 +130,8 @@ redirect_from:
       </div>
     </div>
   </div>
-    <!-- Profile text moved here -->
   <div style="margin: 24px 0 0 0;">
     <span class="para-label">Profile</span> My name is <strong>Michał Tyrolski</strong>. I’m a <em>Senior AI Consultant</em> at <strong>Ernst & Young</strong> where I work on Agentic AI. I hold an <strong>M.Sc. in Machine Learning</strong> (2023), supervised by prof. <a href="https://scholar.google.com/citations?hl=en&user=df8TSy4AAAAJ">Marek Cygan</a> and prof. <a href="https://www.mimuw.edu.pl/~pmilos/">Piotr Miłoś</a>, and a <strong>B.Sc. in Computer Science</strong> (2021), supervised by prof. <a href="https://www.mimuw.edu.pl/~henrykm/resume.html">Henryk Michalewski</a> and prof. <a href="https://scholar.google.com/citations?user=JWmiQR0AAAAJ&hl=en">Łukasz Kaiser</a>. Both degrees are from the <a href="https://www.mimuw.edu.pl/en/"><strong>University of Warsaw, MIM Faculty</strong></a>.<br><br>
-      <!-- Moved Research Focus paragraph here -->
     <span class="para-label">Research Focus</span> My research interests lie at the intersection of <strong>AI-based Planning</strong>, <strong>decision-making in complex environments</strong>, and <strong>Reinforcement Learning</strong>. I am driven by the challenge of advancing the reasoning capabilities of AI algorithms and exploring the strategic thinking that emerges within Game Intelligence. To further pursue this direction, I have recently begun delving in <strong>Meta-RL</strong>, and <strong>Continual Learning</strong> to develop algorithms <strong>capable of solving problem instances</strong> under, broadly speaking, <strong>heavy domain shifts</strong> across different axes.<br><br>
 
 
