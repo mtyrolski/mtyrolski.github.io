@@ -118,7 +118,7 @@ redirect_from:
 <div class="profile-card">
   <div class="profile-header">
     <div class="avatar">
-      <img src="../images/IMG_8383.JPEG" alt="Michał Tyrolski" style="width: 100%; height: 100%; object-fit: cover;">
+    <img src="../images/IMG_0778.JPG" alt="Michał Tyrolski" style="width: 100%; height: 100%; object-fit: cover; object-position: center 40%;">
     </div>
     <div class="profile-meta">
       <h1>Michał Tyrolski</h1>
