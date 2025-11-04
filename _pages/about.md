@@ -194,7 +194,7 @@ redirect_from:
             <strong>Key activities:</strong>
             <ul>
               <li>ICLR A* oral top-5%, onsite presentation on RL and planning</li>
-              <li>Co-led ML in PL Conference 2021,</li>
+              <li>co-leader ML in PL Conference 2021</li>
             </ul>
           </div>
         </li>
