@@ -143,42 +143,42 @@ redirect_from:
       <ul>
         <li>
           <div class="item-title">Senior AI Consultant IV, Ernst & Young</div>
-          <div class="item-date">2025 — present</div>
+          <div class="item-date">2025 - present</div>
           <div class="item-subtext">Warsaw, Poland</div>
         </li>
         <li>
           <div class="item-title">Deep Learning Researcher, DeepFlare</div>
-          <div class="item-date">2022 — 2025</div>
+          <div class="item-date">2022 - 2025</div>
           <div class="item-subtext">Warsaw, Poland</div>
         </li>
         <li>
           <div class="item-title">Data Scientist Intern, Microsoft</div>
-          <div class="item-date">Jul 2022 — Oct 2022</div>
+          <div class="item-date">Jul 2022 - Oct 2022</div>
           <div class="item-subtext">Dublin, Ireland</div>
         </li>
         <li>
           <div class="item-title">Teaching Assistant, Uni of Warsaw</div>
-          <div class="item-date">2021 — 2022</div>
+          <div class="item-date">2021 - 2022</div>
           <div class="item-subtext">Warsaw, Poland</div>
         </li>
         <li>
           <div class="item-title">Deep Learning Intern, Nvidia</div>
-          <div class="item-date">Jul 2021 — Oct 2021</div>
+          <div class="item-date">Jul 2021 - Oct 2021</div>
           <div class="item-subtext">Warsaw, Poland</div>
         </li>
         <li>
           <div class="item-title">Software Engineering Intern, Microsoft</div>
-          <div class="item-date">Apr 2021 — Jun 2021</div>
+          <div class="item-date">Apr 2021 - Jun 2021</div>
           <div class="item-subtext">Dublin, Ireland</div>
         </li>
         <li>
           <div class="item-title">Deep Learning Intern, Nvidia</div>
-          <div class="item-date">Jun 2020 — Sep 2020</div>
+          <div class="item-date">Jun 2020 - Sep 2020</div>
           <div class="item-subtext">Warsaw, Poland</div>
         </li>
         <li>
           <div class="item-title">Software Developer Intern AI, Samsung</div>
-          <div class="item-date">Jul 2019 — Sep 2019</div>
+          <div class="item-date">Jul 2019 - Sep 2019</div>
           <div class="item-subtext">Warsaw, Poland</div>
         </li>
       </ul>
@@ -188,19 +188,19 @@ redirect_from:
       <ul>
         <li>
           <div class="item-title">M.Sc. Machine Learning, University of Warsaw</div>
-          <div class="item-date">Warsaw, Poland 2021 — 2023</div>
+          <div class="item-date">Warsaw, Poland 2021 - 2023</div>
           <div class="item-subtext">top 5% students · graduated with honors</div>
           <div class="key-activities">
             <strong>Key activities:</strong>
             <ul>
-              <li>ICLR A* oral top-5%, onsite presentation on reinforcement learning, first such paper from Poland</li>
+              <li>ICLR A* oral top-5%, onsite presentation on RL and planning</li>
               <li>Co-led ML in PL Conference 2021,</li>
             </ul>
           </div>
         </li>
         <li>
           <div class="item-title">B.Sc. Computer Science, University of Warsaw</div>
-          <div class="item-date">Warsaw, Poland 2018 — 2021</div>
+          <div class="item-date">Warsaw, Poland 2018 - 2021</div>
           <div class="item-subtext">top 5% students</div>
           <div class="key-activities">
             <strong>Key activities:</strong>
@@ -240,11 +240,11 @@ redirect_from:
 
 
 <!-- Techniczne skille + experience  + doświadczenie przy różnych googlach nie googlach -->
-<span class="para-label">Computer Science Background</span> My experience spans the **entire AI stack**: from **low-level C++/CUDA engineering** ([NVIDIA Triton Inference Server](https://docs.nvidia.com/deeplearning/triton-inference-server/user-guide/docs/index.html)) and **scalable distributed systems** ([Microsoft Omex](https://github.com/microsoft/Omex)), through **MLOps** and **ML library development** ([**CaRL**: Deep RL library calibrated for planning and search](https://github.com/mtyrolski/carl)), to advanced **applied & research innovation** across industry and academia. I have worked on **deep learning for vaccine discovery** (DeepFlare), **3D computer vision algorithms** (Samsung), and built my own **fastest model parallelism algorithm** at the time for extremely large **NLP models** (NVIDIA). I was the first **Microsoft Ireland** intern to have a paper accepted at **[MLADS](https://mymlads.microsoft.com/)** on explainable AI. My bachelor’s thesis with **Google Research** set **state-of-the-art benchmarks** for [efficient transformers](https://arxiv.org/abs/2110.13711) in long-sequence prediction. During my master’s, I developed **Adaptive Subgoal Search (AdaSubS)**, a novel search algorithm for efficient reinforcement learning under low computational budgets—presented onsite as an **ICLR 2023 Top-5% Oral** (first such achievement from Poland). Most recently, my research on **hierarchical search landscapes** was awarded **Best Poster at [EEML 2025](https://www.eeml.eu/)**.
+<span class="para-label">Computer Science Background</span> My experience spans the **entire AI stack**: from **low-level C++/CUDA engineering** ([NVIDIA Triton Inference Server](https://docs.nvidia.com/deeplearning/triton-inference-server/user-guide/docs/index.html)) and **scalable distributed systems** ([Microsoft Omex](https://github.com/microsoft/Omex)), through **MLOps** and **ML library development** ([**CaRL**: Deep RL library calibrated for planning and search](https://github.com/mtyrolski/carl)), to advanced **applied & research innovation** across industry and academia. I have worked on **deep learning for vaccine discovery** (DeepFlare), **3D computer vision algorithms** (Samsung), and built my own **fastest model parallelism algorithm** at the time for extremely large **NLP models** (NVIDIA). I was the first **Microsoft Ireland** intern to have a paper accepted at **[MLADS](https://mymlads.microsoft.com/)** on explainable AI. My bachelor’s thesis with **Google Research** set **state-of-the-art benchmarks** for [efficient transformers](https://arxiv.org/abs/2110.13711) in long-sequence prediction. During my master’s, I developed **Adaptive Subgoal Search (AdaSubS)**, a novel search algorithm for efficient reinforcement learning under low computational budgets-presented onsite as an **ICLR 2023 Top-5% Oral** (first such achievement from Poland). Most recently, my research on **hierarchical search landscapes** was awarded **Best Poster at [EEML 2025](https://www.eeml.eu/)**.
 
 
 <!-- Community Contribution -->
-<span class="para-label">Community</span> I am an active member of the AI community, particularly within the [**ML in PL Association**](https://mlinpl.org/), a non-profit advancing the machine learning community in Poland and across Central & Eastern Europe. Since 2020, I have served as **Scientific Program Officer** across six annual editions—curating a high-impact invited speaker lineup—and had the honor to be **co-Leader** of the [**ML in PL 2021 Conference**](https://conference2021.mlinpl.org/). In my free time, I enjoy mountain hiking and motorization.
+<span class="para-label">Community</span> I am an active member of the AI community, particularly within the [**ML in PL Association**](https://mlinpl.org/), a non-profit advancing the machine learning community in Poland and across Central & Eastern Europe. Since 2020, I have served as **Scientific Program Officer** across six annual editions-curating a high-impact invited speaker lineup-and had the honor to be **co-Leader** of the [**ML in PL 2021 Conference**](https://conference2021.mlinpl.org/). In my free time, I enjoy mountain hiking and motorization.
 
 
 
@@ -347,7 +347,7 @@ You can view my [full CV here](../files/cv.pdf).
     <div style="flex: 1; max-width: calc(100% - 170px);">
       <strong>{{ publication.title }}</strong><br>
       <em>{{ publication.venue }}</em><br>
-      {% if publication.paperurl %}
+      {% if publication.paperurl and publication.paperurl != blank %}
         <a href="{{ publication.paperurl }}" class="paper-link">Paper</a>
       {% endif %}
       {% if publication.codeurl %}
@@ -360,7 +360,7 @@ You can view my [full CV here](../files/cv.pdf).
         <a href="{{ publication.colaburl }}" class="paper-link">Colab</a>
       {% endif %}
       {% if publication.excerpt %}<br>{{ publication.excerpt }}{% endif %}
-      {% if publication.citation %}
+      {% if publication.citation and publication.citation != blank %}
         <details class="citation-details" id="cite-{{ publication.title | slugify }}">
           <summary class="cite-button" style="list-style:none;">Cite</summary>
           <div class="citation-box">{{ publication.citation }}</div>
@@ -387,11 +387,11 @@ You can view my [full CV here](../files/cv.pdf).
     <div style="flex: 1; max-width: calc(100% - 170px);">
       <strong>{{ paper.title }}</strong><br>
       <em>{{ paper.venue }}</em><br>
-      {% if paper.paperurl %}
+      {% if paper.paperurl and paper.paperurl != blank %}
         <a href="{{ paper.paperurl }}" class="paper-link">Paper</a>
       {% endif %}
       {% if paper.excerpt %}<br>{{ paper.excerpt }}{% endif %}
-      {% if paper.citation %}
+      {% if paper.citation and paper.citation != blank %}
         <details class="citation-details" id="cite-{{ paper.title | slugify }}">
           <summary class="cite-button" style="list-style:none;">Cite</summary>
           <div class="citation-box">{{ paper.citation }}</div>
@@ -423,7 +423,7 @@ You can view my [full CV here](../files/cv.pdf).
       <b>OpenGVL</b> is an open benchmark and toolkit for measuring how well vision–language models understand <b>temporal task progress</b> in robotics, enabling <b>automatic dataset curation</b> by predicting per-frame completion from videos.
       <ul style="margin: 0.5em 0 0.5em 1.2em;">
         <li><b>Problem:</b> Equip robots with a sense of progress for better learning and decision-making.</li>
-        <li><b>Metric (VOC):</b> Value‑Order Correlation — Spearman rank correlation between predicted progress ordering and true time order.</li>
+        <li><b>Metric (VOC):</b> Value‑Order Correlation - Spearman rank correlation between predicted progress ordering and true time order.</li>
         <li><b>Few‑shot prompting:</b> Uses ordered context episodes to guide predictions on shuffled frames.</li>
         <li><b>Contamination control:</b> Hidden tasks with curated demos; 100% completion rate datasets used for evaluation.</li>
         <li><b>Unified interface:</b> Standardized prompts, data loaders, and configs (Hydra) across open and closed VLMs.</li>
