@@ -126,7 +126,7 @@ redirect_from:
         <a href="https://github.com/mtyrolski"><i class="fab fa-github"></i> <span>GitHub</span></a>
         <a href="https://twitter.com/mtyrolski"><i class="fab fa-twitter"></i> <span>Twitter</span></a>
         <a href="https://www.linkedin.com/in/mtyrolski/"><i class="fab fa-linkedin"></i> <span>LinkedIn</span></a>
-        <a href="{{ site.author.googlescholar }}"><i class="ai ai-google-scholar"></i> <span>Google Scholar</span></a>
+        <a href="{{ site.author.googlescholar }}"><i class="ai ai-google-scholar"></i> <span>Scholar</span></a>
       </div>
     </div>
   </div>
