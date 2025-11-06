@@ -196,7 +196,7 @@ redirect_from:
               <li>ICLR A* oral top-5%, onsite presentation on RL and planning</li>
               <li>co-leader ML in PL Conference 2021</li>
             </ul>
-          </div>
+          </div>zz
         </li>
         <li>
           <div class="item-title">B.Sc. Computer Science, University of Warsaw</div>
@@ -238,12 +238,8 @@ redirect_from:
   }
   </style>
 
+<span class="para-label">Computer Science Background</span> My experience spans the **entire AI stack**: from **low-level C++/CUDA engineering** ([NVIDIA Triton Inference Server](https://docs.nvidia.com/deeplearning/triton-inference-server/user-guide/docs/index.html)) and **scalable distributed systems** ([Microsoft Omex](https://github.com/microsoft/Omex)), through **MLOps** and **ML library development** ([**CaRL**: Deep RL library calibrated for planning and search](https://github.com/mtyrolski/carl)), to advanced **applied & research innovation** across industry and academia. I have worked for **2 years on learning-to-rank and generative modeling for vaccine discovery** (DeepFlare). In a **preclinical cancer vaccine** study, our model achieved **~3× the *in vivo* precision** of **NetMHCpan**, a widely used baseline for peptide–MHC binding prediction in immunoinformatics and vaccine design. I have worked also on **3D computer vision algorithms** (Samsung), and built my own **fastest model parallelism method** at the time for extremely large **NLP models** (NVIDIA). I was the first **Microsoft Ireland** intern to have a paper accepted at **[MLADS](https://mymlads.microsoft.com/)** on explainable AI. My bachelor’s thesis with **Google Research** set **state-of-the-art benchmarks** for [efficient transformers](https://arxiv.org/abs/2110.13711) in long-sequence prediction. During my master’s, I developed **Adaptive Subgoal Search (AdaSubS)**, a novel search algorithm for efficient reinforcement learning under low computational budgets — presented onsite as an **ICLR 2023 Top-5% Oral** (first such achievement from Poland). Most recently, my research on **hierarchical search landscapes** was awarded **Best Poster at [EEML 2025](https://www.eeml.eu/)**.
 
-<!-- Techniczne skille + experience  + doświadczenie przy różnych googlach nie googlach -->
-<span class="para-label">Computer Science Background</span> My experience spans the **entire AI stack**: from **low-level C++/CUDA engineering** ([NVIDIA Triton Inference Server](https://docs.nvidia.com/deeplearning/triton-inference-server/user-guide/docs/index.html)) and **scalable distributed systems** ([Microsoft Omex](https://github.com/microsoft/Omex)), through **MLOps** and **ML library development** ([**CaRL**: Deep RL library calibrated for planning and search](https://github.com/mtyrolski/carl)), to advanced **applied & research innovation** across industry and academia. I have worked on **deep learning for vaccine discovery** (DeepFlare), **3D computer vision algorithms** (Samsung), and built my own **fastest model parallelism algorithm** at the time for extremely large **NLP models** (NVIDIA). I was the first **Microsoft Ireland** intern to have a paper accepted at **[MLADS](https://mymlads.microsoft.com/)** on explainable AI. My bachelor’s thesis with **Google Research** set **state-of-the-art benchmarks** for [efficient transformers](https://arxiv.org/abs/2110.13711) in long-sequence prediction. During my master’s, I developed **Adaptive Subgoal Search (AdaSubS)**, a novel search algorithm for efficient reinforcement learning under low computational budgets-presented onsite as an **ICLR 2023 Top-5% Oral** (first such achievement from Poland). Most recently, my research on **hierarchical search landscapes** was awarded **Best Poster at [EEML 2025](https://www.eeml.eu/)**.
-
-
-<!-- Community Contribution -->
 <span class="para-label">Community</span> I am an active member of the AI community, particularly within the [**ML in PL Association**](https://mlinpl.org/), a non-profit advancing the machine learning community in Poland and across Central & Eastern Europe. Since 2020, I have served as **Scientific Program Officer** across six annual editions-curating a high-impact invited speaker lineup-and had the honor to be **co-Leader** of the [**ML in PL 2021 Conference**](https://conference2021.mlinpl.org/). In my free time, I enjoy mountain hiking and motorization.
 
 
