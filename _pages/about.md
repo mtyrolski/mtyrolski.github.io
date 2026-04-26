@@ -117,7 +117,7 @@ redirect_from:
 <div class="profile-card">
   <div class="profile-header">
     <div class="avatar">
-    <img src="../images/IMG_0778.JPG" alt="Michał Tyrolski" style="width: 100%; height: 100%; object-fit: cover; object-position: center 40%;">
+    <img src="../images/mt_photo.png" alt="Michał Tyrolski" style="width: 100%; height: 100%; object-fit: cover; object-position: center 40%;">
     </div>
     <div class="profile-meta">
       <h1>Michał Tyrolski</h1>
@@ -131,88 +131,11 @@ redirect_from:
     </div>
   </div>
   <div style="margin: 24px 0 0 0;">
-    <span class="para-label">Profile</span> My name is <strong>Michał Tyrolski</strong>. I’m a <em>Senior AI Consultant</em> at <strong>Ernst & Young</strong> where I work on Agentic AI. I hold an <strong>M.Sc. in Machine Learning</strong> (2023), supervised by Prof. <a href="https://www.mimuw.edu.pl/~pmilos/">Piotr Miłoś</a> and Prof. <a href="https://scholar.google.com/citations?hl=en&user=df8TSy4AAAAJ">Marek Cygan</a>, and a <strong>B.Sc. in Computer Science</strong> (2021), supervised by Prof. <a href="https://www.mimuw.edu.pl/~henrykm/resume.html">Henryk Michalewski</a> and Prof. <a href="https://scholar.google.com/citations?user=JWmiQR0AAAAJ&hl=en">Łukasz Kaiser</a>. Both degrees are from the <a href="https://www.mimuw.edu.pl/en/"><strong>University of Warsaw, MIM Faculty</strong></a>.<br><br>
-    <span class="para-label">Research Focus</span> My research interests lie at the intersection of <strong>AI-based Planning</strong>, <strong>decision-making in complex environments</strong>, and <strong>Reinforcement Learning</strong>. I am driven by the challenge of advancing the reasoning capabilities of AI algorithms and exploring the strategic thinking that emerges within Game Intelligence. To further pursue this direction, I have recently begun delving in <strong>Meta-RL</strong>, and <strong>Continual Learning</strong> to develop algorithms <strong>capable of solving problem instances</strong> under, broadly speaking, <strong>heavy domain shifts</strong> across different axes.<br><br>
-
-
+    <span class="para-label">Profile</span> My name is <strong>Michał Tyrolski</strong>. I’m a <em>Senior AI Consultant</em> at <strong>Ernst & Young</strong>, where I work on Agentic AI systems. I hold an <strong>M.Sc. in Machine Learning</strong> (2023), supervised by Prof. <a href="https://www.mimuw.edu.pl/~pmilos/">Piotr Miłoś</a> and Prof. <a href="https://scholar.google.com/citations?hl=en&user=df8TSy4AAAAJ">Marek Cygan</a>, and a <strong>B.Sc. in Computer Science</strong> (2021), supervised by Prof. <a href="https://www.mimuw.edu.pl/~henrykm/resume.html">Henryk Michalewski</a> and Prof. <a href="https://scholar.google.com/citations?user=JWmiQR0AAAAJ&hl=en">Łukasz Kaiser</a>. Both degrees are from the <a href="https://www.mimuw.edu.pl/en/"><strong>University of Warsaw, MIM Faculty</strong></a>.<br><br>
+    <span class="para-label">Research Focus</span> My research interests lie at the intersection of <strong>AI-based Planning</strong>, <strong>decision-making in complex environments</strong>, and <strong>Reinforcement Learning</strong>. I study how intelligent agents can select useful abstractions, adapt their planning horizon, and generalise under distribution shift across diverse problem settings.<br><br> 
 
   </div>
-  <div class="info-grid">
-  <div class="info-card experience">
-      <h3>Professional Experience</h3>
-      <ul>
-        <li>
-          <div class="item-title">Senior AI Consultant IV, Ernst & Young</div>
-          <div class="item-date">2025 - present</div>
-          <div class="item-subtext">Warsaw, Poland</div>
-        </li>
-        <li>
-          <div class="item-title">Deep Learning Researcher, DeepFlare</div>
-          <div class="item-date">2022 - 2025</div>
-          <div class="item-subtext">Warsaw, Poland</div>
-        </li>
-        <li>
-          <div class="item-title">Data Scientist Intern, Microsoft</div>
-          <div class="item-date">Jul 2022 - Oct 2022</div>
-          <div class="item-subtext">Dublin, Ireland</div>
-        </li>
-        <li>
-          <div class="item-title">Teaching Assistant, Uni of Warsaw</div>
-          <div class="item-date">2021 - 2022</div>
-          <div class="item-subtext">Warsaw, Poland</div>
-        </li>
-        <li>
-          <div class="item-title">Deep Learning Intern, Nvidia</div>
-          <div class="item-date">Jul 2021 - Oct 2021</div>
-          <div class="item-subtext">Warsaw, Poland</div>
-        </li>
-        <li>
-          <div class="item-title">Software Engineering Intern, Microsoft</div>
-          <div class="item-date">Apr 2021 - Jun 2021</div>
-          <div class="item-subtext">Dublin, Ireland</div>
-        </li>
-        <li>
-          <div class="item-title">Deep Learning Intern, Nvidia</div>
-          <div class="item-date">Jun 2020 - Sep 2020</div>
-          <div class="item-subtext">Warsaw, Poland</div>
-        </li>
-        <li>
-          <div class="item-title">Software Developer Intern AI, Samsung</div>
-          <div class="item-date">Jul 2019 - Sep 2019</div>
-          <div class="item-subtext">Warsaw, Poland</div>
-        </li>
-      </ul>
-    </div>
-    <div class="info-card">
-      <h3>Education</h3>
-      <ul>
-        <li>
-          <div class="item-title">M.Sc. Machine Learning, University of Warsaw</div>
-          <div class="item-date">Warsaw, Poland 2021 - 2023</div>
-          <div class="item-subtext">top 5% students · graduated with honors</div>
-          <div class="key-activities">
-            <strong>Key activities:</strong>
-            <ul>
-              <li>ICLR A* oral top-5%, onsite presentation on RL and planning</li>
-              <li>co-leader ML in PL Conference 2021</li>
-            </ul>
-          </div>
-        </li>
-        <li>
-          <div class="item-title">B.Sc. Computer Science, University of Warsaw</div>
-          <div class="item-date">Warsaw, Poland 2018 - 2021</div>
-          <div class="item-subtext">top 5% students</div>
-          <div class="key-activities">
-            <strong>Key activities:</strong>
-            <ul>
-              <li>Published paper on efficient transformers with Google Research.</li>
-              <li>President, Machine Learning Society at UW.</li>
-            </ul>
-          </div>
-        </li>
-      </ul>
-    </div>
-  </div>
+
 </div>
 
 <!-- Generic Actual Info -->
@@ -238,14 +161,7 @@ redirect_from:
   }
   </style>
 
-
-<!-- Techniczne skille + experience  + doświadczenie przy różnych googlach nie googlach -->
-<span class="para-label">Computer Science Background</span> My experience spans the **entire AI stack**: from **low-level C++/CUDA engineering** ([NVIDIA Triton Inference Server](https://docs.nvidia.com/deeplearning/triton-inference-server/user-guide/docs/index.html)) and **scalable distributed systems** ([Microsoft Omex](https://github.com/microsoft/Omex)), through **MLOps** and **ML library development** ([**CaRL**: Deep RL library calibrated for planning and search](https://github.com/mtyrolski/carl)), to advanced **applied & research innovation** across industry and academia. I have worked on **deep learning for vaccine discovery** (DeepFlare), **3D computer vision algorithms** (Samsung), and built my own **fastest model parallelism algorithm** at the time for extremely large **NLP models** (NVIDIA). I was the first **Microsoft Ireland** intern to have a paper accepted at **[MLADS](https://mymlads.microsoft.com/)** on explainable AI. My bachelor’s thesis with **Google Research** set **state-of-the-art benchmarks** for [efficient transformers](https://arxiv.org/abs/2110.13711) in long-sequence prediction. During my master’s, I developed **Adaptive Subgoal Search (AdaSubS)**, a novel search algorithm for efficient reinforcement learning under low computational budgets-presented onsite as an **ICLR 2023 Top-5% Oral** (first such achievement from Poland). Most recently, my research on **hierarchical search landscapes** was awarded **Best Poster at [EEML 2025](https://www.eeml.eu/)**.
-
-
-<!-- Community Contribution -->
-<span class="para-label">Community</span> I am an active member of the AI community, particularly within the [**ML in PL Association**](https://mlinpl.org/), a non-profit advancing the machine learning community in Poland and across Central & Eastern Europe. Since 2020, I have served as **Scientific Program Officer** across six annual editions-curating a high-impact invited speaker lineup-and had the honor to be **co-Leader** of the [**ML in PL 2021 Conference**](https://conference2021.mlinpl.org/). In my free time, I enjoy mountain hiking and motorization.
-
+My broader experience spans research and engineering across large-scale machine learning, distributed systems, scientific AI, and applied intelligent systems through work with NVIDIA, Microsoft, Samsung, DeepFlare, and Ernst & Young. I am an active member of the broader AI community, particularly through the <a href="https://mlinpl.org/"><strong>ML in PL Association</strong></a>, a non-profit supporting the machine learning community in Poland and across Central & Eastern Europe. Since 2020, I have contributed to scientific programme activities and conference organisation across multiple editions, including the upcoming <a href="https://conference.mlinpl.org/2026/">10th anniversary conference</a>.
 
 
 You can view my [full CV here](../files/cv.pdf).
@@ -458,5 +374,4 @@ You can view my [full CV here](../files/cv.pdf).
     </div>
   </div>
 </div>
-
 
