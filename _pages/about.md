@@ -9,6 +9,38 @@ redirect_from:
 
 <!-- Custom Top Bar with Profile -->
 <style>
+/* Homepage width tuning */
+#main {
+  width: 100% !important;
+  max-width: none !important;
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+  box-sizing: border-box;
+}
+.masthead__inner-wrap {
+  max-width: 1080px !important;
+  margin-right: auto !important;
+  margin-left: auto !important;
+}
+.page {
+  float: none !important;
+  width: min(1080px, calc(100% - 4rem)) !important;
+  max-width: 1080px !important;
+  margin-right: auto !important;
+  margin-left: auto !important;
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+  box-sizing: border-box;
+}
+.page__inner-wrap {
+  max-width: none !important;
+}
+.page__content {
+  width: 100%;
+  max-width: none;
+  margin: 0;
+}
+
 /* Profile card styling */
 .profile-card {
   display: flex;
@@ -18,7 +50,7 @@ redirect_from:
   border-radius: 14px;
   padding: 18px 20px;
   margin: 0 auto 28px auto;
-  max-width: 1500px;
+  max-width: 1080px;
   box-shadow: 0 6px 20px rgba(16, 24, 40, 0.06);
 }
 .profile-header {
@@ -172,12 +204,15 @@ You can view my [full CV here](../files/cv.pdf).
 <style>
 .publication-box {
   display: flex;
-  align-items: center;
+  align-items: stretch;
+  gap: 0.8rem;
   border: 1px solid #e0e0e0;
   border-radius: 8px;
-  padding: 1.5rem;
+  padding: 0.75rem 0.85rem;
   background: #fafbfc;
-  min-height: 150px;
+  min-height: 0;
+  font-size: 1.04rem;
+  line-height: 1.35;
   transition: background 0.2s, box-shadow 0.2s, border-color 0.2s;
 }
 .publication-box:hover {
@@ -185,15 +220,40 @@ You can view my [full CV here](../files/cv.pdf).
   box-shadow: 0 2px 8px rgba(30, 136, 229, 0.08);
   border-color: #90caf9;
 }
+.publication-box strong { font-size: 1.08em; }
+.publication-box em { color: #4b5563; }
+.publication-list,
+.project-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+.publication-content {
+  flex: 1;
+  min-width: 0;
+}
+.publication-excerpt {
+  margin-top: 0.15em;
+}
+.publication-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 0.35rem;
+  margin: 0.45em 0 0.4em;
+}
 .paper-link {
   display: inline-block;
   background: #c62828;
   color: #fff;
-  padding: 0.4em 1em;
+  padding: 0.26em 0.7em;
   border-radius: 5px;
   text-decoration: none;
   font-weight: 600;
-  margin: 0.5em 0 0.2em 0;
+  margin: 0;
+  font-size: 0.92em;
   transition: background 0.2s, color 0.2s, box-shadow 0.2s;
 }
 .paper-link:hover {
@@ -205,11 +265,11 @@ You can view my [full CV here](../files/cv.pdf).
     display: inline-block;
     background: #1976d2;
     color: #fff;
-    padding: 0.4em 1em;
+    padding: 0.26em 0.7em;
     border-radius: 5px;
     text-decoration: none;
     font-weight: 600;
-    margin: 0.5em 0;
+    margin: 0;
     cursor: pointer;
     transition: background 0.2s, box-shadow 0.2s;
   }
@@ -218,7 +278,7 @@ You can view my [full CV here](../files/cv.pdf).
     box-shadow: 0 2px 8px rgba(25, 118, 210, 0.2);
   }
   .citation-details {
-    margin-top: 0.4em;
+    margin: 0;
   }
   .citation-details[open] > .cite-button {
     background: #1256a1;
@@ -235,19 +295,100 @@ You can view my [full CV here](../files/cv.pdf).
   }
 /* Publication image wrapper utility */
 .pub-img-wrapper {
-  width: 290px; height: 290px; margin-left: 2.5rem; background: #fafbfc; border-radius: 12px; display: flex; align-items: center; justify-content: center; overflow: hidden;
+  width: 220px; min-height: 100%; margin-left: 0; flex: 0 0 220px; background: #ffffff; border-radius: 8px; display: flex; align-items: stretch; justify-content: center; overflow: hidden;
 }
-.pub-img-wrapper.small { width: 260px; height: 260px; }
+.pub-img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+  padding: 4px;
+  box-sizing: border-box;
+  border-radius: 8px;
+}
+.pub-img-wrapper.small {
+  width: 200px;
+  flex-basis: 200px;
+}
+.project-box {
+  display: flex;
+  align-items: stretch;
+  gap: 0.8rem;
+  border: 1px solid #1976d2;
+  border-radius: 8px;
+  padding: 0.75rem 0.85rem;
+  background: #f5faff;
+  box-shadow: 0 2px 8px rgba(25, 118, 210, 0.06);
+  font-size: 1.05rem;
+  line-height: 1.35;
+}
+.project-title {
+  font-size: 1.08em;
+  color: #1976d2;
+}
+.project-content {
+  flex: 1;
+  min-width: 0;
+}
+.project-text {
+  margin-top: 0.55em;
+}
+.project-text ul {
+  margin: 0.45em 0 0 1.15em;
+}
+.project-text li {
+  margin: 0.25em 0;
+}
+.project-media {
+  width: 190px;
+  min-height: 100%;
+  flex: 0 0 190px;
+  background: #ffffff;
+  border-radius: 8px;
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  overflow: hidden;
+}
+.project-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+  padding: 4px;
+  box-sizing: border-box;
+  border-radius: 8px;
+}
+.project-links {
+  margin-top: 0.55em;
+}
+.project-links a {
+  display: inline-block;
+  background: #1976d2;
+  color: #fff;
+  padding: 0.32em 0.85em;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 600;
+  margin: 0 0.35em 0.35em 0;
+  font-size: 0.92em;
+}
+.project-links a.paper {
+  background: #c62828;
+}
 @media (max-width: 920px) {
-  .publication-box { flex-direction: column; align-items: flex-start; padding: 1.1rem 1.1rem 1.25rem; }
-  .pub-img-wrapper, .pub-img-wrapper.small { width: 100%; height: auto; margin: 1rem 0 0 0; }
+  .page { width: calc(100% - 2rem) !important; }
+  .publication-box { flex-direction: column; align-items: flex-start; padding: 0.95rem; }
+  .pub-img-wrapper, .pub-img-wrapper.small { width: 100%; height: auto; flex-basis: auto; margin: 1rem 0 0 0; }
   .pub-img-wrapper img { width: 100%; height: auto; max-height: 320px; object-fit: contain; }
-  .publication-box > div:first-child { max-width: 100% !important; }
   .cite-button { width: auto; }
+  .project-box { flex-direction: column; }
+  .project-media { width: 100%; height: auto; flex-basis: auto; }
+  .project-media img { width: 100%; max-height: 260px; }
 }
 @media (max-width: 520px) {
   .profile-card { padding: 16px 16px 22px; }
-  .publication-box { padding: 0.95rem 0.95rem 1.1rem; }
+  .publication-box { padding: 0.85rem; }
   .pub-img-wrapper img { max-height: 260px; }
   .cite-button { padding: 0.45em 0.85em; font-size: 0.9em; }
 }
@@ -256,36 +397,38 @@ You can view my [full CV here](../files/cv.pdf).
 }
 </style>
 
-<div style="display: flex; flex-direction: column; gap: 1.5rem; max-width: 1500px; margin: 0 auto;">
+<div class="publication-list">
 {% assign pubs_sorted = site.publications | sort: 'date' | reverse %}
 {% for publication in pubs_sorted %}
   <div class="publication-box">
-    <div style="flex: 1; max-width: calc(100% - 170px);">
+    <div class="publication-content">
       <strong>{{ publication.title }}</strong><br>
       <em>{{ publication.venue }}</em><br>
-      {% if publication.paperurl and publication.paperurl != blank %}
-        <a href="{{ publication.paperurl }}" class="paper-link">Paper</a>
-      {% endif %}
-      {% if publication.codeurl %}
-        <a href="{{ publication.codeurl }}" class="paper-link">Code</a>
-      {% endif %}
-      {% if publication.websiteurl %}
-        <a href="{{ publication.websiteurl }}" class="paper-link">Website</a>
-      {% endif %}
-      {% if publication.colaburl %}
-        <a href="{{ publication.colaburl }}" class="paper-link">Colab</a>
-      {% endif %}
-      {% if publication.excerpt %}<br>{{ publication.excerpt }}{% endif %}
-      {% if publication.citation and publication.citation != blank %}
-        <details class="citation-details" id="cite-{{ publication.title | slugify }}">
-          <summary class="cite-button" style="list-style:none;">Cite</summary>
-          <div class="citation-box">{{ publication.citation }}</div>
-        </details>
-      {% endif %}
+      <div class="publication-actions">
+        {% if publication.paperurl and publication.paperurl != blank %}
+          <a href="{{ publication.paperurl }}" class="paper-link">{{ publication.paperlabel | default: "Paper" }}</a>
+        {% endif %}
+        {% if publication.codeurl and publication.codeurl != blank %}
+          <a href="{{ publication.codeurl }}" class="paper-link">{{ publication.codelabel | default: "Code" }}</a>
+        {% endif %}
+        {% if publication.websiteurl and publication.websiteurl != blank %}
+          <a href="{{ publication.websiteurl }}" class="paper-link">{{ publication.websitelabel | default: "Website" }}</a>
+        {% endif %}
+        {% if publication.colaburl and publication.colaburl != blank %}
+          <a href="{{ publication.colaburl }}" class="paper-link">Colab</a>
+        {% endif %}
+        {% if publication.citation and publication.citation != blank %}
+          <details class="citation-details" id="cite-{{ publication.title | slugify }}">
+            <summary class="cite-button" style="list-style:none;">Cite</summary>
+            <div class="citation-box">{{ publication.citation }}</div>
+          </details>
+        {% endif %}
+      </div>
+      {% if publication.excerpt %}<div class="publication-excerpt">{{ publication.excerpt }}</div>{% endif %}
     </div>
   <div class="pub-img-wrapper">
       {% if publication.image %}
-        <img src="{{ publication.image }}" alt="{{ publication.title }}" style="max-width: 100%; max-height: 100%; object-fit: cover; border-radius: 12px;" />
+        <img src="{{ publication.image }}" alt="{{ publication.title }}" />
       {% else %}
         <span style="color: #aaa; font-size: 1.2em;">Image<br>Placeholder</span>
       {% endif %}
@@ -297,26 +440,28 @@ You can view my [full CV here](../files/cv.pdf).
 
 ## Other Papers
 
-<div style="display: flex; flex-direction: column; gap: 1.5rem; max-width: 1500px; margin: 0 auto;">
+<div class="publication-list">
 {% for paper in site.other_papers %}
   <div class="publication-box">
-    <div style="flex: 1; max-width: calc(100% - 170px);">
+    <div class="publication-content">
       <strong>{{ paper.title }}</strong><br>
       <em>{{ paper.venue }}</em><br>
-      {% if paper.paperurl and paper.paperurl != blank %}
-        <a href="{{ paper.paperurl }}" class="paper-link">Paper</a>
-      {% endif %}
-      {% if paper.excerpt %}<br>{{ paper.excerpt }}{% endif %}
-      {% if paper.citation and paper.citation != blank %}
-        <details class="citation-details" id="cite-{{ paper.title | slugify }}">
-          <summary class="cite-button" style="list-style:none;">Cite</summary>
-          <div class="citation-box">{{ paper.citation }}</div>
-        </details>
-      {% endif %}
+      <div class="publication-actions">
+        {% if paper.paperurl and paper.paperurl != blank %}
+          <a href="{{ paper.paperurl }}" class="paper-link">Paper</a>
+        {% endif %}
+        {% if paper.citation and paper.citation != blank %}
+          <details class="citation-details" id="cite-{{ paper.title | slugify }}">
+            <summary class="cite-button" style="list-style:none;">Cite</summary>
+            <div class="citation-box">{{ paper.citation }}</div>
+          </details>
+        {% endif %}
+      </div>
+      {% if paper.excerpt %}<div class="publication-excerpt">{{ paper.excerpt }}</div>{% endif %}
     </div>
   <div class="pub-img-wrapper small">
       {% if paper.image %}
-        <img src="{{ paper.image }}" alt="{{ paper.title }}" style="max-width: 100%; max-height: 100%; object-fit: cover; border-radius: 12px;" />
+        <img src="{{ paper.image }}" alt="{{ paper.title }}" />
       {% else %}
         <span style="color: #aaa; font-size: 1.2em;">Image<br>Placeholder</span>
       {% endif %}
@@ -328,50 +473,36 @@ You can view my [full CV here](../files/cv.pdf).
 
 ## Selected Projects
 
-<div style="display: flex; flex-direction: column; gap: 1.5rem; max-width: 1500px; margin: 0 auto;">
-  <div style="border: 1px solid #1976d2; border-radius: 8px; padding: 1.5rem; background: #f5faff; box-shadow: 0 2px 8px rgba(25, 118, 210, 0.06);">
-    <strong style="font-size: 1.2em; color: #1976d2;">OpenGVL: Benchmarking Visual Temporal Progress for Data Curation</strong><br>
-    <em>Co-author & contributor</em><br>
-    <div style="width: 100%; max-width: 600px; height: 320px; margin: 1.2em auto 0.7em auto; background: #fafbfc; border-radius: 14px; display: flex; align-items: center; justify-content: center;">
-      <img src="../images/publications/opengvl.png" alt="OpenGVL" style="max-width: 100%; max-height: 100%; object-fit: contain; border-radius: 14px;" />
+<div class="project-list">
+  <div class="project-box">
+    <div class="project-content">
+      <strong class="project-title">CaRL Library: Combinatorial RL for Planning</strong><br>
+      <em>Lead author & maintainer</em><br>
+      <div class="project-text">
+        <b>CaRL</b> is an open-source library for offline and online reinforcement/imitation learning in combinatorial planning.
+      </div>
+      <div class="project-links">
+        <a href="https://github.com/mtyrolski/carl">GitHub Repo</a>
+        <a href="https://arxiv.org/abs/2406.03361" class="paper">Latest Paper</a>
+      </div>
     </div>
-    <p style="margin-top: 0.7em;">
-      <b>OpenGVL</b> is an open benchmark and toolkit for measuring how well vision–language models understand <b>temporal task progress</b> in robotics, enabling <b>automatic dataset curation</b> by predicting per-frame completion from videos.
-      <ul style="margin: 0.5em 0 0.5em 1.2em;">
-        <li><b>Problem:</b> Equip robots with a sense of progress for better learning and decision-making.</li>
-        <li><b>Metric (VOC):</b> Value‑Order Correlation - Spearman rank correlation between predicted progress ordering and true time order.</li>
-        <li><b>Few‑shot prompting:</b> Uses ordered context episodes to guide predictions on shuffled frames.</li>
-        <li><b>Contamination control:</b> Hidden tasks with curated demos; 100% completion rate datasets used for evaluation.</li>
-        <li><b>Unified interface:</b> Standardized prompts, data loaders, and configs (Hydra) across open and closed VLMs.</li>
-      </ul>
-    </p>
-    <div style="margin-top: 0.7em;">
-      <a href="https://github.com/budzianowski/opengvl" style="display: inline-block; background: #1976d2; color: #fff; padding: 0.4em 1.2em; border-radius: 5px; text-decoration: none; font-weight: 600; margin-right: 0.7em; transition: background 0.2s;">GitHub Repo</a>
-      <a href="https://huggingface.co/spaces/OpenGVL/OpenGVL" style="display: inline-block; background: #1976d2; color: #fff; padding: 0.4em 1.2em; border-radius: 5px; text-decoration: none; font-weight: 600; margin-right: 0.7em; transition: background 0.2s;">Live Benchmark</a>
-      <a href="https://arxiv.org/abs/2509.17321" style="display: inline-block; background: #c62828; color: #fff; padding: 0.4em 1.2em; border-radius: 5px; text-decoration: none; font-weight: 600; transition: background 0.2s;">arXiv</a>
+    <div class="project-media">
+      <img src="../images/planning.png" alt="CaRL Architecture" />
     </div>
   </div>
-  <div style="border: 1px solid #1976d2; border-radius: 8px; padding: 1.5rem; background: #f5faff; box-shadow: 0 2px 8px rgba(25, 118, 210, 0.06);">
-    <strong style="font-size: 1.2em; color: #1976d2;">CaRL Library: Combinatorial RL for planning</strong><br>
-    <em>Lead author & maintainer</em><br>
-    <div style="width: 100%; max-width: 600px; height: 320px; margin: 1.2em auto 0.7em auto; background: #fafbfc; border-radius: 14px; display: flex; align-items: center; justify-content: center;">
-      <img src="../images/planning.png" alt="CaRL Architecture" style="max-width: 100%; max-height: 100%; object-fit: contain; border-radius: 14px;" />
+  <div class="project-box">
+    <div class="project-content">
+      <strong class="project-title">Todoist Assistant</strong><br>
+      <em>Personal productivity tool</em><br>
+      <div class="project-text">
+        Local-first Todoist dashboard and automation toolkit with optional summaries and read-only chat over cached activity.
+      </div>
+      <div class="project-links">
+        <a href="https://github.com/mtyrolski/todoist-assistant">GitHub Repo</a>
+      </div>
     </div>
-    <p style="margin-top: 0.7em;">
-      <b>CaRL</b> is an open-source library for scalable offline and online reinforcement/imitation learning in combinatorial planning problems.<br>
-      <ul style="margin: 0.5em 0 0.5em 1.2em;">
-        <li>Supports environments like <b>Sokoban</b>, <b>NPuzzle</b>, <b>Rubik</b>, and <b>INT</b>.</li>
-        <li>Includes 35+ open-source models (Generator, Value, Policy, CLLP).</li>
-        <li>Enables distributed experiments on SLURM clusters and local machines.</li>
-        <li>Interactive Jupyter notebooks for research and reproducibility.</li>
-        <li>Used in multiple peer-reviewed papers.</li>
-      </ul>
-      <b>Key features:</b> modular architecture, Hydra config extension, heterogeneous job support, remote deployment, and dataset demos.
-    </p>
-    <div style="margin-top: 0.7em;">
-      <a href="https://github.com/mtyrolski/carl" style="display: inline-block; background: #1976d2; color: #fff; padding: 0.4em 1.2em; border-radius: 5px; text-decoration: none; font-weight: 600; margin-right: 0.7em; transition: background 0.2s;">GitHub Repo</a>
-      <a href="https://arxiv.org/abs/2406.03361" style="display: inline-block; background: #c62828; color: #fff; padding: 0.4em 1.2em; border-radius: 5px; text-decoration: none; font-weight: 600; transition: background 0.2s;">Latest Paper</a>
+    <div class="project-media">
+      <img src="../images/projects/todoist-assistant.png" alt="Todoist Assistant logo" />
     </div>
   </div>
 </div>
-

@@ -3,7 +3,7 @@ title: "Adjusting Planning Horizon with Adaptive Subgoal Search"
 collection: publications
 category: manuscripts
 permalink: /publication/2023-01-01-adjusting-planning-horizon
-excerpt: "AdaSubS adaptively adjusts planning horizon via diverse subgoals + fast reachability filtering; efficient on Sokoban, Rubik's Cube, INT."
+excerpt: "AdaSubS adjusts planning horizon using generated subgoals and reachability filtering; evaluated on Sokoban, Rubik's Cube, and INT."
 date: 2023-06-01
 venue: "ICLR 2023 (Top-5%, Oral)"
 slidesurl: ""
@@ -19,9 +19,9 @@ image: "/images/publications/adasubs.png"
 <img src="{{ page.image }}" alt="Adjusting Planning Horizon with Adaptive Subgoal Search" style="max-width: 420px; border-radius: 8px; margin-bottom: 1em;" />
 {% endif %}
 
-Complex reasoning problems contain states that vary in the computational cost required to determine a good action plan. Taking advantage of this property, we propose Adaptive Subgoal Search (AdaSubS), a search method that adaptively adjusts the planning horizon. To this end, AdaSubS generates diverse sets of subgoals at different distances. A verification mechanism is employed to filter out unreachable subgoals swiftly, allowing to focus on feasible further subgoals. In this way, AdaSubS benefits from the efficiency of planning with longer subgoals and the fine control with the shorter ones, and thus scales well to difficult planning problems.
+Adaptive Subgoal Search (AdaSubS) adjusts the planning horizon by generating candidate subgoals at multiple distances and filtering unreachable states. The method targets complex reasoning tasks where states vary in planning difficulty.
 
-We show that AdaSubS significantly surpasses hierarchical planning algorithms on three complex reasoning tasks: Sokoban, the Rubik's Cube, and inequality proving benchmark INT.
+AdaSubS is evaluated on Sokoban, the Rubik's Cube, and INT.
 
 **Links:**
 - [Paper (PDF)]({{ page.paperurl }})

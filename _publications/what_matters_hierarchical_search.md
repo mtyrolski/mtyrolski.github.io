@@ -1,9 +1,9 @@
 ---
-title: "What Matters in Hierarchical Search for Combinatorial Problems?"
+title: "What Matters in Hierarchical Search for Combinatorial Reasoning Problems?"
 collection: publications
 category: manuscripts
 permalink: /publication/2024-01-01-what-matters-hierarchical-search
-excerpt: "Empirical analysis of properties shaping hierarchical search in combinatorial reasoning; guidelines for robust comparison + future design."
+excerpt: "Empirical study of when hierarchical search helps in combinatorial reasoning, with evaluation guidelines for comparing methods."
 date: 2024-06-01
 venue: "ICLR 2024 (Generative Models for Decision Making)"
 slidesurl: ""
@@ -17,9 +17,9 @@ image: "/images/publications/what-matters.png"
 <img src="{{ page.image }}" alt="What Matters in Hierarchical Search" style="max-width: 420px; border-radius: 8px; margin-bottom: 1em;" />
 {% endif %}
 
-Combinatorial problems, particularly the notorious NP-hard tasks, remain a significant challenge for AI research. A common approach to addressing them combines search with heuristics learned from demonstrations. Recently, hierarchical planning has emerged as a powerful framework in this context, enabling agents to decompose complex problems into manageable subgoals. However, the foundations of this approach, particularly the behavior and limitations of learned heuristics, remain underexplored.
+This work studies when hierarchical search is useful for combinatorial reasoning problems. It focuses on environments with difficult value functions, complex action spaces, dead ends, or heterogeneous training data.
 
-We identify key characteristics whose presence favors the choice of hierarchical search methods: hard-to-learn value functions, complex action spaces, presence of dead ends in the environment, or training data collected from diverse sources. Through in-depth empirical analysis, we establish that hierarchical search methods consistently outperform standard search methods across these dimensions, and we formulate insights for future research. On the practical side, we also propose a set of evaluation guidelines to enable meaningful comparisons between methods and reassess the state-of-the-art algorithms.
+The paper reports controlled empirical comparisons and proposes evaluation guidelines for future hierarchical planning methods.
 
 **Links:**
 - [Paper (PDF)]({{ page.paperurl }})

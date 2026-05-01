@@ -3,15 +3,18 @@ title: "OpenGVL: Benchmarking Visual Temporal Progress for Data Curation"
 collection: publications
 category: manuscripts
 permalink: /publication/2025-09-30-opengvl
-excerpt: "Benchmark and toolkit for evaluating VLMs' sense of progress in robotics via Value-Order Correlation (VOC); enables automated dataset curation from videos."
+excerpt: "Benchmark, toolkit, and live leaderboard for evaluating VLM temporal progress estimation in robotics videos; supports automated dataset curation."
 date: 2025-09-30
 venue: "CoRL 2025 workshop"
 slidesurl: ""
 paperurl: "https://arxiv.org/abs/2509.17321"
+paperlabel: "arXiv"
 websiteurl: "https://huggingface.co/spaces/OpenGVL/OpenGVL"
+websitelabel: "Live Benchmark"
 colaburl: ""
 codeurl: "https://github.com/budzianowski/opengvl"
-citation: "Budzianowski, P., Wiśnios, E., Góral, G., Tyrolski, M., Kulakov, I., Petrenko, V., & Walas, K. (2025). OpenGVL - Benchmarking Visual Temporal Progress for Data Curation. arXiv:2509.17321."
+codelabel: "GitHub Repo"
+citation: "Budzianowski, P., Wiśnios, E., Tyrolski, M., Góral, G., Kulakov, I., Petrenko, V., & Walas, K. (2025). OpenGVL--Benchmarking Visual Temporal Progress for Data Curation. arXiv preprint arXiv:2509.17321."
 image: "/images/publications/opengvl.png"
 ---
 
@@ -19,9 +22,9 @@ image: "/images/publications/opengvl.png"
 <img src="{{ page.image }}" alt="OpenGVL" style="max-width: 420px; border-radius: 8px; margin-bottom: 1em;" />
 {% endif %}
 
-OpenGVL provides a benchmark and toolkit to evaluate how well vision–language models (VLMs) understand temporal progress in robotic tasks. It enables automatic annotation and curation of large-scale robotics datasets by predicting task completion from video frames, making it practical for data quality assessment and filtering.
+OpenGVL evaluates how vision-language models estimate temporal progress in robotics videos. It supports automated dataset curation by predicting task completion from video frames.
 
-We introduce Value-Order Correlation (VOC) — Spearman rank correlation between the model’s predicted progress ordering and the video’s true time order — to measure temporal understanding (higher is better; +1 perfect, 0 random, −1 reversed). The framework supports few-shot prompting with context episodes and includes contamination control via hidden tasks curated for evaluation.
+The benchmark uses Value-Order Correlation (VOC), a rank correlation between predicted progress and true time order. It includes shared prompts, data loaders, configs, and hidden tasks for contamination control.
 
 Links:
 - [Paper (arXiv)]({{ page.paperurl }})
