@@ -18,14 +18,14 @@ redirect_from:
   box-sizing: border-box;
 }
 .masthead__inner-wrap {
-  max-width: 1080px !important;
+  max-width: 810px !important;
   margin-right: auto !important;
   margin-left: auto !important;
 }
 .page {
   float: none !important;
-  width: min(1080px, calc(100% - 4rem)) !important;
-  max-width: 1080px !important;
+  width: min(810px, calc(100% - 4rem)) !important;
+  max-width: 810px !important;
   margin-right: auto !important;
   margin-left: auto !important;
   padding-right: 0 !important;
@@ -50,7 +50,7 @@ redirect_from:
   border-radius: 14px;
   padding: 18px 20px;
   margin: 0 auto 28px auto;
-  max-width: 1080px;
+  max-width: 810px;
   box-shadow: 0 6px 20px rgba(16, 24, 40, 0.06);
 }
 .profile-header {
@@ -227,7 +227,7 @@ You can view my [full CV here](../files/cv.pdf).
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  max-width: 1080px;
+  max-width: 810px;
   margin: 0 auto;
 }
 .publication-content {
@@ -477,7 +477,6 @@ You can view my [full CV here](../files/cv.pdf).
   <div class="project-box">
     <div class="project-content">
       <strong class="project-title">CaRL Library: Combinatorial RL for Planning</strong><br>
-      <em>Lead author & maintainer</em><br>
       <div class="project-text">
         <b>CaRL</b> is an open-source library for offline and online reinforcement/imitation learning in combinatorial planning.
       </div>
@@ -493,7 +492,6 @@ You can view my [full CV here](../files/cv.pdf).
   <div class="project-box">
     <div class="project-content">
       <strong class="project-title">Todoist Assistant</strong><br>
-      <em>Personal productivity tool</em><br>
       <div class="project-text">
         Local-first Todoist dashboard and automation toolkit with optional summaries and read-only chat over cached activity.
       </div>
