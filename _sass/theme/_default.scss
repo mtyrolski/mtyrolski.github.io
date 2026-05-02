@@ -28,6 +28,7 @@ $sidebar-screen-min-width   : 1024px;
 
 /* Default light theme for the site */
 :root {
+    color-scheme: light;
     --global-base-color                 : #{$gray};
     --global-bg-color                   : #fff;
     --global-border-color               : #{$lighter-gray};
@@ -37,9 +38,33 @@ $sidebar-screen-min-width   : 1024px;
     --global-link-color                 : #2f7f93;
     --global-link-color-hover           : mix(#000, #2f7f93, 25%);
     --global-link-color-visited         : mix(#fff, #2f7f93, 25%);  
+    --global-inline-link-color          : #5f6870;
+    --global-inline-link-color-hover    : #343a40;
+    --global-inline-link-color-visited  : #6f7780;
     --global-masthead-link-color        : #{$dark-gray};
     --global-masthead-link-color-hover  : mix(#000, #{$gray}, 25%);    
     --global-text-color                 : #{$dark-gray};
     --global-text-color-light           : #{$light-gray};
     --global-thead-color                : #{$lighter-gray};
+}
+
+html[data-theme="dark"] {
+    color-scheme: dark;
+    --global-base-color                 : #474747;
+    --global-bg-color                   : #474747;
+    --global-border-color               : #{mix(#fff, #474747, 80%)};
+    --global-code-background-color      : #fafafa;
+    --global-code-text-color            : #{$darker-gray};
+    --global-fig-caption-color          : #{$dark-gray};
+    --global-link-color                 : #0ea1c5;
+    --global-link-color-hover           : #{mix(#000, #0ea1c5, 25%)};
+    --global-link-color-visited         : #{mix(#fff, #0ea1c5, 25%)};
+    --global-inline-link-color          : #d6d9dc;
+    --global-inline-link-color-hover    : #ffffff;
+    --global-inline-link-color-visited  : #c4c8cc;
+    --global-masthead-link-color        : #fff;
+    --global-masthead-link-color-hover  : #{mix(#fff, #474747, 80%)};
+    --global-text-color                 : #fff;
+    --global-text-color-light           : #{$light-gray};
+    --global-thead-color                : #{mix(#fff, #474747, 90%)};
 }

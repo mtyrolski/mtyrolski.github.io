@@ -35,6 +35,7 @@ $sidebar-screen-min-width   : 1024px;
 
 /* Dark theme for the site */
 :root {
+    color-scheme: dark;
     --global-base-color                 : #{$background};
     --global-bg-color                   : #{$background};
     --global-border-color               : #{$background-light};
@@ -44,9 +45,33 @@ $sidebar-screen-min-width   : 1024px;
     --global-link-color                 : #{$link};
     --global-link-color-hover           : #{$link-dark};
     --global-link-color-visited         : #{$link-light};    
+    --global-inline-link-color          : #d6d9dc;
+    --global-inline-link-color-hover    : #ffffff;
+    --global-inline-link-color-visited  : #c4c8cc;
     --global-masthead-link-color        : #{$text};
     --global-masthead-link-color-hover  : #{$background-light};    
     --global-text-color                 : #{$text};
     --global-text-color-light           : #{$light-gray};
     --global-thead-color                : #{$background-lighter};
+}
+
+html[data-theme="light"] {
+    color-scheme: light;
+    --global-base-color                 : #{$gray};
+    --global-bg-color                   : #fff;
+    --global-border-color               : #{mix(#fff, $gray, 90%)};
+    --global-code-background-color      : #fafafa;
+    --global-code-text-color            : #{$darker-gray};
+    --global-fig-caption-color          : #{mix(#fff, $dark-gray, 25%)};
+    --global-link-color                 : #2f7f93;
+    --global-link-color-hover           : #{mix(#000, #2f7f93, 25%)};
+    --global-link-color-visited         : #{mix(#fff, #2f7f93, 25%)};
+    --global-inline-link-color          : #5f6870;
+    --global-inline-link-color-hover    : #343a40;
+    --global-inline-link-color-visited  : #6f7780;
+    --global-masthead-link-color        : #{$dark-gray};
+    --global-masthead-link-color-hover  : #{mix(#000, $gray, 25%)};
+    --global-text-color                 : #{$dark-gray};
+    --global-text-color-light           : #{$light-gray};
+    --global-thead-color                : #{mix(#fff, $gray, 90%)};
 }

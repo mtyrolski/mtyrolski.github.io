@@ -41,17 +41,48 @@ redirect_from:
   margin: 0;
 }
 
+:root {
+  --home-profile-bg: linear-gradient(180deg, #f8f9fa, #ffffff);
+  --home-card-bg: #fafbfc;
+  --home-card-bg-soft: #fbfcff;
+  --home-card-bg-hover: #f0f6ff;
+  --home-card-border: #e0e0e0;
+  --home-card-border-soft: #e6eefc;
+  --home-muted-text: #6b7280;
+  --home-image-bg: #ffffff;
+  --home-accent: #1976d2;
+  --home-accent-hover: #1256a1;
+  --home-danger: #c62828;
+  --home-danger-hover: #9f1f1f;
+  --home-shadow: rgba(16, 24, 40, 0.06);
+}
+html[data-theme="dark"] {
+  --home-profile-bg: linear-gradient(180deg, #4f4f4f, #444);
+  --home-card-bg: #3f3f3f;
+  --home-card-bg-soft: #4a4a4a;
+  --home-card-bg-hover: #425056;
+  --home-card-border: #666;
+  --home-card-border-soft: #5c6770;
+  --home-muted-text: var(--global-text-color-light);
+  --home-image-bg: #f7f7f7;
+  --home-accent: var(--global-link-color);
+  --home-accent-hover: var(--global-link-color-hover);
+  --home-danger: #d85b5b;
+  --home-danger-hover: #b84747;
+  --home-shadow: rgba(0, 0, 0, 0.22);
+}
+
 /* Profile card styling */
 .profile-card {
   display: flex;
   flex-direction: column;
-  background: linear-gradient(180deg, #f8f9fa, #ffffff);
-  border: 1px solid #e6e8eb;
+  background: var(--home-profile-bg);
+  border: 1px solid var(--home-card-border);
   border-radius: 14px;
   padding: 18px 20px;
   margin: 0 auto 28px auto;
   max-width: 810px;
-  box-shadow: 0 6px 20px rgba(16, 24, 40, 0.06);
+  box-shadow: 0 6px 20px var(--home-shadow);
 }
 .profile-header {
   display: flex;
@@ -64,8 +95,8 @@ redirect_from:
   border-radius: 50%;
   overflow: hidden;
   box-shadow: 0 8px 30px rgba(0,0,0,0.10);
-  border: 3px solid #fff;
-  background: #eef2f7;
+  border: 3px solid var(--global-bg-color);
+  background: var(--home-card-bg-soft);
   flex-shrink: 0;
 }
 .profile-meta h1 {
@@ -75,7 +106,7 @@ redirect_from:
 }
 .profile-role {
   margin: 6px 0 0 0;
-  color: #425466;
+  color: var(--home-muted-text);
 }
 .socials {
   margin-top: 10px;
@@ -87,9 +118,9 @@ redirect_from:
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  background: #ffffff;
-  color: #1976d2;
-  border: 1px solid #dbe4ff;
+  background: var(--home-card-bg);
+  color: var(--home-accent);
+  border: 1px solid var(--home-card-border-soft);
   padding: 6px 10px;
   border-radius: 8px;
   text-decoration: none;
@@ -97,7 +128,7 @@ redirect_from:
   transition: background 0.2s, color 0.2s, box-shadow 0.2s, transform 0.1s;
 }
 .socials a:hover {
-  background: #1976d2;
+  background: var(--home-accent);
   color: #ffffff;
   box-shadow: 0 6px 16px rgba(25, 118, 210, 0.25);
   transform: translateY(-1px);
@@ -109,22 +140,22 @@ redirect_from:
   margin-top: 16px;
 }
 .info-card {
-  background: #fbfcff;
-  border: 1px solid #e6eefc;
-  border-left: 4px solid #1976d2;
+  background: var(--home-card-bg-soft);
+  border: 1px solid var(--home-card-border-soft);
+  border-left: 4px solid var(--home-accent);
   border-radius: 12px;
   padding: 14px 16px;
   transition: box-shadow 0.2s, transform 0.1s, border-color 0.2s;
 }
-.info-card:hover { box-shadow: 0 8px 18px rgba(25, 118, 210, 0.10); transform: translateY(-1px); border-color: #1256a1; }
+.info-card:hover { box-shadow: 0 8px 18px rgba(25, 118, 210, 0.10); transform: translateY(-1px); border-color: var(--home-accent-hover); }
 .info-card h3 { margin: 0 0 8px 0; font-size: 1.05em; }
 .info-card ul { margin: 0; padding-left: 1.2rem; }
 .info-card li { margin: 8px 0; }
-.info-card li::marker { color: #1976d2; }
+.info-card li::marker { color: var(--home-accent); }
 /* two-line item layout */
 .item-title { font-weight: 600; line-height: 1.3; }
-.item-date { font-size: 0.92em; color: #6b7280; margin-top: 2px; }
-.item-subtext { font-size: 0.9em; color: #7a7f8a; margin-top: 1px; }
+.item-date { font-size: 0.92em; color: var(--home-muted-text); margin-top: 2px; }
+.item-subtext { font-size: 0.9em; color: var(--home-muted-text); margin-top: 1px; }
 
 /* Inline date and place for Professional Experience */
 .info-card.experience .item-date,
@@ -133,7 +164,7 @@ redirect_from:
 }
 .info-card.experience .item-date::after {
   content: ' · ';
-  color: #6b7280;
+  color: var(--home-muted-text);
   margin: 0 4px;
 }
 .info-card.experience .item-subtext { margin: 0; }
@@ -163,8 +194,8 @@ redirect_from:
     </div>
   </div>
   <div style="margin: 24px 0 0 0;">
-    <span class="para-label">Profile</span> My name is <strong>Michał Tyrolski</strong>. I’m a <em>Senior AI Consultant</em> at <strong>Ernst & Young</strong>, where I work on Agentic AI systems. I hold an <strong>M.Sc. in Machine Learning</strong> (2023), supervised by Prof. <a href="https://www.mimuw.edu.pl/~pmilos/">Piotr Miłoś</a> and Prof. <a href="https://scholar.google.com/citations?hl=en&user=df8TSy4AAAAJ">Marek Cygan</a>, and a <strong>B.Sc. in Computer Science</strong> (2021), supervised by Prof. <a href="https://www.mimuw.edu.pl/~henrykm/resume.html">Henryk Michalewski</a> and Prof. <a href="https://scholar.google.com/citations?user=JWmiQR0AAAAJ&hl=en">Łukasz Kaiser</a>. Both degrees are from the <a href="https://www.mimuw.edu.pl/en/"><strong>University of Warsaw, MIM Faculty</strong></a>.<br><br>
-    <span class="para-label">Research Focus</span> My research interests lie at the intersection of <strong>AI-based Planning</strong>, <strong>decision-making in complex environments</strong>, and <strong>Reinforcement Learning</strong>. I study how intelligent agents can select useful abstractions, adapt their planning horizon, and generalise under distribution shift across diverse problem settings.<br><br> 
+    <span class="para-label">Profile</span> I am interested in building AI systems that can plan, adapt, and generalise in complex environments. My research focuses on <strong>AI planning</strong>, <strong>reinforcement learning</strong>, <strong>abstraction</strong>, and <strong>decision-making under distribution shift</strong>.<br><br>
+    I hold an <strong>M.Sc. in Machine Learning</strong> (2023), supervised by Prof. <a href="https://www.mimuw.edu.pl/~pmilos/">Piotr Miłoś</a> and Prof. <a href="https://scholar.google.com/citations?hl=en&user=df8TSy4AAAAJ">Marek Cygan</a>, and a <strong>B.Sc. in Computer Science</strong> (2021), supervised by Prof. <a href="https://www.mimuw.edu.pl/~henrykm/resume.html">Henryk Michalewski</a> and Prof. <a href="https://scholar.google.com/citations?user=JWmiQR0AAAAJ&hl=en">Łukasz Kaiser</a>, both from the <a href="https://www.mimuw.edu.pl/en/"><strong>University of Warsaw, MIM Faculty</strong></a>. I currently work as a <em>Senior AI Consultant</em> at <strong>Ernst & Young</strong> on agentic AI systems.<br><br> 
 
   </div>
 
@@ -177,7 +208,7 @@ redirect_from:
     font-size:0.72em;
     letter-spacing:0.08em;
     text-transform:uppercase;
-    background:#1976d2;
+    background:var(--home-accent);
     color:#fff;
     padding:3px 7px 2px;
     border-radius:5px;
@@ -193,8 +224,7 @@ redirect_from:
   }
   </style>
 
-My broader experience spans research and engineering across large-scale machine learning, distributed systems, scientific AI, and applied intelligent systems through work with NVIDIA, Microsoft, Samsung, DeepFlare, and Ernst & Young. I am an active member of the broader AI community, particularly through the <a href="https://mlinpl.org/"><strong>ML in PL Association</strong></a>, a non-profit supporting the machine learning community in Poland and across Central & Eastern Europe. Since 2020, I have contributed to scientific programme activities and conference organisation across multiple editions, including the upcoming <a href="https://conference.mlinpl.org/2026/">10th anniversary conference</a>.
-
+Alongside this, I have gained experience in research and engineering roles at NVIDIA, Microsoft, Samsung, DeepFlare, and Ernst & Young. Since 2020, I have also been involved in the <a href="https://mlinpl.org/"><strong>ML in PL Association</strong></a>, supporting scientific programme activities and conference organisation across several editions, including its <a href="https://conference.mlinpl.org/2026/">upcoming 10th anniversary conference</a>.
 
 You can view my [full CV here](../files/cv.pdf).
 
@@ -206,22 +236,22 @@ You can view my [full CV here](../files/cv.pdf).
   display: flex;
   align-items: stretch;
   gap: 0.8rem;
-  border: 1px solid #e0e0e0;
+  border: 1px solid var(--home-card-border);
   border-radius: 8px;
   padding: 0.75rem 0.85rem;
-  background: #fafbfc;
+  background: var(--home-card-bg);
   min-height: 0;
   font-size: 1.04rem;
   line-height: 1.35;
   transition: background 0.2s, box-shadow 0.2s, border-color 0.2s;
 }
 .publication-box:hover {
-  background: #f0f6ff;
+  background: var(--home-card-bg-hover);
   box-shadow: 0 2px 8px rgba(30, 136, 229, 0.08);
-  border-color: #90caf9;
+  border-color: var(--home-accent);
 }
 .publication-box strong { font-size: 1.08em; }
-.publication-box em { color: #4b5563; }
+.publication-box em { color: var(--home-muted-text); }
 .publication-list,
 .project-list {
   display: flex;
@@ -246,7 +276,7 @@ You can view my [full CV here](../files/cv.pdf).
 }
 .paper-link {
   display: inline-block;
-  background: #c62828;
+  background: var(--home-danger);
   color: #fff;
   padding: 0.26em 0.7em;
   border-radius: 5px;
@@ -257,13 +287,13 @@ You can view my [full CV here](../files/cv.pdf).
   transition: background 0.2s, color 0.2s, box-shadow 0.2s;
 }
 .paper-link:hover {
-  background: #fff;
-  color: #c62828;
-  box-shadow: 0 0 0 2px #c62828 inset;
+  background: var(--global-bg-color);
+  color: var(--home-danger);
+  box-shadow: 0 0 0 2px var(--home-danger) inset;
 }
 .cite-button {
     display: inline-block;
-    background: #1976d2;
+    background: var(--home-accent);
     color: #fff;
     padding: 0.26em 0.7em;
     border-radius: 5px;
@@ -274,18 +304,18 @@ You can view my [full CV here](../files/cv.pdf).
     transition: background 0.2s, box-shadow 0.2s;
   }
   .cite-button:hover {
-    background: #1256a1;
+    background: var(--home-accent-hover);
     box-shadow: 0 2px 8px rgba(25, 118, 210, 0.2);
   }
   .citation-details {
     margin: 0;
   }
   .citation-details[open] > .cite-button {
-    background: #1256a1;
+    background: var(--home-accent-hover);
   }
   .citation-box {
-    background: #f8f9fa;
-    border: 1px solid #e0e0e0;
+    background: var(--home-card-bg-soft);
+    border: 1px solid var(--home-card-border);
     padding: 1em;
     border-radius: 8px;
     margin-top: 0.6em;
@@ -295,7 +325,7 @@ You can view my [full CV here](../files/cv.pdf).
   }
 /* Publication image wrapper utility */
 .pub-img-wrapper {
-  width: 220px; min-height: 100%; margin-left: 0; flex: 0 0 220px; background: #ffffff; border-radius: 8px; display: flex; align-items: stretch; justify-content: center; overflow: hidden;
+  width: 220px; min-height: 100%; margin-left: 0; flex: 0 0 220px; background: var(--home-image-bg); border-radius: 8px; display: flex; align-items: stretch; justify-content: center; overflow: hidden;
 }
 .pub-img-wrapper img {
   width: 100%;
@@ -314,17 +344,17 @@ You can view my [full CV here](../files/cv.pdf).
   display: flex;
   align-items: stretch;
   gap: 0.8rem;
-  border: 1px solid #1976d2;
+  border: 1px solid var(--home-accent);
   border-radius: 8px;
   padding: 0.75rem 0.85rem;
-  background: #f5faff;
+  background: var(--home-card-bg);
   box-shadow: 0 2px 8px rgba(25, 118, 210, 0.06);
   font-size: 1.05rem;
   line-height: 1.35;
 }
 .project-title {
   font-size: 1.08em;
-  color: #1976d2;
+  color: var(--home-accent);
 }
 .project-content {
   flex: 1;
@@ -343,7 +373,7 @@ You can view my [full CV here](../files/cv.pdf).
   width: 190px;
   min-height: 100%;
   flex: 0 0 190px;
-  background: #ffffff;
+  background: var(--home-image-bg);
   border-radius: 8px;
   display: flex;
   align-items: stretch;
@@ -364,7 +394,7 @@ You can view my [full CV here](../files/cv.pdf).
 }
 .project-links a {
   display: inline-block;
-  background: #1976d2;
+  background: var(--home-accent);
   color: #fff;
   padding: 0.32em 0.85em;
   border-radius: 5px;
@@ -374,7 +404,7 @@ You can view my [full CV here](../files/cv.pdf).
   font-size: 0.92em;
 }
 .project-links a.paper {
-  background: #c62828;
+  background: var(--home-danger);
 }
 @media (max-width: 920px) {
   .page { width: calc(100% - 2rem) !important; }
