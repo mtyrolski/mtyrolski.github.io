@@ -3,6 +3,25 @@
    ========================================================================== */
 
 $(document).ready(function(){
+  var updateThemeToggle = function(theme) {
+    var isDark = theme !== 'light';
+    $(".theme-toggle")
+      .attr("aria-pressed", isDark)
+      .attr("aria-label", isDark ? "Switch to light mode" : "Switch to dark mode");
+    $('meta[name="theme-color"]').attr("content", isDark ? "#474747" : "#ffffff");
+  };
+
+  updateThemeToggle(document.documentElement.dataset.theme || 'light');
+
+  $(".theme-toggle").on("click", function() {
+    var nextTheme = document.documentElement.dataset.theme === 'light' ? 'dark' : 'light';
+    document.documentElement.dataset.theme = nextTheme;
+    try {
+      localStorage.setItem('theme', nextTheme);
+    } catch (error) {}
+    updateThemeToggle(nextTheme);
+  });
+
   // These should be the same as the settings in _variables.scss
   scssLarge = 925; // pixels
 

@@ -5,6 +5,8 @@
 #main {
   @include container;
   @include clearfix;
+  // Increase overall page container width
+  max-width: 1500px !important;
   margin-top: 2em;
   padding-left: 1em;
   padding-right: 1em;
@@ -12,7 +14,8 @@
   animation-delay: 0.35s;
 
   @include breakpoint($x-large) {
-    max-width: $x-large;
+    // Wider page container
+    max-width: 1500px !important;
   }
 }
 
@@ -73,11 +76,7 @@
   }
 
   a {
-    text-decoration: underline;
-
     &:hover {
-      text-decoration: underline;
-
       img {
         box-shadow: 0 0 10px rgba(#000, 0.25);
       }
@@ -107,6 +106,24 @@
   }
 }
 
+.page__content a:not(.btn):not(.paper-link):not(.page__taxonomy-item):not(.socials a):not(.project-links a) {
+  color: var(--global-inline-link-color, var(--global-link-color));
+  text-decoration: underline;
+  text-decoration-color: currentColor;
+  text-decoration-thickness: 0.08em;
+  text-underline-offset: 0.13em;
+}
+
+.page__content a:not(.btn):not(.paper-link):not(.page__taxonomy-item):not(.socials a):not(.project-links a):visited {
+  color: var(--global-inline-link-color-visited, var(--global-link-color-visited));
+}
+
+.page__content a:not(.btn):not(.paper-link):not(.page__taxonomy-item):not(.socials a):not(.project-links a):hover {
+  color: var(--global-inline-link-color-hover, var(--global-link-color-hover));
+  text-decoration: underline;
+  text-decoration-thickness: 0.11em;
+}
+
 .page__hero {
   position: relative;
   margin-bottom: 2em;
@@ -133,9 +150,10 @@
       padding-left: 1em;
       padding-right: 1em;
 
-      @include breakpoint($x-large) {
-        max-width: $x-large;
-      }
+  @include breakpoint($x-large) {
+    // Wider page container for hero wrapper
+    max-width: 1500px !important;
+  }
     }
 
     .page__title,

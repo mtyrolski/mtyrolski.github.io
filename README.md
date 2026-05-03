@@ -15,6 +15,15 @@
 
 See more info at https://academicpages.github.io/
 
+## Setting Up Google Analytics
+
+To track visitors to your website, you can set up Google Analytics. See the [Google Analytics Setup Guide](GOOGLE_ANALYTICS_SETUP.md) for detailed instructions on:
+- Creating a Google Analytics account
+- Getting your tracking ID
+- Configuring your site to use Google Analytics
+- Verifying the installation
+- Troubleshooting common issues
+
 ## Running locally
 
 When you are initially working on your website, it is very useful to be able to preview the changes locally before pushing them to GitHub. To work locally you will need to:
