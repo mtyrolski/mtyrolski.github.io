@@ -1,0 +1,17 @@
+---
+layout: archive
+title: "Research"
+permalink: /publications/
+description: "Publications and manuscripts by Michał Tyrolski on AI planning, reinforcement learning, hierarchical modelling, robotics, and robust machine learning."
+author_profile: false
+page_class: research-page
+---
+
+<p>A complete list of publications and manuscripts. See also my <a href="{{ site.author.googlescholar }}">Google Scholar profile</a>.</p>
+
+<div class="research-list">
+{% assign publications = site.publications | sort: "publication_order" %}
+{% for publication in publications %}
+  {% include publication-card.html publication=publication show_image=true %}
+{% endfor %}
+</div>

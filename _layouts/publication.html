@@ -1,0 +1,33 @@
+---
+layout: default
+---
+
+<main id="main" class="publication-main" role="main">
+  <article class="publication-page" itemscope itemtype="https://schema.org/ScholarlyArticle">
+    <p class="publication-page__back"><a href="{{ '/publications/' | relative_url }}">← Back to Research</a></p>
+
+    <header class="publication-page__header">
+      <h1 class="publication-page__title" itemprop="headline">{{ page.title }}</h1>
+      {% if page.authors %}<p class="publication-page__authors" itemprop="author">{{ page.authors | replace: "M. Tyrolski", "<strong>M. Tyrolski</strong>" }}</p>{% endif %}
+      {% if page.venue %}<p class="publication-page__venue" itemprop="isPartOf">{{ page.venue }}</p>{% endif %}
+
+      <nav class="publication-page__links" aria-label="Resources for {{ page.title }}">
+        {% if page.paperurl %}<a href="{{ page.paperurl }}">{{ page.paperlabel | default: "Paper" }}</a>{% endif %}
+        {% if page.codeurl %}<a href="{{ page.codeurl }}">{{ page.codelabel | default: "Code" }}</a>{% endif %}
+        {% if page.websiteurl %}<a href="{{ page.websiteurl }}">{{ page.websitelabel | default: "Project" }}</a>{% endif %}
+        {% if page.colaburl %}<a href="{{ page.colaburl }}">Demo</a>{% endif %}
+      </nav>
+    </header>
+
+    <section class="publication-page__content" itemprop="articleBody">
+      {{ content }}
+    </section>
+
+    {% if page.citation %}
+      <section class="publication-page__citation" aria-label="Citation">
+        <h2>Citation</h2>
+        <p>{{ page.citation }}</p>
+      </section>
+    {% endif %}
+  </article>
+</main>
