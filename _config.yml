@@ -1,0 +1,186 @@
+# Basic Site Settings
+locale                   : "en-GB"
+site_theme               : "default"
+title                    : "Michał Tyrolski"
+title_separator          : "-"
+name                     : &name "Michał Tyrolski"
+description              : &description "Michał Tyrolski: research in AI planning, reinforcement learning, hierarchical reasoning, and adaptive decision-making."
+url                      : https://mtyrolski.github.io
+baseurl                  : ""
+repository               : "mtyrolski/mtyrolski.github.io"
+
+# Site Author
+author:
+  avatar           : "mt_photo.png"
+  name             : "Michał Tyrolski"
+  pronouns         : 
+  bio              : "Research in AI planning and reinforcement learning."
+  location         : "Warsaw, Poland"
+  employer         : "EY"
+  uri              : 
+
+  # Academic websites
+  googlescholar    : "https://scholar.google.pl/citations?user=3Vr1LfYAAAAJ"
+
+  # Repositories and software development
+  github           : "mtyrolski"
+
+
+  # Social media
+  linkedin         : "mtyrolski"
+  twitter          : "mtyrolski"
+
+
+# Site Settings
+teaser                   : 
+breadcrumbs              : false
+words_per_minute         : 160
+future                   : false
+read_more                : "disabled"
+atom_feed:
+  hide                   : true
+  path                   : 
+
+# SEO Related
+google_site_verification :
+bing_site_verification   :
+alexa_site_verification  :
+yandex_site_verification :
+
+# Social Sharing
+twitter:
+  username               : &twitter
+facebook:
+  username               : 
+  app_id                 : 
+  publisher              : 
+og_image                 : "mt_photo.png"
+social:
+  type                   : "Person"
+  name                   : "Michał Tyrolski"
+  links:
+    - "https://scholar.google.pl/citations?user=3Vr1LfYAAAAJ"
+    - "https://github.com/mtyrolski"
+    - "https://www.linkedin.com/in/mtyrolski/"
+
+# Analytics
+analytics:
+  provider               : "google-analytics-4"
+  google:
+    tracking_id          : "G-3KF7H2BLFH"
+
+# Reading Files
+include:
+  - .htaccess
+  - _pages
+  - files
+exclude:
+  - "*.sublime-project"
+  - "*.sublime-workspace"
+  - .asset-cache
+  - .bundle
+  - .github
+  - .jekyll-assets-cache
+  - .sass-cache
+  - .venv
+  - assets/js/_main.js
+  - assets/js/plugins
+  - assets/js/vendor
+  - CHANGELOG
+  - Capfile
+  - config
+  - Dockerfile
+  - Gemfile
+  - Gruntfile.js
+  - gulpfile.js
+  - LICENSE
+  - local
+  - log
+  - node_modules
+  - package.json*
+  - package-lock.json
+  - pyproject.toml
+  - uv.lock
+  - .python-version
+  - docker-compose.yaml
+  - CONTRIBUTING.md
+  - GOOGLE_ANALYTICS_SETUP.md
+  - python_scripts
+  - images/arch_carl.png
+  - images/planning.png
+  - images/projects/todoist-assistant.png
+  - images/publications/mlads.png
+  - Rakefile
+  - README
+  - tmp
+  - vendor
+keep_files:
+  - .git
+  - .svn
+encoding: "utf-8"
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+
+# Conversion
+markdown: kramdown
+highlighter: rouge
+lsi: false
+excerpt_separator: "\n\n"
+incremental: false
+
+# Markdown Processing
+kramdown:
+  input: GFM
+  hard_wrap: false
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  enable_coderay: false
+
+# Collections
+collections:
+  publications:
+    output: true
+    permalink: /publications/:path/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+  - scope:
+      path: ""
+      type: publications
+    values:
+      layout: publication
+      author_profile: false
+      share: false
+
+# Sass/SCSS
+sass:
+  sass_dir: _sass
+  style: compressed
+
+# Outputting
+permalink: /:categories/:title/
+timezone: Europe/Warsaw
+
+# Plugins
+plugins:
+  - jekyll-sitemap
+  - jekyll-redirect-from
+
+# Mimic GitHub Pages with --safe
+whitelist:
+  - jekyll-sitemap
+  - jekyll-redirect-from
+
+# HTML Compression
+compress_html:
+  clippings: all
+  ignore:
+    envs: development
