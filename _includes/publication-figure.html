@@ -1,0 +1,5 @@
+{% if page.image %}
+<figure class="publication-figure">
+  <img src="{{ page.image | relative_url }}" alt="{{ include.alt | default: page.title }}">
+</figure>
+{% endif %}

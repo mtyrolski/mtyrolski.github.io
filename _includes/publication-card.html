@@ -1,0 +1,21 @@
+{% assign publication = include.publication %}
+<article class="research-item{% if include.compact %} research-item--compact{% endif %}">
+  <div class="research-item__body">
+    <h3 class="research-item__title"><a href="{{ publication.url | relative_url }}">{{ publication.title }}</a></h3>
+    <p class="research-item__authors">{{ publication.authors | replace: "M. Tyrolski", "<strong>M. Tyrolski</strong>" }}</p>
+    <p class="research-item__venue">{{ publication.venue }}</p>
+    {% if publication.excerpt %}<p class="research-item__summary">{{ publication.excerpt }}</p>{% endif %}
+    <div class="research-item__links" aria-label="Links for {{ publication.title }}">
+      <a href="{{ publication.url | relative_url }}">Details</a>
+      {% if publication.paperurl %}<a href="{{ publication.paperurl }}">{{ publication.paperlabel | default: "Paper" }}</a>{% endif %}
+      {% if publication.codeurl %}<a href="{{ publication.codeurl }}">{{ publication.codelabel | default: "Code" }}</a>{% endif %}
+      {% if publication.websiteurl %}<a href="{{ publication.websiteurl }}">{{ publication.websitelabel | default: "Project" }}</a>{% endif %}
+      {% if publication.colaburl %}<a href="{{ publication.colaburl }}">Demo</a>{% endif %}
+    </div>
+  </div>
+  {% if publication.image and include.show_image %}
+    <a class="research-item__image" href="{{ publication.url | relative_url }}" tabindex="-1" aria-hidden="true">
+      <img src="{{ publication.image | relative_url }}" alt="" loading="lazy">
+    </a>
+  {% endif %}
+</article>
